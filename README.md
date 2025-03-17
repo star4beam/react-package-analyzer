@@ -86,10 +86,24 @@ import { Button } from '@components/ui/Button';
 
 ### 3. Run the analyzer
 
-After setting up your configuration file, simply run the following command from your project's root directory:
+After setting up your configuration file, you can run the analyzer in one of the following ways:
+
+#### If installed globally or locally:
 
 ```bash
 analyze-imports
+```
+
+#### Using npx (without installing):
+
+```bash
+npx react-package-analyzer
+```
+
+#### Using npx with specific version:
+
+```bash
+npx react-package-analyzer@latest
 ```
 
 The tool will automatically detect and use your `react-import-analyzer.config.js` file.
@@ -97,7 +111,13 @@ The tool will automatically detect and use your `react-import-analyzer.config.js
 You can also specify a different configuration file:
 
 ```bash
-analyze-imports --config custom-config.js
+npx react-package-analyzer --config custom-config.js
+```
+
+Or run it directly on a specific directory:
+
+```bash
+npx react-package-analyzer --dir ./src
 ```
 
 ## Example project structure
