@@ -206,17 +206,6 @@ const generateFeatureDependencyMermaid = (featureHubCategories, hubDependencies,
         }
     })
   
-    // Add click events to make nodes clickable
-    allIncludedHubs.forEach(hub => {
-        const hubType = getHubType(hub.path)
-        const hubId = makeNodeId(hubType, hub.name)
-        const safeAnchor = utils.createSafeAnchor(hub.name)
-        mermaidCode += `    click ${hubId} "../hubs/${safeAnchor}.md" "View details for ${hub.name}"\n`
-    })
-    
-    // Add click event for the feature node
-    mermaidCode += `    click ${featureId} "javascript:void(0)" "Current feature: ${feature.name}"\n`
-    
     return mermaidCode
 }
 

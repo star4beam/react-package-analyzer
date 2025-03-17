@@ -1,15 +1,3 @@
-## Main Navigation
-
-| Report | Description |
-|--------|-------------|
-| [Main Page](../index.md) | Dashboard and overview of all reports |
-| [Components](../components.md) | Detailed component usage statistics and insights |
-| [Files](../files.md) | Files and their component usage statistics |
-| [Features](../features.md) | Features and their component integration points |
-| [Hubs](../hubs.md) | Hub components and their dependency relationships |
-
----
-
 # Hub: Button
 
 *Navigation: [Home](../index.md) | [Components](../components.md) | [Files](../files.md) | [Features](../features.md) | **Hubs***
@@ -49,18 +37,7 @@ flowchart LR
     end
 
     feature_UserSummary --> hub_Button
-    click feature_UserSummary "../features/UserSummary.md" "Go to UserSummary feature"
-
     %% Direct hub-to-hub connections
-
-    %% Components directly used by this hub
-    subgraph pkg__mui_material["@mui/material"]
-        comp__mui_material_Button["Button"]
-        class comp__mui_material_Button component
-    end
-    hub_Button --> pkg__mui_material
-    click comp__mui_material_Button "../components/@mui_material/Button.md" "Go to Button component"
-
 ```
 
 ## Features Using This Hub
