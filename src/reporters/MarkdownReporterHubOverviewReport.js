@@ -217,14 +217,6 @@ const generateHubDependencyMermaid = (hubCategories, hubDependencies) => {
         mermaidCode += `    class ${safeId} base\n`
     })
     
-    // Add click events to make nodes clickable
-    const allHubs = [...mainHubs, ...intermediateHubs, ...baseHubs]
-    allHubs.forEach(hub => {
-        const safeId = hub.name.replace(/[^a-zA-Z0-9]/g, '_')
-        const safeAnchor = utils.createSafeAnchor(hub.name)
-        mermaidCode += `    click ${safeId} "./hubs/${safeAnchor}.md" "View details for ${hub.name}"\n`
-    })
-  
     return mermaidCode
 }
 

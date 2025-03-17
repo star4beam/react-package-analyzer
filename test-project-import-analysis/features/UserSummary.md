@@ -53,13 +53,6 @@ flowchart LR
     feature_UserSummary ==> isolated_ChakraCard
     feature_UserSummary ==> isolated_ChakraButton
     feature_UserSummary --> isolated_Card
-    click isolated_ActionCard "../hubs/ActionCard.md" "View details for ActionCard"
-    click isolated_InfoPanel "../hubs/InfoPanel.md" "View details for InfoPanel"
-    click isolated_Button "../hubs/Button.md" "View details for Button"
-    click isolated_ChakraCard "../hubs/ChakraCard.md" "View details for ChakraCard"
-    click isolated_ChakraButton "../hubs/ChakraButton.md" "View details for ChakraButton"
-    click isolated_Card "../hubs/Card.md" "View details for Card"
-    click feature_UserSummary "javascript:void(0)" "Current feature: UserSummary"
 
 ```
 

@@ -348,7 +348,7 @@ const generateDirectComponentsSection = ({hub, detailedReport}) => {
  * @param {Object} intersectionsReport - The intersections report for finding indirect features
  * @returns {string} The generated mermaid diagram
  */
-const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, detailedReport, intersectionsReport}) => {
+const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, intersectionsReport}) => {
     const { globalImportHubByIntersection } = intersectionsReport || {}
     
     let diagram = '## Hub Relationships Diagram\n\n'
@@ -536,32 +536,6 @@ const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, d
                 links.push({ from: featureId, to: consumerHubId, type: dependencyType, index: linkIndex })
             })
         }
-        
-        // Add click events for all features to make them clickable
-        if (featuresUsingHub && featuresUsingHub.length > 0) {
-            featuresUsingHub.forEach(feature => {
-                const featureId = makeNodeId('feature', feature.name)
-                const featureSafeAnchor = utils.createSafeAnchor(feature.name)
-                diagram += `    click ${featureId} "../features/${featureSafeAnchor}.md" "Go to ${feature.name} feature"\n`
-            })
-        }
-        
-        if (indirectFeaturesUsingHub && indirectFeaturesUsingHub.length > 0) {
-            indirectFeaturesUsingHub.forEach(feature => {
-                // Only add click event if not already added for direct features
-                const featureId = makeNodeId('feature', feature.name)
-                // Check if this feature is already in direct features
-                const isAlsoDirectFeature = featuresUsingHub && 
-                    featuresUsingHub.some(directFeature => directFeature.path === feature.path)
-                
-                if (!isAlsoDirectFeature) {
-                    const featureSafeAnchor = utils.createSafeAnchor(feature.name)
-                    diagram += `    click ${featureId} "../features/${featureSafeAnchor}.md" "Go to ${feature.name} feature"\n`
-                }
-            })
-        }
-        
-        diagram += '\n'
     }
     
     // Add hubs this hub depends on
@@ -723,65 +697,6 @@ const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, d
         })
     })
     
-    // Add click events for all hubs
-    allRelatedHubs.forEach((hubData, hubPath) => {
-        if (hubPath !== hub.path) { // Skip current hub
-            const hubSafeAnchor = utils.createSafeAnchor(hubData.name)
-            diagram += `    click ${hubData.nodeId} "../hubs/${hubSafeAnchor}.md" "Go to ${hubData.name} hub"\n`
-        }
-    })
-    
-    diagram += '\n'
-    
-    // Add direct components this hub uses
-    if (detailedReport?.files) {
-        const hubFile = detailedReport.files.find(file => file.path === hub.path)
-        
-        if (hubFile?.componentsUsed?.length > 0) {
-            diagram += '    %% Components directly used by this hub\n'
-            
-            // Group components by package for cleaner visualization
-            const componentsByPackage = {}
-            
-            hubFile.componentsUsed.forEach(component => {
-                if (!componentsByPackage[component.package]) {
-                    componentsByPackage[component.package] = []
-                }
-                componentsByPackage[component.package].push(component.name)
-            })
-            
-            // Add components grouped by package (with subgraphs)
-            Object.entries(componentsByPackage).forEach(([packageName, components]) => {
-                const packageId = makeNodeId('pkg', packageName)
-                
-                // Create subgraph for each package
-                diagram += `    subgraph ${packageId}["${packageName}"]\n`
-                
-                // Add components to the subgraph
-                components.forEach(componentName => {
-                    const componentId = makeNodeId('comp', `${packageName}_${componentName}`)
-                    diagram += `        ${componentId}["${componentName}"]\n`
-                    diagram += `        class ${componentId} component\n`
-                })
-                
-                diagram += '    end\n'
-                
-                // Connect current hub to package subgraph
-                diagram += `    ${currentHubId} --> ${packageId}\n`
-                
-                // Add click events for components to make them clickable
-                components.forEach(componentName => {
-                    const componentId = makeNodeId('comp', `${packageName}_${componentName}`)
-                    const sanitizedPackage = utils.sanitizePackageName(packageName)
-                    const componentSafeAnchor = utils.createSafeAnchor(componentName)
-                    diagram += `    click ${componentId} "../components/${sanitizedPackage}/${componentSafeAnchor}.md" "Go to ${componentName} component"\n`
-                })
-            })
-            
-            diagram += '\n'
-        }
-    }
-    
     diagram += '```\n\n'
     return diagram
 }
@@ -800,7 +715,7 @@ const generateHubFile = ({hub, intersectionsReport, detailedReport, config}) => 
     // Find features that use this hub
     const featuresUsingHub = findFeaturesUsingHub(hub, globalImportHubByIntersection)
     
-    let markdown = MainNavigation.generateMainNavigation('../') + '\n'
+    let markdown = ''
     markdown += `# Hub: ${hub.name}\n\n`
     
     // Add navigation with proper relative path
