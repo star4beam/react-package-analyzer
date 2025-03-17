@@ -159,9 +159,7 @@ const generateDependencyHubsSection = ({hub, hubDependencies, config}) => {
         hubDependencies[hub.path].dependsOn.length > 0) {
         
         // Filter to only include direct dependencies (same as in diagram)
-        const directDependencies = hubDependencies[hub.path].dependsOn.filter(dep => 
-            dep.dependencyType === 'direct' || dep.dependencyType === 'both'
-        )
+        const directDependencies = hubDependencies[hub.path].dependsOn
         
         if (directDependencies.length > 0) {
             content += '| Hub | Path | Dependency Type |\n'
@@ -226,32 +224,43 @@ const formatTargetComponents = (componentsUsed) => {
  * Generates the indirectly used components section
  * @param {Object} hub - The hub
  * @param {Object} detailedReport - The detailed report
+ * @param {Object} hubDependencies - Hub dependency relationships
  * @param {Object} config - The configuration
  * @returns {string} The generated markdown content
  */
-const generateIndirectComponentsSection = ({hub, detailedReport, config}) => {
+const generateIndirectComponentsSection = ({hub, detailedReport, hubDependencies, config}) => {
     let content = '## Components Used Indirectly\n\n'
-    content += 'This section shows how components from packages are used by this hub through intermediate files.\n\n'
-    content += '| Target Components | Path |\n'
-    content += '| ---------------- | ---- |\n'
+    content += 'This section shows components used by other hubs that this hub depends on.\n\n'
     
-    // Organize dependency paths for better clarity
-    if (detailedReport?.files && hub.dependencyPaths.length > 0) {
-        // Process each dependency path
-        hub.dependencyPaths.forEach(dep => {
-            const depFile = detailedReport.files.find(file => file.path === dep.path)
+    // Get hubs that this hub depends on
+    const dependencyHubs = []
+    if (hubDependencies && hubDependencies[hub.path] && hubDependencies[hub.path].dependsOn) {
+        dependencyHubs.push(...hubDependencies[hub.path].dependsOn)
+    }
+    
+    if (dependencyHubs.length > 0 && detailedReport?.files) {
+        content += '| Hub | Components Used |\n'
+        content += '| --- | -------------- |\n'
+        
+        // Sort dependency hubs alphabetically by name
+        const sortedHubs = [...dependencyHubs].sort((a, b) => a.name.localeCompare(b.name))
+        
+        sortedHubs.forEach(depHub => {
+            // Find the hub file in the detailed report
+            const hubFile = detailedReport.files.find(file => file.path === depHub.path)
             
-            if (depFile?.componentsUsed?.length > 0) {
+            if (hubFile?.componentsUsed?.length > 0) {
                 // Format target components
-                const formattedTargets = formatTargetComponents(depFile.componentsUsed)
+                const formattedTargets = formatTargetComponents(hubFile.componentsUsed)
                 
-                // Add row to table
-                const intermediatePath = utils.createFileLink(dep.path, config.repoUrl)
-                content += `| ${formattedTargets} | ${intermediatePath} |\n`
+                // Add row to table with hub name and link
+                const hubLink = utils.createFileLink(depHub.path, config.repoUrl)
+                const hubNameWithLink = `[${depHub.name}](../hubs/${utils.createSafeAnchor(depHub.name)}.md) (${hubLink})`
+                content += `| ${hubNameWithLink} | ${formattedTargets} |\n`
             }
         })
     } else {
-        content += '| No intermediate dependencies | No target components |\n'
+        content += 'This hub does not use any components indirectly through other hubs.\n'
     }
     
     content += '\n'
@@ -339,16 +348,53 @@ const generateDirectComponentsSection = ({hub, detailedReport}) => {
 }
 
 /**
+ * Generates a table of hubs that use the current hub
+ * @param {Object} hub - The current hub
+ * @param {Object} hubUsage - Hub usage relationships
+ * @param {Object} config - The configuration 
+ * @returns {string} The generated markdown content
+ */
+const generateConsumerHubsSection = ({hub, hubUsage, config}) => {
+    let content = '## Hubs Using This Hub\n\n'
+    
+    if (hubUsage && hubUsage[hub.path] && 
+        hubUsage[hub.path].usedBy && 
+        hubUsage[hub.path].usedBy.length > 0) {
+        
+        content += '| Hub | Path | Dependency Type |\n'
+        content += '|-----|------|----------------|\n'
+        
+        // Sort consumer hubs alphabetically by name
+        const sortedConsumers = [...hubUsage[hub.path].usedBy]
+            .sort((a, b) => a.name.localeCompare(b.name))
+        
+        sortedConsumers.forEach(consumer => {
+            const hubLink = `../hubs/${utils.createSafeAnchor(consumer.name)}.md`
+            const dependencyType = consumer.dependencyType || 'unknown'
+            
+            content += `| ${utils.createMarkdownLink(consumer.name, hubLink)} | `
+            content += `${utils.createFileLink(consumer.path, config.repoUrl)} | `
+            content += `${dependencyType} |\n`
+        })
+    } else {
+        content += 'No other hubs use this hub.\n'
+    }
+    
+    content += '\n'
+    return content
+}
+
+/**
  * Generates a mermaid diagram showing hub relationships
  * @param {Object} hub - The current hub
  * @param {Array} featuresUsingHub - Features using this hub
  * @param {Object} hubDependencies - Hub dependency relationships
  * @param {Object} hubUsage - Hub usage relationships
- * @param {Object} detailedReport - The detailed report
  * @param {Object} intersectionsReport - The intersections report for finding indirect features
+ * @param {Object} detailedReport - The detailed report
  * @returns {string} The generated mermaid diagram
  */
-const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, intersectionsReport}) => {
+const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, intersectionsReport, detailedReport}) => {
     const { globalImportHubByIntersection } = intersectionsReport || {}
     
     let diagram = '## Hub Relationships Diagram\n\n'
@@ -406,32 +452,31 @@ const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, i
     const consumerHubs = []
     if (hubUsage && hubUsage[hub.path]) {
         hubUsage[hub.path].usedBy.forEach(consumer => {
-            // Only show direct relationships
-            if (consumer.dependencyType === 'direct' || consumer.dependencyType === 'both') {
-                const consumerId = makeNodeId('hub', consumer.name)
-                
-                if (!allRelatedHubs.has(consumer.path)) {
-                    allRelatedHubs.set(consumer.path, {
-                        name: consumer.name,
-                        nodeId: consumerId,
-                        type: 'consumer',
-                        inDependencyOf: new Set(),
-                        dependsOn: new Set([hub.path])
-                    })
-                } else {
-                    allRelatedHubs.get(consumer.path).dependsOn.add(hub.path)
-                }
-                
-                // Mark this hub as being a dependency of the consumer
-                allRelatedHubs.get(hub.path).inDependencyOf.add(consumer.path)
-                
-                // Track consumer hubs for finding indirect features
-                consumerHubs.push({
-                    path: consumer.path,
+            // Include both direct and indirect relationships
+            const consumerId = makeNodeId('hub', consumer.name)
+            
+            if (!allRelatedHubs.has(consumer.path)) {
+                allRelatedHubs.set(consumer.path, {
                     name: consumer.name,
-                    nodeId: consumerId
+                    nodeId: consumerId,
+                    type: 'consumer',
+                    inDependencyOf: new Set(),
+                    dependsOn: new Set([hub.path])
                 })
+            } else {
+                allRelatedHubs.get(consumer.path).dependsOn.add(hub.path)
             }
+            
+            // Mark this hub as being a dependency of the consumer
+            allRelatedHubs.get(hub.path).inDependencyOf.add(consumer.path)
+            
+            // Track consumer hubs for finding indirect features
+            consumerHubs.push({
+                path: consumer.path,
+                name: consumer.name,
+                nodeId: consumerId,
+                dependencyType: consumer.dependencyType || 'unknown'
+            })
         })
     }
     
@@ -493,9 +538,10 @@ const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, i
                 if (dependencyType === 'direct') {
                     diagram += `    ${featureId} --> ${currentHubId}\n`
                 } else if (dependencyType === 'indirect') {
-                    diagram += `    ${featureId} -.->|indirect| ${currentHubId}\n`
+                    // Skip drawing indirect connections (no line drawn)
+                    // But still track the link for reference
                 } else if (dependencyType === 'both') {
-                    diagram += `    ${featureId} ==>|direct+indirect| ${currentHubId}\n`
+                    diagram += `    ${featureId} --> ${currentHubId}\n`
                 } else {
                     diagram += `    ${featureId} --> ${currentHubId}\n`
                 }
@@ -526,9 +572,10 @@ const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, i
                 if (dependencyType === 'direct') {
                     diagram += `    ${featureId} --> ${consumerHubId}\n`
                 } else if (dependencyType === 'indirect') {
-                    diagram += `    ${featureId} -.->|indirect| ${consumerHubId}\n`
+                    // Skip drawing indirect connections (no line drawn)
+                    // But still track the link for reference
                 } else if (dependencyType === 'both') {
-                    diagram += `    ${featureId} ==>|direct+indirect| ${consumerHubId}\n`
+                    diagram += `    ${featureId} --> ${consumerHubId}\n`
                 } else {
                     diagram += `    ${featureId} --> ${consumerHubId}\n`
                 }
@@ -541,25 +588,23 @@ const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, i
     // Add hubs this hub depends on
     if (hubDependencies && hubDependencies[hub.path]) {
         hubDependencies[hub.path].dependsOn.forEach(dependency => {
-            // Only show direct relationships
-            if (dependency.dependencyType === 'direct' || dependency.dependencyType === 'both') {
-                const dependencyId = makeNodeId('hub', dependency.name)
-                
-                if (!allRelatedHubs.has(dependency.path)) {
-                    allRelatedHubs.set(dependency.path, {
-                        name: dependency.name,
-                        nodeId: dependencyId,
-                        type: 'dependency',
-                        inDependencyOf: new Set([hub.path]),
-                        dependsOn: new Set()
-                    })
-                } else {
-                    allRelatedHubs.get(dependency.path).inDependencyOf.add(hub.path)
-                }
-                
-                // Mark this hub as depending on the dependency
-                allRelatedHubs.get(hub.path).dependsOn.add(dependency.path)
+            // Include both direct and indirect relationships
+            const dependencyId = makeNodeId('hub', dependency.name)
+            
+            if (!allRelatedHubs.has(dependency.path)) {
+                allRelatedHubs.set(dependency.path, {
+                    name: dependency.name,
+                    nodeId: dependencyId,
+                    type: 'dependency',
+                    inDependencyOf: new Set([hub.path]),
+                    dependsOn: new Set()
+                })
+            } else {
+                allRelatedHubs.get(dependency.path).inDependencyOf.add(hub.path)
             }
+            
+            // Mark this hub as depending on the dependency
+            allRelatedHubs.get(hub.path).dependsOn.add(dependency.path)
         })
     }
     
@@ -576,13 +621,11 @@ const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, i
         // Find dependencies of this related hub
         if (hubDependencies && hubDependencies[hubPath]) {
             hubDependencies[hubPath].dependsOn.forEach(dependency => {
-                // Only consider direct relationships
-                if (dependency.dependencyType === 'direct' || dependency.dependencyType === 'both') {
-                    // Only add if the dependency is also in our diagram
-                    if (allRelatedHubs.has(dependency.path)) {
-                        allRelatedHubs.get(hubPath).dependsOn.add(dependency.path)
-                        allRelatedHubs.get(dependency.path).inDependencyOf.add(hubPath)
-                    }
+                // Include both direct and indirect relationships
+                // Only add if the dependency is also in our diagram
+                if (allRelatedHubs.has(dependency.path)) {
+                    allRelatedHubs.get(hubPath).dependsOn.add(dependency.path)
+                    allRelatedHubs.get(dependency.path).inDependencyOf.add(hubPath)
                 }
             })
         }
@@ -661,6 +704,47 @@ const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, i
         diagram += '    end\n\n'
     }
     
+    // Add direct components this hub uses
+    if (detailedReport?.files) {
+        const hubFile = detailedReport.files.find(file => file.path === hub.path)
+
+        if (hubFile?.componentsUsed?.length > 0) {
+            diagram += '    %% Components directly used by this hub\n'
+
+            // Group components by package for cleaner visualization
+            const componentsByPackage = {}
+
+            hubFile.componentsUsed.forEach(component => {
+                if (!componentsByPackage[component.package]) {
+                    componentsByPackage[component.package] = []
+                }
+                componentsByPackage[component.package].push(component.name)
+            })
+
+            // Add components grouped by package (with subgraphs)
+            Object.entries(componentsByPackage).forEach(([packageName, components]) => {
+                const packageId = makeNodeId('pkg', packageName)
+
+                // Create subgraph for each package
+                diagram += `    subgraph ${packageId}["${packageName}"]\n`
+
+                // Add components to the subgraph
+                components.forEach(componentName => {
+                    const componentId = makeNodeId('comp', `${packageName}_${componentName}`)
+                    diagram += `        ${componentId}["${componentName}"]\n`
+                    diagram += `        class ${componentId} component\n`
+                })
+
+                diagram += '    end\n'
+
+                // Connect current hub to package subgraph
+                diagram += `    ${currentHubId} --> ${packageId}\n`
+            })
+
+            diagram += '\n'
+        }
+    }
+    
     // Add connections between hubs
     diagram += '    %% Direct hub-to-hub connections\n'
     
@@ -679,20 +763,26 @@ const generateHubDiagram = ({hub, featuresUsingHub, hubDependencies, hubUsage, i
                     }
                 }
                 
-                // Only show direct connections (not indirect or both)
+                const linkIndex = links.length
+                
+                // Use different arrow styles based on dependency type
                 if (dependencyType === 'direct') {
-                    const linkIndex = links.length
-                    
-                    // Use solid arrow for direct dependencies
                     diagram += `    ${hubData.nodeId} --> ${dependency.nodeId}\n`
-                    
-                    links.push({ 
-                        from: hubData.nodeId, 
-                        to: dependency.nodeId, 
-                        type: dependencyType,
-                        index: linkIndex
-                    })
+                } else if (dependencyType === 'indirect') {
+                    // Skip drawing indirect connections (no line drawn)
+                    // But still track the link for reference
+                } else if (dependencyType === 'both') {
+                    diagram += `    ${hubData.nodeId} --> ${dependency.nodeId}\n`
+                } else {
+                    diagram += `    ${hubData.nodeId} --> ${dependency.nodeId}\n`
                 }
+                
+                links.push({ 
+                    from: hubData.nodeId, 
+                    to: dependency.nodeId, 
+                    type: dependencyType,
+                    index: linkIndex
+                })
             }
         })
     })
@@ -730,18 +820,21 @@ const generateHubFile = ({hub, intersectionsReport, detailedReport, config}) => 
         featuresUsingHub, 
         hubDependencies, 
         hubUsage, 
-        detailedReport,
-        intersectionsReport
+        intersectionsReport,
+        detailedReport
     })
     
     // Add features using this hub section
     markdown += generateFeaturesUsingHubSection({featuresUsingHub, config})
     
+    // Add hubs that use this hub section
+    markdown += generateConsumerHubsSection({hub, hubUsage, config})
+    
     // Add hubs this hub depends on section
     markdown += generateDependencyHubsSection({hub, hubDependencies, config})
     
     // Add components used indirectly section
-    markdown += generateIndirectComponentsSection({hub, detailedReport, config})
+    markdown += generateIndirectComponentsSection({hub, detailedReport, hubDependencies, config})
     
     // Add directly used components section
     markdown += generateDirectComponentsSection({hub, detailedReport, config})
@@ -750,5 +843,11 @@ const generateHubFile = ({hub, intersectionsReport, detailedReport, config}) => 
 }
 
 module.exports = {
-    generateHubFile
+    generateHubFile,
+    generateHubOverviewSection,
+    generateFeaturesUsingHubSection,
+    generateDependencyHubsSection,
+    generateConsumerHubsSection,
+    generateIndirectComponentsSection,
+    generateDirectComponentsSection
 } 
