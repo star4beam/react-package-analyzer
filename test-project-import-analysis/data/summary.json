@@ -1,0 +1,71 @@
+{
+  "totalFiles": 39,
+  "totalImports": 130,
+  "totalComponentsUsed": 49,
+  "totalPropUsage": 505,
+  "packageStats": {
+    "@mui/material": {
+      "totalImports": 67,
+      "totalUsages": 110,
+      "totalComponents": 21,
+      "uniqueComponents": [
+        "CssBaseline",
+        "CircularProgress",
+        "Box",
+        "Container",
+        "Typography",
+        "Grid",
+        "Stack",
+        "FormControl",
+        "InputLabel",
+        "Select",
+        "MenuItem",
+        "Paper",
+        "Tab",
+        "Tabs",
+        "Button",
+        "Divider",
+        "TextField",
+        "Avatar",
+        "Badge",
+        "List",
+        "ListItem"
+      ]
+    },
+    "@chakra-ui/react": {
+      "totalImports": 63,
+      "totalUsages": 84,
+      "totalComponents": 28,
+      "uniqueComponents": [
+        "ChakraProvider",
+        "extendTheme",
+        "Box",
+        "VStack",
+        "Heading",
+        "Stat",
+        "StatLabel",
+        "StatNumber",
+        "StatHelpText",
+        "Container",
+        "Text",
+        "Link",
+        "Center",
+        "Button",
+        "useColorModeValue",
+        "Alert",
+        "AlertIcon",
+        "AlertTitle",
+        "AlertDescription",
+        "Card",
+        "CardBody",
+        "CardHeader",
+        "Stack",
+        "Grid",
+        "Flex",
+        "SimpleGrid",
+        "Icon",
+        "Select"
+      ]
+    }
+  }
+}

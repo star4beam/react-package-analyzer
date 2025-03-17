@@ -1,0 +1,4291 @@
+{
+  "files": [
+    {
+      "path": "src/index.js",
+      "componentsUsed": [
+        {
+          "name": "CssBaseline",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": []
+        },
+        {
+          "name": "ChakraProvider",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "theme",
+            "children"
+          ]
+        },
+        {
+          "name": "extendTheme",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": []
+        }
+      ]
+    },
+    {
+      "path": "src/App.jsx",
+      "componentsUsed": [
+        {
+          "name": "CssBaseline",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": []
+        },
+        {
+          "name": "CircularProgress",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": []
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "display",
+            "justifyContent",
+            "alignItems",
+            "height",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/Home.jsx",
+      "componentsUsed": [
+        {
+          "name": "Container",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "maxWidth",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 4,
+          "props": [
+            "variant",
+            "component",
+            "gutterBottom",
+            "children",
+            "paragraph"
+          ]
+        },
+        {
+          "name": "Grid",
+          "package": "@mui/material",
+          "usageCount": 4,
+          "props": [
+            "container",
+            "spacing",
+            "children",
+            "item",
+            "xs",
+            "md",
+            "mt"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 3,
+          "props": [
+            "mt",
+            "children"
+          ]
+        },
+        {
+          "name": "Stack",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "direction",
+            "spacing",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/DynamicComponentDemo.jsx",
+      "componentsUsed": [
+        {
+          "name": "Container",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "maxWidth",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "children",
+            "variant",
+            "component",
+            "gutterBottom"
+          ]
+        },
+        {
+          "name": "Grid",
+          "package": "@mui/material",
+          "usageCount": 3,
+          "props": [
+            "container",
+            "spacing",
+            "children",
+            "item",
+            "xs",
+            "md"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "p",
+            "children",
+            "display",
+            "justifyContent",
+            "alignItems",
+            "minHeight",
+            "border",
+            "borderRadius"
+          ]
+        },
+        {
+          "name": "FormControl",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "fullWidth",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "InputLabel",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "Select",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "value",
+            "onChange",
+            "label",
+            "children"
+          ]
+        },
+        {
+          "name": "MenuItem",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "key",
+            "value",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/profile/ProfilePage.jsx",
+      "componentsUsed": [
+        {
+          "name": "Container",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "maxWidth",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Grid",
+          "package": "@mui/material",
+          "usageCount": 3,
+          "props": [
+            "container",
+            "spacing",
+            "children",
+            "item",
+            "xs"
+          ]
+        },
+        {
+          "name": "Paper",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Tab",
+          "package": "@mui/material",
+          "usageCount": 6,
+          "props": [
+            "label"
+          ]
+        },
+        {
+          "name": "Tabs",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "value",
+            "onChange",
+            "variant",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "p",
+            "children",
+            "display",
+            "justifyContent",
+            "mt"
+          ]
+        },
+        {
+          "name": "VStack",
+          "package": "@chakra-ui/react",
+          "usageCount": 3,
+          "props": [
+            "spacing",
+            "align",
+            "children"
+          ]
+        },
+        {
+          "name": "Heading",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "as",
+            "size",
+            "mb",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/dashboard/LazyDashboard.jsx",
+      "componentsUsed": [
+        {
+          "name": "Container",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "maxWidth",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "component",
+            "gutterBottom",
+            "children"
+          ]
+        },
+        {
+          "name": "Grid",
+          "package": "@mui/material",
+          "usageCount": 7,
+          "props": [
+            "container",
+            "spacing",
+            "mb",
+            "children",
+            "item",
+            "xs",
+            "md"
+          ]
+        },
+        {
+          "name": "Button",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "color",
+            "onClick",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "display",
+            "justifyContent",
+            "alignItems",
+            "height",
+            "bgcolor",
+            "borderRadius",
+            "children",
+            "textAlign",
+            "mb"
+          ]
+        },
+        {
+          "name": "CircularProgress",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "size"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/dashboard/EnhancedDashboard.jsx",
+      "componentsUsed": [
+        {
+          "name": "Container",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "maxWidth",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Grid",
+          "package": "@mui/material",
+          "usageCount": 3,
+          "props": [
+            "container",
+            "spacing",
+            "children",
+            "item",
+            "xs",
+            "md"
+          ]
+        },
+        {
+          "name": "Divider",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "sx"
+          ]
+        },
+        {
+          "name": "Heading",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "as",
+            "size",
+            "mb",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "mb",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/dashboard/DashboardPage.jsx",
+      "componentsUsed": [
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "minH",
+            "bg",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/dashboard/widgets/StatWidget.jsx",
+      "componentsUsed": [
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 0,
+          "props": []
+        },
+        {
+          "name": "Stat",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "StatLabel",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "StatNumber",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "StatHelpText",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/dashboard/widgets/ChartWidget.jsx",
+      "componentsUsed": [
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "sx",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/auth/Signup.jsx",
+      "componentsUsed": [
+        {
+          "name": "Container",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "maxWidth",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Paper",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "elevation",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "p",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/auth/Login.jsx",
+      "componentsUsed": [
+        {
+          "name": "Container",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "maxW",
+            "py",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "mb",
+            "children",
+            "mt",
+            "textAlign"
+          ]
+        },
+        {
+          "name": "Text",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "fontSize",
+            "fontWeight",
+            "children"
+          ]
+        },
+        {
+          "name": "Link",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "color",
+            "href",
+            "children"
+          ]
+        },
+        {
+          "name": "Center",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "mb",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/auth/forms/SignupForm.jsx",
+      "componentsUsed": [
+        {
+          "name": "Stack",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "spacing",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/pages/auth/forms/LoginForm.jsx",
+      "componentsUsed": [
+        {
+          "name": "VStack",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "spacing",
+            "align",
+            "children"
+          ]
+        },
+        {
+          "name": "Heading",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "as",
+            "size",
+            "textAlign",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/hooks/custom/useDynamicComponent.js",
+      "componentsUsed": [
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "display",
+            "justifyContent",
+            "alignItems",
+            "p",
+            "children"
+          ]
+        },
+        {
+          "name": "CircularProgress",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "size"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/TextField.jsx",
+      "componentsUsed": [
+        {
+          "name": "TextField",
+          "package": "@mui/material",
+          "usageCount": 0,
+          "props": []
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/ChakraCard.jsx",
+      "componentsUsed": [
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "p",
+            "borderRadius",
+            "boxShadow",
+            "bg",
+            "borderWidth",
+            "children"
+          ]
+        },
+        {
+          "name": "Heading",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "size",
+            "mb",
+            "children"
+          ]
+        },
+        {
+          "name": "Text",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/ChakraButton.jsx",
+      "componentsUsed": [
+        {
+          "name": "Button",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "colorScheme",
+            "fontWeight",
+            "borderRadius",
+            "shadow",
+            "_hover",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/Card.jsx",
+      "componentsUsed": [
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "bg",
+            "borderWidth",
+            "borderColor",
+            "borderRadius",
+            "overflow",
+            "boxShadow",
+            "p",
+            "children"
+          ]
+        },
+        {
+          "name": "useColorModeValue",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": []
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/Button.jsx",
+      "componentsUsed": [
+        {
+          "name": "Button",
+          "package": "@mui/material",
+          "usageCount": 0,
+          "props": []
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/AdaptiveButton.jsx",
+      "componentsUsed": [
+        {
+          "name": "Button",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "color",
+            "size",
+            "children"
+          ]
+        },
+        {
+          "name": "Button",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "colorScheme",
+            "variant",
+            "size",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/feedback/AlertMessage.jsx",
+      "componentsUsed": [
+        {
+          "name": "Alert",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "status",
+            "children"
+          ]
+        },
+        {
+          "name": "AlertIcon",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": []
+        },
+        {
+          "name": "AlertTitle",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "AlertDescription",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/layouts/containers/Panel.jsx",
+      "componentsUsed": [
+        {
+          "name": "Paper",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "elevation",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "component",
+            "gutterBottom",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/layouts/containers/Card.jsx",
+      "componentsUsed": [
+        {
+          "name": "Card",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "CardBody",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "CardHeader",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "Heading",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "size",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/dashboard/UserSummary.jsx",
+      "componentsUsed": [
+        {
+          "name": "Paper",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Avatar",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "src",
+            "alt",
+            "sx"
+          ]
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "children"
+          ]
+        },
+        {
+          "name": "Stack",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "direction",
+            "spacing",
+            "alignItems",
+            "mb",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/dashboard/StatsSummary.jsx",
+      "componentsUsed": [
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Grid",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "templateColumns",
+            "gap",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "p",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/dashboard/StatCard.jsx",
+      "componentsUsed": [
+        {
+          "name": "Paper",
+          "package": "@mui/material",
+          "usageCount": 0,
+          "props": []
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "component",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "Flex",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "justifyContent",
+            "alignItems",
+            "children"
+          ]
+        },
+        {
+          "name": "Text",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "color",
+            "fontSize",
+            "mb",
+            "children",
+            "fontWeight"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/dashboard/Dashboard.jsx",
+      "componentsUsed": [
+        {
+          "name": "Grid",
+          "package": "@mui/material",
+          "usageCount": 3,
+          "props": [
+            "container",
+            "spacing",
+            "children",
+            "item",
+            "xs",
+            "md"
+          ]
+        },
+        {
+          "name": "Container",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "maxWidth",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "variant",
+            "gutterBottom",
+            "children",
+            "color"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "children",
+            "height",
+            "display",
+            "justifyContent",
+            "alignItems"
+          ]
+        },
+        {
+          "name": "Flex",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "justifyContent",
+            "alignItems",
+            "mb",
+            "children"
+          ]
+        },
+        {
+          "name": "Heading",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "as",
+            "size",
+            "children"
+          ]
+        },
+        {
+          "name": "SimpleGrid",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "columns",
+            "spacing",
+            "mb",
+            "children"
+          ]
+        },
+        {
+          "name": "Text",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "color",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/dashboard/ActivityFeed.jsx",
+      "componentsUsed": [
+        {
+          "name": "Avatar",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "src",
+            "alt"
+          ]
+        },
+        {
+          "name": "Badge",
+          "package": "@mui/material",
+          "usageCount": 0,
+          "props": []
+        },
+        {
+          "name": "List",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "disablePadding",
+            "children"
+          ]
+        },
+        {
+          "name": "ListItem",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 5,
+          "props": [
+            "flex",
+            "children",
+            "mb",
+            "borderBottom",
+            "borderColor",
+            "mt",
+            "textAlign"
+          ]
+        },
+        {
+          "name": "Stack",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "direction",
+            "spacing",
+            "width",
+            "children",
+            "alignItems"
+          ]
+        },
+        {
+          "name": "Text",
+          "package": "@chakra-ui/react",
+          "usageCount": 4,
+          "props": [
+            "fontWeight",
+            "children",
+            "color",
+            "fontSize",
+            "mb"
+          ]
+        },
+        {
+          "name": "VStack",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "spacing",
+            "align",
+            "divider",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/common/LibrarySwitcher.jsx",
+      "componentsUsed": [
+        {
+          "name": "FormControl",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "fullWidth",
+            "size",
+            "children"
+          ]
+        },
+        {
+          "name": "InputLabel",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "id",
+            "children"
+          ]
+        },
+        {
+          "name": "Select",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "labelId",
+            "id",
+            "value",
+            "label",
+            "onChange",
+            "children"
+          ]
+        },
+        {
+          "name": "MenuItem",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "value",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "sx",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/common/InfoPanel.jsx",
+      "componentsUsed": [
+        {
+          "name": "Flex",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "alignItems",
+            "mb",
+            "children",
+            "justifyContent"
+          ]
+        },
+        {
+          "name": "Icon",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "as",
+            "mr",
+            "boxSize"
+          ]
+        },
+        {
+          "name": "Text",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/common/FormCard.jsx",
+      "componentsUsed": [
+        {
+          "name": "Stack",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "spacing",
+            "children",
+            "direction",
+            "justifyContent"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/common/ComponentLibraryProvider.jsx",
+      "componentsUsed": [
+        {
+          "name": "ChakraProvider",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/common/ActionCard.jsx",
+      "componentsUsed": [
+        {
+          "name": "Divider",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "sx"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "p",
+            "children"
+          ]
+        },
+        {
+          "name": "Flex",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "justifyContent",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/common/inputs/TextField.jsx",
+      "componentsUsed": [
+        {
+          "name": "TextField",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "fullWidth",
+            "variant"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/common/inputs/SelectField.jsx",
+      "componentsUsed": [
+        {
+          "name": "Select",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "placeholder",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/common/buttons/SecondaryButton.jsx",
+      "componentsUsed": [
+        {
+          "name": "Button",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "colorScheme",
+            "variant",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/common/buttons/PrimaryButton.jsx",
+      "componentsUsed": [
+        {
+          "name": "Button",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "color",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/auth/LoginForm.jsx",
+      "componentsUsed": [
+        {
+          "name": "Heading",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "as",
+            "size",
+            "textAlign",
+            "children"
+          ]
+        },
+        {
+          "name": "Text",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "textAlign",
+            "color",
+            "children",
+            "fontSize"
+          ]
+        },
+        {
+          "name": "Link",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "color",
+            "href",
+            "children"
+          ]
+        },
+        {
+          "name": "VStack",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "spacing",
+            "align",
+            "children"
+          ]
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "name": "CssBaseline",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 4,
+      "fileCount": 2,
+      "files": [
+        "src/index.js",
+        "src/App.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "ChakraProvider",
+      "package": "@chakra-ui/react",
+      "totalImports": 2,
+      "totalUsages": 2,
+      "fileCount": 2,
+      "files": [
+        "src/index.js",
+        "src/components/common/ComponentLibraryProvider.jsx"
+      ],
+      "props": {
+        "total": 3,
+        "unique": [
+          "theme",
+          "children"
+        ],
+        "details": {
+          "theme": 1,
+          "children": 2
+        },
+        "categories": {
+          "styling": {
+            "count": 1,
+            "props": {
+              "theme": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "theme"
+          ],
+          "files": [
+            "src/index.js"
+          ]
+        },
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/components/common/ComponentLibraryProvider.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "extendTheme",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/index.js"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "CircularProgress",
+      "package": "@mui/material",
+      "totalImports": 3,
+      "totalUsages": 6,
+      "fileCount": 3,
+      "files": [
+        "src/App.jsx",
+        "src/pages/dashboard/LazyDashboard.jsx",
+        "src/hooks/custom/useDynamicComponent.js"
+      ],
+      "props": {
+        "total": 4,
+        "unique": [
+          "size"
+        ],
+        "details": {
+          "size": 4
+        },
+        "categories": {
+          "customization": {
+            "count": 4,
+            "props": {
+              "size": 4
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "size"
+          ],
+          "files": [
+            "src/pages/dashboard/LazyDashboard.jsx",
+            "src/hooks/custom/useDynamicComponent.js"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Box",
+      "package": "@mui/material",
+      "totalImports": 10,
+      "totalUsages": 14,
+      "fileCount": 10,
+      "files": [
+        "src/App.jsx",
+        "src/pages/Home.jsx",
+        "src/pages/DynamicComponentDemo.jsx",
+        "src/pages/dashboard/LazyDashboard.jsx",
+        "src/pages/dashboard/widgets/ChartWidget.jsx",
+        "src/pages/auth/Signup.jsx",
+        "src/pages/auth/forms/SignupForm.jsx",
+        "src/hooks/custom/useDynamicComponent.js",
+        "src/components/layouts/containers/Panel.jsx",
+        "src/components/common/LibrarySwitcher.jsx"
+      ],
+      "props": {
+        "total": 44,
+        "unique": [
+          "display",
+          "justifyContent",
+          "alignItems",
+          "height",
+          "children",
+          "mt",
+          "p",
+          "minHeight",
+          "border",
+          "borderRadius",
+          "bgcolor",
+          "textAlign",
+          "mb",
+          "sx"
+        ],
+        "details": {
+          "display": 4,
+          "justifyContent": 4,
+          "alignItems": 4,
+          "height": 2,
+          "children": 14,
+          "mt": 3,
+          "p": 4,
+          "minHeight": 1,
+          "border": 1,
+          "borderRadius": 2,
+          "bgcolor": 1,
+          "textAlign": 1,
+          "mb": 1,
+          "sx": 2
+        },
+        "categories": {
+          "other": {
+            "count": 21,
+            "props": {
+              "display": 4,
+              "justifyContent": 4,
+              "mt": 3,
+              "p": 4,
+              "border": 1,
+              "borderRadius": 2,
+              "mb": 1,
+              "sx": 2
+            }
+          },
+          "customization": {
+            "count": 9,
+            "props": {
+              "alignItems": 4,
+              "height": 2,
+              "minHeight": 1,
+              "bgcolor": 1,
+              "textAlign": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "alignItems",
+            "children",
+            "display",
+            "height",
+            "justifyContent"
+          ],
+          "files": [
+            "src/App.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "mt"
+          ],
+          "files": [
+            "src/pages/Home.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "alignItems",
+            "border",
+            "borderRadius",
+            "children",
+            "display",
+            "justifyContent",
+            "minHeight",
+            "p"
+          ],
+          "files": [
+            "src/pages/DynamicComponentDemo.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "alignItems",
+            "bgcolor",
+            "borderRadius",
+            "children",
+            "display",
+            "height",
+            "justifyContent",
+            "mb",
+            "textAlign"
+          ],
+          "files": [
+            "src/pages/dashboard/LazyDashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "sx"
+          ],
+          "files": [
+            "src/pages/dashboard/widgets/ChartWidget.jsx",
+            "src/components/common/LibrarySwitcher.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "p"
+          ],
+          "files": [
+            "src/pages/auth/Signup.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/pages/auth/forms/SignupForm.jsx",
+            "src/components/layouts/containers/Panel.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "alignItems",
+            "children",
+            "display",
+            "justifyContent",
+            "p"
+          ],
+          "files": [
+            "src/hooks/custom/useDynamicComponent.js"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Container",
+      "package": "@mui/material",
+      "totalImports": 7,
+      "totalUsages": 7,
+      "fileCount": 7,
+      "files": [
+        "src/pages/Home.jsx",
+        "src/pages/DynamicComponentDemo.jsx",
+        "src/pages/profile/ProfilePage.jsx",
+        "src/pages/dashboard/LazyDashboard.jsx",
+        "src/pages/dashboard/EnhancedDashboard.jsx",
+        "src/pages/auth/Signup.jsx",
+        "src/components/dashboard/Dashboard.jsx"
+      ],
+      "props": {
+        "total": 21,
+        "unique": [
+          "maxWidth",
+          "sx",
+          "children"
+        ],
+        "details": {
+          "maxWidth": 7,
+          "sx": 7,
+          "children": 7
+        },
+        "categories": {
+          "customization": {
+            "count": 7,
+            "props": {
+              "maxWidth": 7
+            }
+          },
+          "other": {
+            "count": 7,
+            "props": {
+              "sx": 7
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "maxWidth",
+            "sx"
+          ],
+          "files": [
+            "src/pages/Home.jsx",
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/pages/dashboard/LazyDashboard.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/pages/auth/Signup.jsx",
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Typography",
+      "package": "@mui/material",
+      "totalImports": 9,
+      "totalUsages": 14,
+      "fileCount": 9,
+      "files": [
+        "src/pages/Home.jsx",
+        "src/pages/DynamicComponentDemo.jsx",
+        "src/pages/dashboard/LazyDashboard.jsx",
+        "src/components/layouts/containers/Panel.jsx",
+        "src/components/dashboard/UserSummary.jsx",
+        "src/components/dashboard/StatsSummary.jsx",
+        "src/components/dashboard/StatCard.jsx",
+        "src/components/dashboard/Dashboard.jsx",
+        "src/components/dashboard/ActivityFeed.jsx"
+      ],
+      "props": {
+        "total": 39,
+        "unique": [
+          "variant",
+          "component",
+          "gutterBottom",
+          "children",
+          "paragraph",
+          "sx",
+          "color"
+        ],
+        "details": {
+          "variant": 9,
+          "component": 5,
+          "gutterBottom": 5,
+          "children": 14,
+          "paragraph": 3,
+          "sx": 2,
+          "color": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 10,
+            "props": {
+              "variant": 9,
+              "color": 1
+            }
+          },
+          "composition": {
+            "count": 5,
+            "props": {
+              "component": 5
+            }
+          },
+          "other": {
+            "count": 10,
+            "props": {
+              "gutterBottom": 5,
+              "paragraph": 3,
+              "sx": 2
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "component",
+            "gutterBottom",
+            "paragraph",
+            "variant"
+          ],
+          "files": [
+            "src/pages/Home.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "component",
+            "gutterBottom",
+            "variant"
+          ],
+          "files": [
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/pages/dashboard/LazyDashboard.jsx",
+            "src/components/layouts/containers/Panel.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "variant"
+          ],
+          "files": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/dashboard/ActivityFeed.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "sx",
+            "variant"
+          ],
+          "files": [
+            "src/components/dashboard/StatsSummary.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "component",
+            "sx",
+            "variant"
+          ],
+          "files": [
+            "src/components/dashboard/StatCard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "color",
+            "gutterBottom",
+            "variant"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grid",
+      "package": "@mui/material",
+      "totalImports": 6,
+      "totalUsages": 23,
+      "fileCount": 6,
+      "files": [
+        "src/pages/Home.jsx",
+        "src/pages/DynamicComponentDemo.jsx",
+        "src/pages/profile/ProfilePage.jsx",
+        "src/pages/dashboard/LazyDashboard.jsx",
+        "src/pages/dashboard/EnhancedDashboard.jsx",
+        "src/components/dashboard/Dashboard.jsx"
+      ],
+      "props": {
+        "total": 84,
+        "unique": [
+          "container",
+          "spacing",
+          "children",
+          "item",
+          "xs",
+          "md",
+          "mt",
+          "mb"
+        ],
+        "details": {
+          "container": 7,
+          "spacing": 7,
+          "children": 23,
+          "item": 16,
+          "xs": 16,
+          "md": 13,
+          "mt": 1,
+          "mb": 1
+        },
+        "categories": {
+          "other": {
+            "count": 25,
+            "props": {
+              "container": 7,
+              "item": 16,
+              "mt": 1,
+              "mb": 1
+            }
+          },
+          "customization": {
+            "count": 36,
+            "props": {
+              "spacing": 7,
+              "xs": 16,
+              "md": 13
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "container",
+            "item",
+            "md",
+            "mt",
+            "spacing",
+            "xs"
+          ],
+          "files": [
+            "src/pages/Home.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "container",
+            "item",
+            "md",
+            "spacing",
+            "xs"
+          ],
+          "files": [
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "container",
+            "item",
+            "spacing",
+            "xs"
+          ],
+          "files": [
+            "src/pages/profile/ProfilePage.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "container",
+            "item",
+            "mb",
+            "md",
+            "spacing",
+            "xs"
+          ],
+          "files": [
+            "src/pages/dashboard/LazyDashboard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stack",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 3,
+      "fileCount": 2,
+      "files": [
+        "src/pages/Home.jsx",
+        "src/pages/auth/forms/SignupForm.jsx"
+      ],
+      "props": {
+        "total": 8,
+        "unique": [
+          "direction",
+          "spacing",
+          "children"
+        ],
+        "details": {
+          "direction": 2,
+          "spacing": 3,
+          "children": 3
+        },
+        "categories": {
+          "customization": {
+            "count": 5,
+            "props": {
+              "direction": 2,
+              "spacing": 3
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "direction",
+            "spacing"
+          ],
+          "files": [
+            "src/pages/Home.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "spacing"
+          ],
+          "files": [
+            "src/pages/auth/forms/SignupForm.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FormControl",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 3,
+      "fileCount": 2,
+      "files": [
+        "src/pages/DynamicComponentDemo.jsx",
+        "src/components/common/LibrarySwitcher.jsx"
+      ],
+      "props": {
+        "total": 8,
+        "unique": [
+          "fullWidth",
+          "sx",
+          "children",
+          "size"
+        ],
+        "details": {
+          "fullWidth": 3,
+          "sx": 1,
+          "children": 3,
+          "size": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 4,
+            "props": {
+              "fullWidth": 3,
+              "size": 1
+            }
+          },
+          "other": {
+            "count": 1,
+            "props": {
+              "sx": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "fullWidth",
+            "sx"
+          ],
+          "files": [
+            "src/pages/DynamicComponentDemo.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "fullWidth",
+            "size"
+          ],
+          "files": [
+            "src/components/common/LibrarySwitcher.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "InputLabel",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 3,
+      "fileCount": 2,
+      "files": [
+        "src/pages/DynamicComponentDemo.jsx",
+        "src/components/common/LibrarySwitcher.jsx"
+      ],
+      "props": {
+        "total": 4,
+        "unique": [
+          "children",
+          "id"
+        ],
+        "details": {
+          "children": 3,
+          "id": 1
+        },
+        "categories": {
+          "identification": {
+            "count": 1,
+            "props": {
+              "id": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/pages/DynamicComponentDemo.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "id"
+          ],
+          "files": [
+            "src/components/common/LibrarySwitcher.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Select",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 3,
+      "fileCount": 2,
+      "files": [
+        "src/pages/DynamicComponentDemo.jsx",
+        "src/components/common/LibrarySwitcher.jsx"
+      ],
+      "props": {
+        "total": 14,
+        "unique": [
+          "value",
+          "onChange",
+          "label",
+          "children",
+          "labelId",
+          "id"
+        ],
+        "details": {
+          "value": 3,
+          "onChange": 3,
+          "label": 3,
+          "children": 3,
+          "labelId": 1,
+          "id": 1
+        },
+        "categories": {
+          "stateControl": {
+            "count": 3,
+            "props": {
+              "value": 3
+            }
+          },
+          "eventHandler": {
+            "count": 3,
+            "props": {
+              "onChange": 3
+            }
+          },
+          "configuration": {
+            "count": 4,
+            "props": {
+              "label": 3,
+              "labelId": 1
+            }
+          },
+          "identification": {
+            "count": 1,
+            "props": {
+              "id": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "label",
+            "onChange",
+            "value"
+          ],
+          "files": [
+            "src/pages/DynamicComponentDemo.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "id",
+            "label",
+            "labelId",
+            "onChange",
+            "value"
+          ],
+          "files": [
+            "src/components/common/LibrarySwitcher.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MenuItem",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 4,
+      "fileCount": 2,
+      "files": [
+        "src/pages/DynamicComponentDemo.jsx",
+        "src/components/common/LibrarySwitcher.jsx"
+      ],
+      "props": {
+        "total": 10,
+        "unique": [
+          "key",
+          "value",
+          "children"
+        ],
+        "details": {
+          "key": 2,
+          "value": 4,
+          "children": 4
+        },
+        "categories": {
+          "identification": {
+            "count": 2,
+            "props": {
+              "key": 2
+            }
+          },
+          "stateControl": {
+            "count": 4,
+            "props": {
+              "value": 4
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "key",
+            "value"
+          ],
+          "files": [
+            "src/pages/DynamicComponentDemo.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "value"
+          ],
+          "files": [
+            "src/components/common/LibrarySwitcher.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paper",
+      "package": "@mui/material",
+      "totalImports": 5,
+      "totalUsages": 4,
+      "fileCount": 5,
+      "files": [
+        "src/pages/profile/ProfilePage.jsx",
+        "src/pages/auth/Signup.jsx",
+        "src/components/layouts/containers/Panel.jsx",
+        "src/components/dashboard/UserSummary.jsx",
+        "src/components/dashboard/StatCard.jsx"
+      ],
+      "props": {
+        "total": 9,
+        "unique": [
+          "sx",
+          "children",
+          "elevation"
+        ],
+        "details": {
+          "sx": 3,
+          "children": 4,
+          "elevation": 2
+        },
+        "categories": {
+          "other": {
+            "count": 5,
+            "props": {
+              "sx": 3,
+              "elevation": 2
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "sx"
+          ],
+          "files": [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/components/dashboard/UserSummary.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "elevation"
+          ],
+          "files": [
+            "src/pages/auth/Signup.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "elevation",
+            "sx"
+          ],
+          "files": [
+            "src/components/layouts/containers/Panel.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tab",
+      "package": "@mui/material",
+      "totalImports": 1,
+      "totalUsages": 6,
+      "fileCount": 1,
+      "files": [
+        "src/pages/profile/ProfilePage.jsx"
+      ],
+      "props": {
+        "total": 6,
+        "unique": [
+          "label"
+        ],
+        "details": {
+          "label": 6
+        },
+        "categories": {
+          "configuration": {
+            "count": 6,
+            "props": {
+              "label": 6
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "label"
+          ],
+          "files": [
+            "src/pages/profile/ProfilePage.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "package": "@mui/material",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/pages/profile/ProfilePage.jsx"
+      ],
+      "props": {
+        "total": 4,
+        "unique": [
+          "value",
+          "onChange",
+          "variant",
+          "children"
+        ],
+        "details": {
+          "value": 1,
+          "onChange": 1,
+          "variant": 1,
+          "children": 1
+        },
+        "categories": {
+          "stateControl": {
+            "count": 1,
+            "props": {
+              "value": 1
+            }
+          },
+          "eventHandler": {
+            "count": 1,
+            "props": {
+              "onChange": 1
+            }
+          },
+          "customization": {
+            "count": 1,
+            "props": {
+              "variant": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "onChange",
+            "value",
+            "variant"
+          ],
+          "files": [
+            "src/pages/profile/ProfilePage.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Box",
+      "package": "@chakra-ui/react",
+      "totalImports": 12,
+      "totalUsages": 18,
+      "fileCount": 12,
+      "files": [
+        "src/pages/profile/ProfilePage.jsx",
+        "src/pages/dashboard/EnhancedDashboard.jsx",
+        "src/pages/dashboard/DashboardPage.jsx",
+        "src/pages/dashboard/widgets/StatWidget.jsx",
+        "src/pages/auth/Login.jsx",
+        "src/components/ui/ChakraCard.jsx",
+        "src/components/ui/Card.jsx",
+        "src/components/dashboard/StatsSummary.jsx",
+        "src/components/dashboard/StatCard.jsx",
+        "src/components/dashboard/Dashboard.jsx",
+        "src/components/dashboard/ActivityFeed.jsx",
+        "src/components/common/ActionCard.jsx"
+      ],
+      "props": {
+        "total": 52,
+        "unique": [
+          "p",
+          "children",
+          "display",
+          "justifyContent",
+          "mt",
+          "mb",
+          "minH",
+          "bg",
+          "textAlign",
+          "borderRadius",
+          "boxShadow",
+          "borderWidth",
+          "borderColor",
+          "overflow",
+          "height",
+          "alignItems",
+          "flex",
+          "borderBottom"
+        ],
+        "details": {
+          "p": 5,
+          "children": 16,
+          "display": 2,
+          "justifyContent": 2,
+          "mt": 3,
+          "mb": 3,
+          "minH": 1,
+          "bg": 3,
+          "textAlign": 2,
+          "borderRadius": 2,
+          "boxShadow": 2,
+          "borderWidth": 2,
+          "borderColor": 3,
+          "overflow": 1,
+          "height": 1,
+          "alignItems": 1,
+          "flex": 1,
+          "borderBottom": 2
+        },
+        "categories": {
+          "other": {
+            "count": 26,
+            "props": {
+              "p": 5,
+              "display": 2,
+              "justifyContent": 2,
+              "mt": 3,
+              "mb": 3,
+              "bg": 3,
+              "borderRadius": 2,
+              "boxShadow": 2,
+              "overflow": 1,
+              "flex": 1,
+              "borderBottom": 2
+            }
+          },
+          "customization": {
+            "count": 10,
+            "props": {
+              "minH": 1,
+              "textAlign": 2,
+              "borderWidth": 2,
+              "borderColor": 3,
+              "height": 1,
+              "alignItems": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "display",
+            "justifyContent",
+            "mt",
+            "p"
+          ],
+          "files": [
+            "src/pages/profile/ProfilePage.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "mb"
+          ],
+          "files": [
+            "src/pages/dashboard/EnhancedDashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "bg",
+            "children",
+            "minH"
+          ],
+          "files": [
+            "src/pages/dashboard/DashboardPage.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "mb",
+            "mt",
+            "textAlign"
+          ],
+          "files": [
+            "src/pages/auth/Login.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "bg",
+            "borderRadius",
+            "borderWidth",
+            "boxShadow",
+            "children",
+            "p"
+          ],
+          "files": [
+            "src/components/ui/ChakraCard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "bg",
+            "borderColor",
+            "borderRadius",
+            "borderWidth",
+            "boxShadow",
+            "children",
+            "overflow",
+            "p"
+          ],
+          "files": [
+            "src/components/ui/Card.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "p"
+          ],
+          "files": [
+            "src/components/dashboard/StatsSummary.jsx",
+            "src/components/common/ActionCard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/components/dashboard/StatCard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "alignItems",
+            "children",
+            "display",
+            "height",
+            "justifyContent"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "borderBottom",
+            "borderColor",
+            "children",
+            "flex",
+            "mb",
+            "mt",
+            "textAlign"
+          ],
+          "files": [
+            "src/components/dashboard/ActivityFeed.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VStack",
+      "package": "@chakra-ui/react",
+      "totalImports": 4,
+      "totalUsages": 6,
+      "fileCount": 4,
+      "files": [
+        "src/pages/profile/ProfilePage.jsx",
+        "src/pages/auth/forms/LoginForm.jsx",
+        "src/components/dashboard/ActivityFeed.jsx",
+        "src/components/auth/LoginForm.jsx"
+      ],
+      "props": {
+        "total": 19,
+        "unique": [
+          "spacing",
+          "align",
+          "children",
+          "divider"
+        ],
+        "details": {
+          "spacing": 6,
+          "align": 6,
+          "children": 6,
+          "divider": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 12,
+            "props": {
+              "spacing": 6,
+              "align": 6
+            }
+          },
+          "other": {
+            "count": 1,
+            "props": {
+              "divider": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "align",
+            "children",
+            "spacing"
+          ],
+          "files": [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/pages/auth/forms/LoginForm.jsx",
+            "src/components/auth/LoginForm.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "align",
+            "children",
+            "divider",
+            "spacing"
+          ],
+          "files": [
+            "src/components/dashboard/ActivityFeed.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heading",
+      "package": "@chakra-ui/react",
+      "totalImports": 7,
+      "totalUsages": 7,
+      "fileCount": 7,
+      "files": [
+        "src/pages/profile/ProfilePage.jsx",
+        "src/pages/dashboard/EnhancedDashboard.jsx",
+        "src/pages/auth/forms/LoginForm.jsx",
+        "src/components/ui/ChakraCard.jsx",
+        "src/components/layouts/containers/Card.jsx",
+        "src/components/dashboard/Dashboard.jsx",
+        "src/components/auth/LoginForm.jsx"
+      ],
+      "props": {
+        "total": 24,
+        "unique": [
+          "as",
+          "size",
+          "mb",
+          "children",
+          "textAlign"
+        ],
+        "details": {
+          "as": 5,
+          "size": 7,
+          "mb": 3,
+          "children": 7,
+          "textAlign": 2
+        },
+        "categories": {
+          "composition": {
+            "count": 5,
+            "props": {
+              "as": 5
+            }
+          },
+          "customization": {
+            "count": 9,
+            "props": {
+              "size": 7,
+              "textAlign": 2
+            }
+          },
+          "other": {
+            "count": 3,
+            "props": {
+              "mb": 3
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "as",
+            "children",
+            "mb",
+            "size"
+          ],
+          "files": [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "as",
+            "children",
+            "size",
+            "textAlign"
+          ],
+          "files": [
+            "src/pages/auth/forms/LoginForm.jsx",
+            "src/components/auth/LoginForm.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "mb",
+            "size"
+          ],
+          "files": [
+            "src/components/ui/ChakraCard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "size"
+          ],
+          "files": [
+            "src/components/layouts/containers/Card.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "as",
+            "children",
+            "size"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "package": "@mui/material",
+      "totalImports": 4,
+      "totalUsages": 3,
+      "fileCount": 4,
+      "files": [
+        "src/pages/dashboard/LazyDashboard.jsx",
+        "src/components/ui/Button.jsx",
+        "src/components/ui/AdaptiveButton.jsx",
+        "src/components/common/buttons/PrimaryButton.jsx"
+      ],
+      "props": {
+        "total": 11,
+        "unique": [
+          "variant",
+          "color",
+          "onClick",
+          "children",
+          "size"
+        ],
+        "details": {
+          "variant": 3,
+          "color": 3,
+          "onClick": 1,
+          "children": 3,
+          "size": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 7,
+            "props": {
+              "variant": 3,
+              "color": 3,
+              "size": 1
+            }
+          },
+          "eventHandler": {
+            "count": 1,
+            "props": {
+              "onClick": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "color",
+            "onClick",
+            "variant"
+          ],
+          "files": [
+            "src/pages/dashboard/LazyDashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "color",
+            "size",
+            "variant"
+          ],
+          "files": [
+            "src/components/ui/AdaptiveButton.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "color",
+            "variant"
+          ],
+          "files": [
+            "src/components/common/buttons/PrimaryButton.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Divider",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 4,
+      "fileCount": 2,
+      "files": [
+        "src/pages/dashboard/EnhancedDashboard.jsx",
+        "src/components/common/ActionCard.jsx"
+      ],
+      "props": {
+        "total": 4,
+        "unique": [
+          "sx"
+        ],
+        "details": {
+          "sx": 4
+        },
+        "categories": {
+          "other": {
+            "count": 4,
+            "props": {
+              "sx": 4
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "sx"
+          ],
+          "files": [
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/components/common/ActionCard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stat",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/pages/dashboard/widgets/StatWidget.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/pages/dashboard/widgets/StatWidget.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "StatLabel",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/pages/dashboard/widgets/StatWidget.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/pages/dashboard/widgets/StatWidget.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "StatNumber",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/pages/dashboard/widgets/StatWidget.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/pages/dashboard/widgets/StatWidget.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "StatHelpText",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/pages/dashboard/widgets/StatWidget.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/pages/dashboard/widgets/StatWidget.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Container",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/pages/auth/Login.jsx"
+      ],
+      "props": {
+        "total": 3,
+        "unique": [
+          "maxW",
+          "py",
+          "children"
+        ],
+        "details": {
+          "maxW": 1,
+          "py": 1,
+          "children": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 1,
+            "props": {
+              "maxW": 1
+            }
+          },
+          "other": {
+            "count": 1,
+            "props": {
+              "py": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "maxW",
+            "py"
+          ],
+          "files": [
+            "src/pages/auth/Login.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "package": "@chakra-ui/react",
+      "totalImports": 7,
+      "totalUsages": 13,
+      "fileCount": 7,
+      "files": [
+        "src/pages/auth/Login.jsx",
+        "src/components/ui/ChakraCard.jsx",
+        "src/components/dashboard/StatCard.jsx",
+        "src/components/dashboard/Dashboard.jsx",
+        "src/components/dashboard/ActivityFeed.jsx",
+        "src/components/common/InfoPanel.jsx",
+        "src/components/auth/LoginForm.jsx"
+      ],
+      "props": {
+        "total": 33,
+        "unique": [
+          "fontSize",
+          "fontWeight",
+          "children",
+          "color",
+          "mb",
+          "textAlign"
+        ],
+        "details": {
+          "fontSize": 6,
+          "fontWeight": 4,
+          "children": 13,
+          "color": 6,
+          "mb": 2,
+          "textAlign": 2
+        },
+        "categories": {
+          "customization": {
+            "count": 14,
+            "props": {
+              "fontSize": 6,
+              "color": 6,
+              "textAlign": 2
+            }
+          },
+          "other": {
+            "count": 6,
+            "props": {
+              "fontWeight": 4,
+              "mb": 2
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "fontSize",
+            "fontWeight"
+          ],
+          "files": [
+            "src/pages/auth/Login.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/components/ui/ChakraCard.jsx",
+            "src/components/common/InfoPanel.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "color",
+            "fontSize",
+            "fontWeight",
+            "mb"
+          ],
+          "files": [
+            "src/components/dashboard/StatCard.jsx",
+            "src/components/dashboard/ActivityFeed.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "color"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "color",
+            "fontSize",
+            "textAlign"
+          ],
+          "files": [
+            "src/components/auth/LoginForm.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Link",
+      "package": "@chakra-ui/react",
+      "totalImports": 2,
+      "totalUsages": 2,
+      "fileCount": 2,
+      "files": [
+        "src/pages/auth/Login.jsx",
+        "src/components/auth/LoginForm.jsx"
+      ],
+      "props": {
+        "total": 6,
+        "unique": [
+          "color",
+          "href",
+          "children"
+        ],
+        "details": {
+          "color": 2,
+          "href": 2,
+          "children": 2
+        },
+        "categories": {
+          "customization": {
+            "count": 2,
+            "props": {
+              "color": 2
+            }
+          },
+          "other": {
+            "count": 2,
+            "props": {
+              "href": 2
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "color",
+            "href"
+          ],
+          "files": [
+            "src/pages/auth/Login.jsx",
+            "src/components/auth/LoginForm.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Center",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/pages/auth/Login.jsx"
+      ],
+      "props": {
+        "total": 2,
+        "unique": [
+          "mb",
+          "children"
+        ],
+        "details": {
+          "mb": 1,
+          "children": 1
+        },
+        "categories": {
+          "other": {
+            "count": 1,
+            "props": {
+              "mb": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "mb"
+          ],
+          "files": [
+            "src/pages/auth/Login.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TextField",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 2,
+      "fileCount": 2,
+      "files": [
+        "src/components/ui/TextField.jsx",
+        "src/components/common/inputs/TextField.jsx"
+      ],
+      "props": {
+        "total": 4,
+        "unique": [
+          "fullWidth",
+          "variant"
+        ],
+        "details": {
+          "fullWidth": 2,
+          "variant": 2
+        },
+        "categories": {
+          "customization": {
+            "count": 4,
+            "props": {
+              "fullWidth": 2,
+              "variant": 2
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "fullWidth",
+            "variant"
+          ],
+          "files": [
+            "src/components/common/inputs/TextField.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "package": "@chakra-ui/react",
+      "totalImports": 3,
+      "totalUsages": 3,
+      "fileCount": 3,
+      "files": [
+        "src/components/ui/ChakraButton.jsx",
+        "src/components/ui/AdaptiveButton.jsx",
+        "src/components/common/buttons/SecondaryButton.jsx"
+      ],
+      "props": {
+        "total": 14,
+        "unique": [
+          "variant",
+          "colorScheme",
+          "fontWeight",
+          "borderRadius",
+          "shadow",
+          "_hover",
+          "children",
+          "size"
+        ],
+        "details": {
+          "variant": 3,
+          "colorScheme": 3,
+          "fontWeight": 1,
+          "borderRadius": 1,
+          "shadow": 1,
+          "_hover": 1,
+          "children": 3,
+          "size": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 7,
+            "props": {
+              "variant": 3,
+              "colorScheme": 3,
+              "size": 1
+            }
+          },
+          "other": {
+            "count": 4,
+            "props": {
+              "fontWeight": 1,
+              "borderRadius": 1,
+              "shadow": 1,
+              "_hover": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "_hover",
+            "borderRadius",
+            "children",
+            "colorScheme",
+            "fontWeight",
+            "shadow",
+            "variant"
+          ],
+          "files": [
+            "src/components/ui/ChakraButton.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "colorScheme",
+            "size",
+            "variant"
+          ],
+          "files": [
+            "src/components/ui/AdaptiveButton.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "colorScheme",
+            "variant"
+          ],
+          "files": [
+            "src/components/common/buttons/SecondaryButton.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "useColorModeValue",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 2,
+      "fileCount": 1,
+      "files": [
+        "src/components/ui/Card.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "Alert",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ui/feedback/AlertMessage.jsx"
+      ],
+      "props": {
+        "total": 2,
+        "unique": [
+          "status",
+          "children"
+        ],
+        "details": {
+          "status": 1,
+          "children": 1
+        },
+        "categories": {
+          "other": {
+            "count": 1,
+            "props": {
+              "status": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "status"
+          ],
+          "files": [
+            "src/components/ui/feedback/AlertMessage.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AlertIcon",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 2,
+      "fileCount": 1,
+      "files": [
+        "src/components/ui/feedback/AlertMessage.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "AlertTitle",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ui/feedback/AlertMessage.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/components/ui/feedback/AlertMessage.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AlertDescription",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ui/feedback/AlertMessage.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/components/ui/feedback/AlertMessage.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/layouts/containers/Card.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/components/layouts/containers/Card.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CardBody",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/layouts/containers/Card.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/components/layouts/containers/Card.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CardHeader",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/layouts/containers/Card.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/components/layouts/containers/Card.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Avatar",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 4,
+      "fileCount": 2,
+      "files": [
+        "src/components/dashboard/UserSummary.jsx",
+        "src/components/dashboard/ActivityFeed.jsx"
+      ],
+      "props": {
+        "total": 10,
+        "unique": [
+          "src",
+          "alt",
+          "sx"
+        ],
+        "details": {
+          "src": 4,
+          "alt": 4,
+          "sx": 2
+        },
+        "categories": {
+          "other": {
+            "count": 10,
+            "props": {
+              "src": 4,
+              "alt": 4,
+              "sx": 2
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "alt",
+            "src",
+            "sx"
+          ],
+          "files": [
+            "src/components/dashboard/UserSummary.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "alt",
+            "src"
+          ],
+          "files": [
+            "src/components/dashboard/ActivityFeed.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stack",
+      "package": "@chakra-ui/react",
+      "totalImports": 3,
+      "totalUsages": 6,
+      "fileCount": 3,
+      "files": [
+        "src/components/dashboard/UserSummary.jsx",
+        "src/components/dashboard/ActivityFeed.jsx",
+        "src/components/common/FormCard.jsx"
+      ],
+      "props": {
+        "total": 21,
+        "unique": [
+          "direction",
+          "spacing",
+          "alignItems",
+          "mb",
+          "children",
+          "width",
+          "justifyContent"
+        ],
+        "details": {
+          "direction": 4,
+          "spacing": 6,
+          "alignItems": 2,
+          "mb": 1,
+          "children": 6,
+          "width": 1,
+          "justifyContent": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 13,
+            "props": {
+              "direction": 4,
+              "spacing": 6,
+              "alignItems": 2,
+              "width": 1
+            }
+          },
+          "other": {
+            "count": 2,
+            "props": {
+              "mb": 1,
+              "justifyContent": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "alignItems",
+            "children",
+            "direction",
+            "mb",
+            "spacing"
+          ],
+          "files": [
+            "src/components/dashboard/UserSummary.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "alignItems",
+            "children",
+            "direction",
+            "spacing",
+            "width"
+          ],
+          "files": [
+            "src/components/dashboard/ActivityFeed.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "direction",
+            "justifyContent",
+            "spacing"
+          ],
+          "files": [
+            "src/components/common/FormCard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grid",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/dashboard/StatsSummary.jsx"
+      ],
+      "props": {
+        "total": 3,
+        "unique": [
+          "templateColumns",
+          "gap",
+          "children"
+        ],
+        "details": {
+          "templateColumns": 1,
+          "gap": 1,
+          "children": 1
+        },
+        "categories": {
+          "other": {
+            "count": 1,
+            "props": {
+              "templateColumns": 1
+            }
+          },
+          "customization": {
+            "count": 1,
+            "props": {
+              "gap": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "gap",
+            "templateColumns"
+          ],
+          "files": [
+            "src/components/dashboard/StatsSummary.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flex",
+      "package": "@chakra-ui/react",
+      "totalImports": 4,
+      "totalUsages": 5,
+      "fileCount": 4,
+      "files": [
+        "src/components/dashboard/StatCard.jsx",
+        "src/components/dashboard/Dashboard.jsx",
+        "src/components/common/InfoPanel.jsx",
+        "src/components/common/ActionCard.jsx"
+      ],
+      "props": {
+        "total": 14,
+        "unique": [
+          "justifyContent",
+          "alignItems",
+          "children",
+          "mb"
+        ],
+        "details": {
+          "justifyContent": 4,
+          "alignItems": 3,
+          "children": 5,
+          "mb": 2
+        },
+        "categories": {
+          "other": {
+            "count": 6,
+            "props": {
+              "justifyContent": 4,
+              "mb": 2
+            }
+          },
+          "customization": {
+            "count": 3,
+            "props": {
+              "alignItems": 3
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "alignItems",
+            "children",
+            "justifyContent"
+          ],
+          "files": [
+            "src/components/dashboard/StatCard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "alignItems",
+            "children",
+            "justifyContent",
+            "mb"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx",
+            "src/components/common/InfoPanel.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "justifyContent"
+          ],
+          "files": [
+            "src/components/common/ActionCard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SimpleGrid",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/dashboard/Dashboard.jsx"
+      ],
+      "props": {
+        "total": 4,
+        "unique": [
+          "columns",
+          "spacing",
+          "mb",
+          "children"
+        ],
+        "details": {
+          "columns": 1,
+          "spacing": 1,
+          "mb": 1,
+          "children": 1
+        },
+        "categories": {
+          "other": {
+            "count": 2,
+            "props": {
+              "columns": 1,
+              "mb": 1
+            }
+          },
+          "customization": {
+            "count": 1,
+            "props": {
+              "spacing": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "columns",
+            "mb",
+            "spacing"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Badge",
+      "package": "@mui/material",
+      "totalImports": 1,
+      "totalUsages": 0,
+      "fileCount": 1,
+      "files": [
+        "src/components/dashboard/ActivityFeed.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "List",
+      "package": "@mui/material",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/dashboard/ActivityFeed.jsx"
+      ],
+      "props": {
+        "total": 2,
+        "unique": [
+          "disablePadding",
+          "children"
+        ],
+        "details": {
+          "disablePadding": 1,
+          "children": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 1,
+            "props": {
+              "disablePadding": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "disablePadding"
+          ],
+          "files": [
+            "src/components/dashboard/ActivityFeed.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ListItem",
+      "package": "@mui/material",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/dashboard/ActivityFeed.jsx"
+      ],
+      "props": {
+        "total": 2,
+        "unique": [
+          "sx",
+          "children"
+        ],
+        "details": {
+          "sx": 1,
+          "children": 1
+        },
+        "categories": {
+          "other": {
+            "count": 1,
+            "props": {
+              "sx": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "sx"
+          ],
+          "files": [
+            "src/components/dashboard/ActivityFeed.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Icon",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 2,
+      "fileCount": 1,
+      "files": [
+        "src/components/common/InfoPanel.jsx"
+      ],
+      "props": {
+        "total": 6,
+        "unique": [
+          "as",
+          "mr",
+          "boxSize"
+        ],
+        "details": {
+          "as": 2,
+          "mr": 2,
+          "boxSize": 2
+        },
+        "categories": {
+          "composition": {
+            "count": 2,
+            "props": {
+              "as": 2
+            }
+          },
+          "other": {
+            "count": 2,
+            "props": {
+              "mr": 2
+            }
+          },
+          "customization": {
+            "count": 2,
+            "props": {
+              "boxSize": 2
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "as",
+            "boxSize",
+            "mr"
+          ],
+          "files": [
+            "src/components/common/InfoPanel.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Select",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/common/inputs/SelectField.jsx"
+      ],
+      "props": {
+        "total": 2,
+        "unique": [
+          "placeholder",
+          "children"
+        ],
+        "details": {
+          "placeholder": 1,
+          "children": 1
+        },
+        "categories": {
+          "configuration": {
+            "count": 1,
+            "props": {
+              "placeholder": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "placeholder"
+          ],
+          "files": [
+            "src/components/common/inputs/SelectField.jsx"
+          ]
+        }
+      ]
+    }
+  ]
+}

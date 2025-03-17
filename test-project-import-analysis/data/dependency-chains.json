@@ -1,0 +1,912 @@
+{
+  "@mui/material": {
+    "files": {
+      "src/index.js": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          []
+        ]
+      },
+      "src/App.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/Home.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/DynamicComponentDemo.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/profile/ProfilePage.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/dashboard/LazyDashboard.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/dashboard/EnhancedDashboard.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/dashboard/widgets/ChartWidget.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/dashboard/LazyDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/auth/Signup.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/auth/forms/SignupForm.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/auth/Signup.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/hooks/custom/useDynamicComponent.js": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/ui/TextField.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/components/common/FormCard.jsx",
+            "src/components/auth/LoginForm.jsx",
+            "src/pages/auth/Login.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/auth/LoginForm.jsx",
+            "src/pages/auth/Login.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/ui/Button.jsx": {
+        "directImporters": [
+          "src/components/common/ActionCard.jsx"
+        ],
+        "indirectImporters": [
+          "src/components/dashboard/UserSummary.jsx"
+        ],
+        "totalImporters": 2,
+        "importChains": [
+          [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/Dashboard.jsx",
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/ActivityFeed.jsx",
+            "src/components/dashboard/Dashboard.jsx",
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/FormCard.jsx",
+            "src/components/auth/LoginForm.jsx",
+            "src/pages/auth/Login.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/ActionCard.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/ActionCard.jsx",
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/ActionCard.jsx",
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/ActionCard.jsx",
+            "src/components/dashboard/StatsSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/ui/AdaptiveButton.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/layouts/containers/Panel.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/dashboard/LazyDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/dashboard/widgets/ChartWidget.jsx",
+            "src/pages/dashboard/LazyDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/hooks/custom/useDynamicComponent.js",
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/UserSummary.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/StatsSummary.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/StatCard.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/components/dashboard/Dashboard.jsx",
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/Dashboard.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/ActivityFeed.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/components/dashboard/Dashboard.jsx",
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/LibrarySwitcher.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/ActionCard.jsx": {
+        "directImporters": [
+          "src/components/dashboard/UserSummary.jsx"
+        ],
+        "indirectImporters": [],
+        "totalImporters": 1,
+        "importChains": [
+          [
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/StatsSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/inputs/TextField.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/auth/forms/SignupForm.jsx",
+            "src/pages/auth/Signup.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/auth/forms/LoginForm.jsx"
+          ],
+          [
+            "src/hooks/custom/useDynamicComponent.js",
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/buttons/PrimaryButton.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/Home.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/auth/forms/LoginForm.jsx"
+          ],
+          [
+            "src/hooks/custom/useDynamicComponent.js",
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      }
+    }
+  },
+  "@chakra-ui/react": {
+    "files": {
+      "src/index.js": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          []
+        ]
+      },
+      "src/pages/profile/ProfilePage.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/dashboard/EnhancedDashboard.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/dashboard/DashboardPage.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/dashboard/widgets/StatWidget.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/dashboard/LazyDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/auth/Login.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/pages/auth/forms/LoginForm.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          []
+        ]
+      },
+      "src/components/ui/ChakraCard.jsx": {
+        "directImporters": [
+          "src/components/common/InfoPanel.jsx"
+        ],
+        "indirectImporters": [
+          "src/components/dashboard/UserSummary.jsx"
+        ],
+        "totalImporters": 2,
+        "importChains": [
+          [
+            "src/components/common/InfoPanel.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/InfoPanel.jsx",
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/InfoPanel.jsx",
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/InfoPanel.jsx",
+            "src/components/dashboard/StatsSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/ui/ChakraButton.jsx": {
+        "directImporters": [
+          "src/components/common/InfoPanel.jsx"
+        ],
+        "indirectImporters": [
+          "src/components/dashboard/UserSummary.jsx"
+        ],
+        "totalImporters": 2,
+        "importChains": [
+          [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/InfoPanel.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/InfoPanel.jsx",
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/InfoPanel.jsx",
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/InfoPanel.jsx",
+            "src/components/dashboard/StatsSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/ui/Card.jsx": {
+        "directImporters": [
+          "src/components/common/ActionCard.jsx"
+        ],
+        "indirectImporters": [
+          "src/components/dashboard/UserSummary.jsx"
+        ],
+        "totalImporters": 2,
+        "importChains": [
+          [
+            "src/components/dashboard/StatCard.jsx",
+            "src/components/dashboard/Dashboard.jsx",
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/Dashboard.jsx",
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/ActivityFeed.jsx",
+            "src/components/dashboard/Dashboard.jsx",
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/FormCard.jsx",
+            "src/components/auth/LoginForm.jsx",
+            "src/pages/auth/Login.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/ActionCard.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/ActionCard.jsx",
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/ActionCard.jsx",
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/ActionCard.jsx",
+            "src/components/dashboard/StatsSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/ui/AdaptiveButton.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/ui/feedback/AlertMessage.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/auth/forms/SignupForm.jsx",
+            "src/pages/auth/Signup.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/hooks/custom/useDynamicComponent.js",
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/layouts/containers/Card.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/Home.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/dashboard/widgets/StatWidget.jsx",
+            "src/pages/dashboard/LazyDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/hooks/custom/useDynamicComponent.js",
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/UserSummary.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/StatsSummary.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/StatCard.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/components/dashboard/Dashboard.jsx",
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/Dashboard.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/dashboard/ActivityFeed.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/components/dashboard/Dashboard.jsx",
+            "src/pages/dashboard/DashboardPage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/InfoPanel.jsx": {
+        "directImporters": [
+          "src/components/dashboard/UserSummary.jsx"
+        ],
+        "indirectImporters": [],
+        "totalImporters": 1,
+        "importChains": [
+          [
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/StatsSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/FormCard.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/components/auth/LoginForm.jsx",
+            "src/pages/auth/Login.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/ComponentLibraryProvider.jsx": {
+        "directImporters": [
+          "src/components/common/LibrarySwitcher.jsx"
+        ],
+        "indirectImporters": [],
+        "totalImporters": 1,
+        "importChains": [
+          [
+            "src/index.js"
+          ],
+          [
+            "src/components/ui/AdaptiveButton.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/LibrarySwitcher.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/LibrarySwitcher.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/ActionCard.jsx": {
+        "directImporters": [
+          "src/components/dashboard/UserSummary.jsx"
+        ],
+        "indirectImporters": [],
+        "totalImporters": 1,
+        "importChains": [
+          [
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/dashboard/StatsSummary.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/inputs/SelectField.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/hooks/custom/useDynamicComponent.js",
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/common/buttons/SecondaryButton.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/Home.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/auth/forms/SignupForm.jsx",
+            "src/pages/auth/Signup.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/pages/auth/forms/LoginForm.jsx"
+          ],
+          [
+            "src/hooks/custom/useDynamicComponent.js",
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
+      "src/components/auth/LoginForm.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/auth/Login.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      }
+    }
+  }
+}

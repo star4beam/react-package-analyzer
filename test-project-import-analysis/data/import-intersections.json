@@ -1,0 +1,606 @@
+{
+  "stats": {
+    "directImportersCount": 4,
+    "indirectImportersCount": 1,
+    "intersectionCount": 1
+  },
+  "intersectionImporters": [
+    {
+      "path": "src/components/dashboard/UserSummary.jsx",
+      "name": "UserSummary",
+      "directImporterImportsCount": 2,
+      "indirectImporterImportsCount": 0,
+      "indirectImportChains": [
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/ui/Button.jsx"
+          ],
+          "packages": [
+            "@mui/material"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/common/ActionCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/common/ActionCard.jsx",
+            "src/components/ui/Button.jsx"
+          ],
+          "packages": [
+            "@mui/material"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/common/ActionCard.jsx",
+            "src/components/ui/Card.jsx"
+          ],
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/ui/ChakraCard.jsx"
+          ],
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/ui/ChakraButton.jsx"
+          ],
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/ui/Card.jsx"
+          ],
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/common/InfoPanel.jsx"
+          ],
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/common/InfoPanel.jsx",
+            "src/components/ui/ChakraCard.jsx"
+          ],
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/common/InfoPanel.jsx",
+            "src/components/ui/ChakraButton.jsx"
+          ],
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        }
+      ],
+      "groupedImportChains": [
+        {
+          "path": "src/components/ui/Button.jsx",
+          "name": "Button",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/Button.jsx"
+              ],
+              "packages": [
+                "@mui/material"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/common/ActionCard.jsx",
+          "name": "ActionCard",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/common/ActionCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/ActionCard.jsx",
+                "src/components/ui/Button.jsx"
+              ],
+              "packages": [
+                "@mui/material"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/ActionCard.jsx",
+                "src/components/ui/Card.jsx"
+              ],
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/ChakraCard.jsx",
+          "name": "ChakraCard",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/ChakraCard.jsx"
+              ],
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/ChakraButton.jsx",
+          "name": "ChakraButton",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/ChakraButton.jsx"
+              ],
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/Card.jsx",
+          "name": "Card",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/Card.jsx"
+              ],
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/common/InfoPanel.jsx",
+          "name": "InfoPanel",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/common/InfoPanel.jsx"
+              ],
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/InfoPanel.jsx",
+                "src/components/ui/ChakraCard.jsx"
+              ],
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/InfoPanel.jsx",
+                "src/components/ui/ChakraButton.jsx"
+              ],
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalImportHubs": [
+    {
+      "path": "src/components/ui/Button.jsx",
+      "name": "Button",
+      "usedByIntersectionsCount": 1,
+      "usedByIntersections": [
+        "src/components/dashboard/UserSummary.jsx"
+      ],
+      "totalChainCount": 1,
+      "packages": [
+        "@mui/material"
+      ],
+      "dependencyPaths": []
+    },
+    {
+      "path": "src/components/common/ActionCard.jsx",
+      "name": "ActionCard",
+      "usedByIntersectionsCount": 1,
+      "usedByIntersections": [
+        "src/components/dashboard/UserSummary.jsx"
+      ],
+      "totalChainCount": 3,
+      "packages": [
+        "@mui/material",
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": [
+        {
+          "path": "src/components/ui/Button.jsx",
+          "name": "Button",
+          "count": 1,
+          "packages": [
+            "@mui/material"
+          ]
+        },
+        {
+          "path": "src/components/ui/Card.jsx",
+          "name": "Card",
+          "count": 1,
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/ChakraCard.jsx",
+      "name": "ChakraCard",
+      "usedByIntersectionsCount": 1,
+      "usedByIntersections": [
+        "src/components/dashboard/UserSummary.jsx"
+      ],
+      "totalChainCount": 1,
+      "packages": [
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": []
+    },
+    {
+      "path": "src/components/ui/ChakraButton.jsx",
+      "name": "ChakraButton",
+      "usedByIntersectionsCount": 1,
+      "usedByIntersections": [
+        "src/components/dashboard/UserSummary.jsx"
+      ],
+      "totalChainCount": 1,
+      "packages": [
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": []
+    },
+    {
+      "path": "src/components/ui/Card.jsx",
+      "name": "Card",
+      "usedByIntersectionsCount": 1,
+      "usedByIntersections": [
+        "src/components/dashboard/UserSummary.jsx"
+      ],
+      "totalChainCount": 1,
+      "packages": [
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": []
+    },
+    {
+      "path": "src/components/common/InfoPanel.jsx",
+      "name": "InfoPanel",
+      "usedByIntersectionsCount": 1,
+      "usedByIntersections": [
+        "src/components/dashboard/UserSummary.jsx"
+      ],
+      "totalChainCount": 3,
+      "packages": [
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": [
+        {
+          "path": "src/components/ui/ChakraCard.jsx",
+          "name": "ChakraCard",
+          "count": 1,
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": "src/components/ui/ChakraButton.jsx",
+          "name": "ChakraButton",
+          "count": 1,
+          "packages": [
+            "@chakra-ui/react"
+          ]
+        }
+      ]
+    }
+  ],
+  "globalImportHubByIntersection": {
+    "src/components/dashboard/UserSummary.jsx": {
+      "name": "UserSummary",
+      "hubsCount": 6,
+      "hubs": [
+        {
+          "path": "src/components/common/ActionCard.jsx",
+          "name": "ActionCard",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/Button.jsx",
+              "name": "Button",
+              "packages": [
+                "@mui/material"
+              ]
+            },
+            {
+              "path": "src/components/ui/Card.jsx",
+              "name": "Card",
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/common/InfoPanel.jsx",
+          "name": "InfoPanel",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 3,
+          "packages": [
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/ChakraCard.jsx",
+              "name": "ChakraCard",
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/ChakraButton.jsx",
+              "name": "ChakraButton",
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/Button.jsx",
+          "name": "Button",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/ChakraCard.jsx",
+          "name": "ChakraCard",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 1,
+          "packages": [
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/ChakraButton.jsx",
+          "name": "ChakraButton",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 1,
+          "packages": [
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/Card.jsx",
+          "name": "Card",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 1,
+          "packages": [
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "direct"
+        }
+      ]
+    }
+  },
+  "features": [
+    {
+      "path": "src/components/dashboard/UserSummary.jsx",
+      "name": "UserSummary",
+      "hubsCount": 6,
+      "hubs": [
+        {
+          "path": "src/components/common/ActionCard.jsx",
+          "name": "ActionCard",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/Button.jsx",
+              "name": "Button",
+              "packages": [
+                "@mui/material"
+              ]
+            },
+            {
+              "path": "src/components/ui/Card.jsx",
+              "name": "Card",
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/common/InfoPanel.jsx",
+          "name": "InfoPanel",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 3,
+          "packages": [
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/ChakraCard.jsx",
+              "name": "ChakraCard",
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/ChakraButton.jsx",
+              "name": "ChakraButton",
+              "packages": [
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/Button.jsx",
+          "name": "Button",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/ChakraCard.jsx",
+          "name": "ChakraCard",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 1,
+          "packages": [
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/ChakraButton.jsx",
+          "name": "ChakraButton",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 1,
+          "packages": [
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/Card.jsx",
+          "name": "Card",
+          "totalIntersectionsUsingThisHub": 1,
+          "chainsCount": 1,
+          "packages": [
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "direct"
+        }
+      ],
+      "hubDependencies": [
+        {
+          "path": "src/components/common/ActionCard.jsx",
+          "name": "ActionCard",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/common/InfoPanel.jsx",
+          "name": "InfoPanel",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/Button.jsx",
+          "name": "Button",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/ChakraCard.jsx",
+          "name": "ChakraCard",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/ChakraButton.jsx",
+          "name": "ChakraButton",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/Card.jsx",
+          "name": "Card",
+          "dependencyType": "direct"
+        }
+      ]
+    }
+  ],
+  "hubDependencies": {},
+  "hubUsage": {},
+  "hubCategories": {
+    "baseHubs": [],
+    "mainHubs": [],
+    "intermediateHubs": []
+  }
+}
