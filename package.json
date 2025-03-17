@@ -1,6 +1,6 @@
 {
   "name": "react-package-analyzer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Analyze package usage patterns in React JavaScript projects",
   "main": "src/index.js",
   "bin": {
