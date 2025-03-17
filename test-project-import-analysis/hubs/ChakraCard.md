@@ -37,6 +37,17 @@ flowchart LR
     end
 
     feature_UserSummary --> hub_ChakraCard
+    %% Components directly used by this hub
+    subgraph pkg__chakra_ui_react["@chakra-ui/react"]
+        comp__chakra_ui_react_Box["Box"]
+        class comp__chakra_ui_react_Box component
+        comp__chakra_ui_react_Heading["Heading"]
+        class comp__chakra_ui_react_Heading component
+        comp__chakra_ui_react_Text["Text"]
+        class comp__chakra_ui_react_Text component
+    end
+    hub_ChakraCard --> pkg__chakra_ui_react
+
     %% Direct hub-to-hub connections
 ```
 
@@ -46,17 +57,19 @@ flowchart LR
 |---------|------|
 | [UserSummary](../features/UserSummary.md) | [src/components/dashboard/UserSummary.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/UserSummary.jsx) |
 
+## Hubs Using This Hub
+
+No other hubs use this hub.
+
 ## Hubs This Hub Depends On
 
 This hub does not depend on any other hubs.
 
 ## Components Used Indirectly
 
-This section shows how components from packages are used by this hub through intermediate files.
+This section shows components used by other hubs that this hub depends on.
 
-| Target Components | Path |
-| ---------------- | ---- |
-| No intermediate dependencies | No target components |
+This hub does not use any components indirectly through other hubs.
 
 ## Components Used Directly
 
