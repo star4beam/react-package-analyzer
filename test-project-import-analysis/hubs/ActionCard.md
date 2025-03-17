@@ -37,6 +37,20 @@ flowchart LR
     end
 
     feature_UserSummary --> hub_ActionCard
+    %% Components directly used by this hub
+    subgraph pkg__mui_material["@mui/material"]
+        comp__mui_material_Divider["Divider"]
+        class comp__mui_material_Divider component
+    end
+    hub_ActionCard --> pkg__mui_material
+    subgraph pkg__chakra_ui_react["@chakra-ui/react"]
+        comp__chakra_ui_react_Box["Box"]
+        class comp__chakra_ui_react_Box component
+        comp__chakra_ui_react_Flex["Flex"]
+        class comp__chakra_ui_react_Flex component
+    end
+    hub_ActionCard --> pkg__chakra_ui_react
+
     %% Direct hub-to-hub connections
 ```
 
@@ -46,18 +60,19 @@ flowchart LR
 |---------|------|
 | [UserSummary](../features/UserSummary.md) | [src/components/dashboard/UserSummary.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/UserSummary.jsx) |
 
+## Hubs Using This Hub
+
+No other hubs use this hub.
+
 ## Hubs This Hub Depends On
 
 This hub does not depend on any other hubs.
 
 ## Components Used Indirectly
 
-This section shows how components from packages are used by this hub through intermediate files.
+This section shows components used by other hubs that this hub depends on.
 
-| Target Components | Path |
-| ---------------- | ---- |
-| [Button](../components/@mui_material/Button.md) (@mui/material) | [src/components/ui/Button.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ui/Button.jsx) |
-| [Box](../components/@chakra-ui_react/Box.md), [useColorModeValue](../components/@chakra-ui_react/useColorModeValue.md) (@chakra-ui/react) | [src/components/ui/Card.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ui/Card.jsx) |
+This hub does not use any components indirectly through other hubs.
 
 ## Components Used Directly
 
