@@ -9,9 +9,9 @@
 
 | **Summary Stats** | **Value** |
 |:---------------------|:------------:|
-| **Components Analyzed** | **49** |
-| **Files Affected** | **39** |
-| **Usage Instances** | **194** |
+| **Components Analyzed** | **56** |
+| **Files Affected** | **53** |
+| **Usage Instances** | **330** |
 
 ---
 
@@ -65,28 +65,28 @@ The data reveals usage patterns that can help understand the current structure o
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **Total Components** | 49 | Number of unique components identified in the codebase |
-| **Total Component Usages** | 194 | Total instances of components being used |
-| **Files Analyzed** | 39 | Number of source files containing component usage |
-| **Average Usage per Component** | 4.0 | How frequently each component is used on average |
+| **Total Components** | 56 | Number of unique components identified in the codebase |
+| **Total Component Usages** | 330 | Total instances of components being used |
+| **Files Analyzed** | 53 | Number of source files containing component usage |
+| **Average Usage per Component** | 5.9 | How frequently each component is used on average |
 
 ### Component Usage Categories
 *(Categorized by usage patterns, prop diversity, and configuration variations)*
 
 ```mermaid
 pie title Component Usage Categories
-    "Rich" : 4
-    "Standard" : 8
-    "Basic" : 33
-    "Minimal" : 55
+    "Rich" : 11
+    "Standard" : 11
+    "Basic" : 30
+    "Minimal" : 48
 ```
 
 | Usage Category | Count | % of Total | Distribution |
 |------------------|-------|------------|--------------|
-| **Rich (High Versatility)** | 2 | 4% | █                    |
-| **Standard (Medium Versatility)** | 4 | 8% | ██                   |
-| **Basic (Limited Versatility)** | 16 | 33% | ███████              |
-| **Minimal (Single-purpose)** | 27 | 55% | ███████████          |
+| **Rich (High Versatility)** | 6 | 11% | ██                   |
+| **Standard (Medium Versatility)** | 6 | 11% | ██                   |
+| **Basic (Limited Versatility)** | 17 | 30% | ██████               |
+| **Minimal (Single-purpose)** | 27 | 48% | ██████████           |
 
 > **Note**: Component categories are determined by a weighted score that considers:
 > * **Prop Set Diversity**: How many different ways the component is configured (highest weight)
@@ -99,16 +99,16 @@ pie title Component Usage Categories
 
 ```mermaid
 pie title Package Distribution
-    "@chakra-ui/react" : 57
-    "@mui/material" : 43
+    "@chakra-ui/react" : 54
+    "@mui/material" : 46
 ```
 
 **Top Packages Breakdown:**
 
 | Package | Component Count | % of Total |
 |---------|-----------------|------------|
-| @chakra-ui/react | 28 | 57% |
-| @mui/material | 21 | 43% |
+| @chakra-ui/react | 30 | 54% |
+| @mui/material | 26 | 46% |
 
 
 
@@ -130,46 +130,53 @@ Components are grouped into categories based on their versatility and usage patt
 This multi-dimensional approach provides a more nuanced view of component usage patterns than simple metrics like prop count alone.
 
 <details>
-<summary><b>🔴 High Feature Intensity (2 components)</b></summary>
+<summary><b>🔴 High Feature Intensity (6 components)</b></summary>
 
 | Component | Package | Usage Count | Files | Props | Variants | Impact Score |
 |-----------|---------|-------------|-------|-------|----------|-------------|
-| [Box](./components/@chakra-ui_react/Box.md) | @chakra-ui/react | 18 | 12 | 18 | 10 | 6.3 |
-| [Box](./components/@mui_material/Box.md) | @mui/material | 14 | 10 | 14 | 8 | 5.3 |
+| [Box](./components/@chakra-ui_react/Box.md) | @chakra-ui/react | 42 | 20 | 22 | 15 | 8.2 |
+| [Grid](./components/@mui_material/Grid.md) | @mui/material | 32 | 7 | 8 | 4 | 4.6 |
+| [Typography](./components/@mui_material/Typography.md) | @mui/material | 26 | 19 | 7 | 9 | 5.3 |
+| [Box](./components/@mui_material/Box.md) | @mui/material | 20 | 13 | 15 | 10 | 6.1 |
+| [Text](./components/@chakra-ui_react/Text.md) | @chakra-ui/react | 17 | 14 | 6 | 6 | 4.3 |
+| [Heading](./components/@chakra-ui_react/Heading.md) | @chakra-ui/react | 14 | 15 | 5 | 6 | 4.0 |
 
 </details>
 
 <details>
-<summary><b>🟠 Medium Feature Intensity (4 components)</b></summary>
+<summary><b>🟠 Medium Feature Intensity (6 components)</b></summary>
 
 | Component | Package | Usage Count | Files | Props | Variants | Impact Score |
 |-----------|---------|-------------|-------|-------|----------|-------------|
-| [Grid](./components/@mui_material/Grid.md) | @mui/material | 23 | 6 | 8 | 4 | 4.3 |
-| [Typography](./components/@mui_material/Typography.md) | @mui/material | 14 | 9 | 7 | 6 | 4.2 |
-| [Text](./components/@chakra-ui_react/Text.md) | @chakra-ui/react | 13 | 7 | 6 | 5 | 3.8 |
-| [Heading](./components/@chakra-ui_react/Heading.md) | @chakra-ui/react | 7 | 7 | 5 | 5 | 3.2 |
+| [Paper](./components/@mui_material/Paper.md) | @mui/material | 14 | 15 | 3 | 3 | 3.2 |
+| [Stack](./components/@chakra-ui_react/Stack.md) | @chakra-ui/react | 14 | 8 | 7 | 6 | 4.2 |
+| [VStack](./components/@chakra-ui_react/VStack.md) | @chakra-ui/react | 12 | 9 | 5 | 3 | 3.3 |
+| [Button](./components/@mui_material/Button.md) | @mui/material | 6 | 6 | 5 | 4 | 2.9 |
+| [Flex](./components/@chakra-ui_react/Flex.md) | @chakra-ui/react | 6 | 5 | 5 | 4 | 2.9 |
+| [Button](./components/@chakra-ui_react/Button.md) | @chakra-ui/react | 4 | 4 | 8 | 4 | 2.8 |
 
 </details>
 
 <details>
-<summary><b>🟡 Low Feature Intensity (16 components)</b></summary>
+<summary><b>🟡 Low Feature Intensity (17 components)</b></summary>
 
 | Component | Package | Usage Count | Files | Props | Variants | Impact Score |
 |-----------|---------|-------------|-------|-------|----------|-------------|
+| [Divider](./components/@mui_material/Divider.md) | @mui/material | 12 | 6 | 1 | 1 | 2.5 |
 | [Container](./components/@mui_material/Container.md) | @mui/material | 7 | 7 | 3 | 1 | 2.2 |
 | [CircularProgress](./components/@mui_material/CircularProgress.md) | @mui/material | 6 | 3 | 1 | 1 | 1.9 |
-| [VStack](./components/@chakra-ui_react/VStack.md) | @chakra-ui/react | 6 | 4 | 4 | 2 | 2.4 |
-| [Stack](./components/@chakra-ui_react/Stack.md) | @chakra-ui/react | 6 | 3 | 7 | 3 | 2.9 |
-| [Flex](./components/@chakra-ui_react/Flex.md) | @chakra-ui/react | 5 | 4 | 4 | 3 | 2.4 |
+| [Container](./components/@chakra-ui_react/Container.md) | @chakra-ui/react | 6 | 6 | 3 | 2 | 2.3 |
+| [SimpleGrid](./components/@chakra-ui_react/SimpleGrid.md) | @chakra-ui/react | 6 | 5 | 5 | 3 | 2.7 |
+| [Chip](./components/@mui_material/Chip.md) | @mui/material | 6 | 2 | 3 | 1 | 2.1 |
+| [Switch](./components/@mui_material/Switch.md) | @mui/material | 6 | 1 | 2 | 1 | 2.0 |
+| [FormControlLabel](./components/@mui_material/FormControlLabel.md) | @mui/material | 6 | 1 | 2 | 1 | 2.0 |
 | [MenuItem](./components/@mui_material/MenuItem.md) | @mui/material | 4 | 2 | 3 | 2 | 1.9 |
-| [Paper](./components/@mui_material/Paper.md) | @mui/material | 4 | 5 | 3 | 3 | 2.1 |
+| [TextField](./components/@mui_material/TextField.md) | @mui/material | 4 | 3 | 4 | 2 | 2.0 |
 | [Avatar](./components/@mui_material/Avatar.md) | @mui/material | 4 | 2 | 3 | 2 | 1.9 |
 | [Stack](./components/@mui_material/Stack.md) | @mui/material | 3 | 2 | 3 | 2 | 1.7 |
 | [FormControl](./components/@mui_material/FormControl.md) | @mui/material | 3 | 2 | 4 | 2 | 1.8 |
 | [InputLabel](./components/@mui_material/InputLabel.md) | @mui/material | 3 | 2 | 2 | 2 | 1.6 |
 | [Select](./components/@mui_material/Select.md) | @mui/material | 3 | 2 | 6 | 2 | 2.0 |
-| [Button](./components/@mui_material/Button.md) | @mui/material | 3 | 4 | 5 | 3 | 2.1 |
-| [Button](./components/@chakra-ui_react/Button.md) | @chakra-ui/react | 3 | 3 | 8 | 3 | 2.4 |
 | [ChakraProvider](./components/@chakra-ui_react/ChakraProvider.md) | @chakra-ui/react | 2 | 2 | 2 | 2 | 1.2 |
 | [Link](./components/@chakra-ui_react/Link.md) | @chakra-ui/react | 2 | 2 | 3 | 1 | 1.1 |
 
@@ -182,9 +189,10 @@ This multi-dimensional approach provides a more nuanced view of component usage 
 |-----------|---------|-------------|-------|-------|----------|-------------|
 | [Tab](./components/@mui_material/Tab.md) | @mui/material | 6 | 1 | 1 | 1 | 1.9 |
 | [CssBaseline](./components/@mui_material/CssBaseline.md) | @mui/material | 4 | 2 | 0 | 0 | 1.2 |
-| [Divider](./components/@mui_material/Divider.md) | @mui/material | 4 | 2 | 1 | 1 | 1.5 |
-| [TextField](./components/@mui_material/TextField.md) | @mui/material | 2 | 2 | 2 | 1 | 1.0 |
 | [useColorModeValue](./components/@chakra-ui_react/useColorModeValue.md) | @chakra-ui/react | 2 | 1 | 0 | 0 | 0.6 |
+| [Card](./components/@chakra-ui_react/Card.md) | @chakra-ui/react | 2 | 2 | 1 | 1 | 0.9 |
+| [CardBody](./components/@chakra-ui_react/CardBody.md) | @chakra-ui/react | 2 | 2 | 1 | 1 | 0.9 |
+| [CardHeader](./components/@chakra-ui_react/CardHeader.md) | @chakra-ui/react | 2 | 2 | 1 | 1 | 0.9 |
 | [AlertIcon](./components/@chakra-ui_react/AlertIcon.md) | @chakra-ui/react | 2 | 1 | 0 | 0 | 0.6 |
 | [Icon](./components/@chakra-ui_react/Icon.md) | @chakra-ui/react | 2 | 1 | 3 | 1 | 1.1 |
 | [extendTheme](./components/@chakra-ui_react/extendTheme.md) | @chakra-ui/react | 1 | 1 | 0 | 0 | 0.0 |
@@ -193,16 +201,15 @@ This multi-dimensional approach provides a more nuanced view of component usage 
 | [StatLabel](./components/@chakra-ui_react/StatLabel.md) | @chakra-ui/react | 1 | 1 | 1 | 1 | 0.3 |
 | [StatNumber](./components/@chakra-ui_react/StatNumber.md) | @chakra-ui/react | 1 | 1 | 1 | 1 | 0.3 |
 | [StatHelpText](./components/@chakra-ui_react/StatHelpText.md) | @chakra-ui/react | 1 | 1 | 1 | 1 | 0.3 |
-| [Container](./components/@chakra-ui_react/Container.md) | @chakra-ui/react | 1 | 1 | 3 | 1 | 0.5 |
 | [Center](./components/@chakra-ui_react/Center.md) | @chakra-ui/react | 1 | 1 | 2 | 1 | 0.4 |
+| [FormControl](./components/@chakra-ui_react/FormControl.md) | @chakra-ui/react | 1 | 1 | 2 | 1 | 0.4 |
+| [FormLabel](./components/@chakra-ui_react/FormLabel.md) | @chakra-ui/react | 1 | 1 | 1 | 1 | 0.3 |
 | [Alert](./components/@chakra-ui_react/Alert.md) | @chakra-ui/react | 1 | 1 | 2 | 1 | 0.4 |
 | [AlertTitle](./components/@chakra-ui_react/AlertTitle.md) | @chakra-ui/react | 1 | 1 | 1 | 1 | 0.3 |
 | [AlertDescription](./components/@chakra-ui_react/AlertDescription.md) | @chakra-ui/react | 1 | 1 | 1 | 1 | 0.3 |
-| [Card](./components/@chakra-ui_react/Card.md) | @chakra-ui/react | 1 | 1 | 1 | 1 | 0.3 |
-| [CardBody](./components/@chakra-ui_react/CardBody.md) | @chakra-ui/react | 1 | 1 | 1 | 1 | 0.3 |
-| [CardHeader](./components/@chakra-ui_react/CardHeader.md) | @chakra-ui/react | 1 | 1 | 1 | 1 | 0.3 |
+| [AppBar](./components/@mui_material/AppBar.md) | @mui/material | 1 | 1 | 2 | 1 | 0.4 |
+| [Toolbar](./components/@mui_material/Toolbar.md) | @mui/material | 1 | 1 | 1 | 1 | 0.3 |
 | [Grid](./components/@chakra-ui_react/Grid.md) | @chakra-ui/react | 1 | 1 | 3 | 1 | 0.5 |
-| [SimpleGrid](./components/@chakra-ui_react/SimpleGrid.md) | @chakra-ui/react | 1 | 1 | 4 | 1 | 0.6 |
 | [List](./components/@mui_material/List.md) | @mui/material | 1 | 1 | 2 | 1 | 0.4 |
 | [ListItem](./components/@mui_material/ListItem.md) | @mui/material | 1 | 1 | 2 | 1 | 0.4 |
 | [Select](./components/@chakra-ui_react/Select.md) | @chakra-ui/react | 1 | 1 | 2 | 1 | 0.4 |
@@ -229,21 +236,21 @@ The following components have the highest measured usage frequency in your appli
 
 | Component | Package | Usage Count | Files | Props | Usage Score |
 |-----------|---------|-------------|-------|-------|-------------|
-| [Grid](./components/@mui_material/Grid.md) | @mui/material | 23 | 6 | 8 | 4.3 |
-| [Box](./components/@chakra-ui_react/Box.md) | @chakra-ui/react | 18 | 12 | 18 | 6.3 |
-| [Box](./components/@mui_material/Box.md) | @mui/material | 14 | 10 | 14 | 5.3 |
-| [Typography](./components/@mui_material/Typography.md) | @mui/material | 14 | 9 | 7 | 4.2 |
-| [Text](./components/@chakra-ui_react/Text.md) | @chakra-ui/react | 13 | 7 | 6 | 3.8 |
+| [Box](./components/@chakra-ui_react/Box.md) | @chakra-ui/react | 42 | 20 | 22 | 8.2 |
+| [Grid](./components/@mui_material/Grid.md) | @mui/material | 32 | 7 | 8 | 4.6 |
+| [Typography](./components/@mui_material/Typography.md) | @mui/material | 26 | 19 | 7 | 5.3 |
+| [Box](./components/@mui_material/Box.md) | @mui/material | 20 | 13 | 15 | 6.1 |
+| [Text](./components/@chakra-ui_react/Text.md) | @chakra-ui/react | 17 | 14 | 6 | 4.3 |
+| [Heading](./components/@chakra-ui_react/Heading.md) | @chakra-ui/react | 14 | 15 | 5 | 4.0 |
+| [Paper](./components/@mui_material/Paper.md) | @mui/material | 14 | 15 | 3 | 3.2 |
+| [Stack](./components/@chakra-ui_react/Stack.md) | @chakra-ui/react | 14 | 8 | 7 | 4.2 |
+| [VStack](./components/@chakra-ui_react/VStack.md) | @chakra-ui/react | 12 | 9 | 5 | 3.3 |
+| [Divider](./components/@mui_material/Divider.md) | @mui/material | 12 | 6 | 1 | 2.5 |
 | [Container](./components/@mui_material/Container.md) | @mui/material | 7 | 7 | 3 | 2.2 |
-| [Heading](./components/@chakra-ui_react/Heading.md) | @chakra-ui/react | 7 | 7 | 5 | 3.2 |
-| [VStack](./components/@chakra-ui_react/VStack.md) | @chakra-ui/react | 6 | 4 | 4 | 2.4 |
-| [CircularProgress](./components/@mui_material/CircularProgress.md) | @mui/material | 6 | 3 | 1 | 1.9 |
-| [Stack](./components/@chakra-ui_react/Stack.md) | @chakra-ui/react | 6 | 3 | 7 | 2.9 |
-| [Tab](./components/@mui_material/Tab.md) | @mui/material | 6 | 1 | 1 | 1.9 |
-| [Flex](./components/@chakra-ui_react/Flex.md) | @chakra-ui/react | 5 | 4 | 4 | 2.4 |
-| [Paper](./components/@mui_material/Paper.md) | @mui/material | 4 | 5 | 3 | 2.1 |
-| [Avatar](./components/@mui_material/Avatar.md) | @mui/material | 4 | 2 | 3 | 1.9 |
-| [CssBaseline](./components/@mui_material/CssBaseline.md) | @mui/material | 4 | 2 | 0 | 1.2 |
+| [Button](./components/@mui_material/Button.md) | @mui/material | 6 | 6 | 5 | 2.9 |
+| [Container](./components/@chakra-ui_react/Container.md) | @chakra-ui/react | 6 | 6 | 3 | 2.3 |
+| [Flex](./components/@chakra-ui_react/Flex.md) | @chakra-ui/react | 6 | 5 | 5 | 2.9 |
+| [SimpleGrid](./components/@chakra-ui_react/SimpleGrid.md) | @chakra-ui/react | 6 | 5 | 5 | 2.7 |
 
 > **Note**: Usage counts shown here represent static imports and JSX usage identified through code analysis. Dynamic usage patterns or runtime behavior are not captured in these metrics.
 
@@ -263,16 +270,16 @@ The following components are used with the widest variety of prop combinations:
 
 | Component | Package | Unique Prop Sets | Total Usages | Flexibility Index |
 |-----------|---------|------------------|--------------|-------------------|
-| [Box](./components/@chakra-ui_react/Box.md) | @chakra-ui/react | 10 | 18 | 55.6% |
-| [Box](./components/@mui_material/Box.md) | @mui/material | 8 | 14 | 57.1% |
-| [Typography](./components/@mui_material/Typography.md) | @mui/material | 6 | 14 | 42.9% |
-| [Heading](./components/@chakra-ui_react/Heading.md) | @chakra-ui/react | 5 | 7 | 71.4% |
-| [Text](./components/@chakra-ui_react/Text.md) | @chakra-ui/react | 5 | 13 | 38.5% |
-| [Grid](./components/@mui_material/Grid.md) | @mui/material | 4 | 23 | 17.4% |
-| [Paper](./components/@mui_material/Paper.md) | @mui/material | 3 | 4 | 75.0% |
-| [Button](./components/@mui_material/Button.md) | @mui/material | 3 | 3 | 100.0% |
-| [Button](./components/@chakra-ui_react/Button.md) | @chakra-ui/react | 3 | 3 | 100.0% |
-| [Stack](./components/@chakra-ui_react/Stack.md) | @chakra-ui/react | 3 | 6 | 50.0% |
+| [Box](./components/@chakra-ui_react/Box.md) | @chakra-ui/react | 15 | 42 | 35.7% |
+| [Box](./components/@mui_material/Box.md) | @mui/material | 10 | 20 | 50.0% |
+| [Typography](./components/@mui_material/Typography.md) | @mui/material | 9 | 26 | 34.6% |
+| [Heading](./components/@chakra-ui_react/Heading.md) | @chakra-ui/react | 6 | 14 | 42.9% |
+| [Text](./components/@chakra-ui_react/Text.md) | @chakra-ui/react | 6 | 17 | 35.3% |
+| [Stack](./components/@chakra-ui_react/Stack.md) | @chakra-ui/react | 6 | 14 | 42.9% |
+| [Grid](./components/@mui_material/Grid.md) | @mui/material | 4 | 32 | 12.5% |
+| [Button](./components/@mui_material/Button.md) | @mui/material | 4 | 6 | 66.7% |
+| [Button](./components/@chakra-ui_react/Button.md) | @chakra-ui/react | 4 | 4 | 100.0% |
+| [Flex](./components/@chakra-ui_react/Flex.md) | @chakra-ui/react | 4 | 6 | 66.7% |
 
 *Flexibility Index = Percentage of unique prop combinations relative to total usage count*
 
@@ -284,16 +291,16 @@ The following components show the most consistent usage patterns:
 
 | Component | Package | Uses | Variants | Common Props |
 |-----------|---------|------|----------|--------------|
+| [Divider](./components/@mui_material/Divider.md) | @mui/material | 12 | 1 | `sx` |
+| [Grid](./components/@mui_material/Grid.md) | @mui/material | 32 | 4 | `children, container, item...` |
 | [Container](./components/@mui_material/Container.md) | @mui/material | 7 | 1 | `children, maxWidth, sx` |
 | [CircularProgress](./components/@mui_material/CircularProgress.md) | @mui/material | 6 | 1 | `size` |
 | [Tab](./components/@mui_material/Tab.md) | @mui/material | 6 | 1 | `label` |
-| [Grid](./components/@mui_material/Grid.md) | @mui/material | 23 | 4 | `children, container, item...` |
-| [VStack](./components/@chakra-ui_react/VStack.md) | @chakra-ui/react | 6 | 2 | `align, children, spacing` |
-| [Text](./components/@chakra-ui_react/Text.md) | @chakra-ui/react | 13 | 5 | `children` |
-| [Typography](./components/@mui_material/Typography.md) | @mui/material | 14 | 6 | `children, component, gutterBottom...` |
-| [Stack](./components/@chakra-ui_react/Stack.md) | @chakra-ui/react | 6 | 3 | `alignItems, children, direction...` |
-| [Box](./components/@chakra-ui_react/Box.md) | @chakra-ui/react | 18 | 10 | `children, p` |
-| [Box](./components/@mui_material/Box.md) | @mui/material | 14 | 8 | `children, sx` |
+| [Chip](./components/@mui_material/Chip.md) | @mui/material | 6 | 1 | `color, label, size` |
+| [Switch](./components/@mui_material/Switch.md) | @mui/material | 6 | 1 | `checked, onChange` |
+| [FormControlLabel](./components/@mui_material/FormControlLabel.md) | @mui/material | 6 | 1 | `control, label` |
+| [Paper](./components/@mui_material/Paper.md) | @mui/material | 14 | 3 | `children, elevation, sx` |
+| [VStack](./components/@chakra-ui_react/VStack.md) | @chakra-ui/react | 12 | 3 | `align, children, spacing` |
 
 
 > **Note**: For detailed prop combination patterns for each component, please visit the individual component pages.

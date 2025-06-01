@@ -7,6 +7,8 @@ import Button from '../../components/ui/Button';
 import ChakraButton from '../../components/ui/ChakraButton';
 import LibrarySwitcher from '../../components/common/LibrarySwitcher';
 import AdaptiveButton from '../../components/ui/AdaptiveButton';
+import IntermediatePanel from '../../components/ui/IntermediatePanel';
+import BaseCard from '../../components/ui/BaseCard';
 
 const mockUser = {
   name: 'Jane Smith',
@@ -77,12 +79,22 @@ const ProfilePage = () => {
               
               {tabValue === 1 && (
                 <VStack spacing={4} align="stretch">
-                  <InfoPanel
+                  <IntermediatePanel
                     title="Notification Preferences"
-                    info="Email notifications: Enabled"
-                    actionText="Change Settings"
-                    onAction={() => console.log('Change notification settings')}
+                    content="Email notifications: Enabled"
+                    actions={[
+                      { label: 'Change Settings', onClick: () => console.log('Change notification settings') },
+                      { label: 'Test Notification', onClick: () => console.log('Test notification') }
+                    ]}
+                    variant="mui"
                   />
+                  <BaseCard title="Communication Preferences" variant="chakra">
+                    <Box>
+                      <p>SMS alerts: Disabled</p>
+                      <p>Push notifications: Enabled</p>
+                      <p>Newsletter: Weekly</p>
+                    </Box>
+                  </BaseCard>
                 </VStack>
               )}
               
