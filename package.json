@@ -29,8 +29,10 @@
   ],
   "scripts": {
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "test": "node tests/importExtractor.test.js",
-    "test:imports": "node tests/importExtractor.test.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:unit": "jest tests/unit/",
     "version": "git add -A",
     "postversion": "git push && git push --tags",
     "release": "npm test && npm version patch && npm publish"

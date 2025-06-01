@@ -23,6 +23,8 @@ build/
 
 # Coverage directory
 coverage/
+coverage-*/
+*.lcov
 
 # OS specific files
 .DS_Store
