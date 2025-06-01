@@ -122,6 +122,8 @@ npx react-package-analyzer --dir ./src
 
 ## Example project structure
 
+For an example of a project that uses this tool, see the [test project](./test-project/README.md).
+
 Here's an example project structure showing where to place the configuration file:
 
 ```
