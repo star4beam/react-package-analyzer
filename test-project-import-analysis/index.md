@@ -8,11 +8,11 @@
 
 | **Summary Stats** | **Value** |
 |:---------------------|:------------:|
-| **Components Analyzed** | **49** |
-| **Files Affected** | **39** |
-| **Usage Instances** | **194** |
-| **Features** | **1** |
-| **Hubs** | **0** |
+| **Components Analyzed** | **56** |
+| **Files Affected** | **53** |
+| **Usage Instances** | **330** |
+| **Features** | **7** |
+| **Hubs** | **5** |
 
 ## Available Reports
 

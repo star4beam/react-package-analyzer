@@ -10,16 +10,16 @@
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
 | Component | Typography | Package | @mui/material |
-| Usage Count | 14 instances | Files | 9 files |
+| Usage Count | 26 instances | Files | 19 files |
 | Unique Props | 7 props | Prop Categories | 3 categories |
-| Impact Score | 31 (Low) | | |
+| Impact Score | 52 (Medium) | | |
 
 ### Impact Assessment
 
-**Low Impact Component**  
-Primary factor: Usage frequency
+**Medium Impact Component**  
+Primary factor: File distribution
 
-This component has relatively low impact in your codebase. It&#x27;s used in fewer files or has a simpler interface. Changes are less likely to cause widespread issues.
+This component has medium impact in your codebase. It&#x27;s used in several files and has moderate complexity. Changes should be made with care.
 
 ## Prop Usage Analysis
 
@@ -27,9 +27,9 @@ This component has relatively low impact in your codebase. It&#x27;s used in few
 
 | Category | Props | Usage Count |
 |----------|-------|-------------|
-| Customization | `variant` (9), `color` (1) | 10 |
-| Other | `gutterBottom` (5), `paragraph` (3), `sx` (2) | 10 |
-| Composition | `component` (5) | 5 |
+| Customization | `variant` (21), `color` (2) | 23 |
+| Other | `gutterBottom` (8), `paragraph` (3), `sx` (3) | 14 |
+| Composition | `component` (7) | 7 |
 
 ## Prop Combinations
 
@@ -42,12 +42,20 @@ This section analyzes similar ways this component is configured across the codeb
 **Variations**:
 - `children`, `component`, `gutterBottom`, `variant` (3 uses, 80% similarity)
 
-### Pattern Group 2 (2 total usages)
+### Pattern Group 2 (4 total usages)
 
-**Base configuration**: `children`, `sx`, `variant`
+**Base configuration**: `children`, `component`, `sx`, `variant`
 
 **Variations**:
-- `children`, `component`, `sx`, `variant` (1 uses, 75% similarity)
+- `children`, `component`, `variant` (1 uses, 75% similarity)
+- `children`, `sx`, `variant` (1 uses, 75% similarity)
+
+### Pattern Group 3 (2 total usages)
+
+**Base configuration**: `children`, `color`, `variant`
+
+**Variations**:
+- `children`, `color`, `gutterBottom`, `variant` (1 uses, 75% similarity)
 
 
 ## Locations
@@ -59,20 +67,29 @@ This section analyzes similar ways this component is configured across the codeb
 | [src/pages/Home.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/Home.jsx) | `variant`, `component`, `gutterBottom`, `children`, `paragraph` | 3 |
 | [src/pages/DynamicComponentDemo.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/DynamicComponentDemo.jsx) | `children`, `variant`, `component`, `gutterBottom` | 3 |
 | [src/pages/dashboard/LazyDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/dashboard/LazyDashboard.jsx) | `variant`, `component`, `gutterBottom`, `children` | 3 |
+| [src/components/layouts/MainLayout.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/layouts/MainLayout.jsx) | `variant`, `component`, `sx`, `children` | 3 |
 | [src/components/layouts/containers/Panel.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/layouts/containers/Panel.jsx) | `variant`, `component`, `gutterBottom`, `children` | 3 |
 | [src/components/dashboard/StatsSummary.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/StatsSummary.jsx) | `variant`, `sx`, `children` | 3 |
 | [src/components/dashboard/StatCard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/StatCard.jsx) | `variant`, `component`, `sx`, `children` | 3 |
 | [src/components/dashboard/Dashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/Dashboard.jsx) | `variant`, `gutterBottom`, `children`, `color` | 3 |
+| [src/components/composite/ManagementHub.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/composite/ManagementHub.jsx) | `variant`, `gutterBottom`, `children` | 3 |
+| [src/components/composite/AdminPanel.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/composite/AdminPanel.jsx) | `variant`, `children`, `gutterBottom` | 3 |
+| [src/components/ui/AdvancedPanel.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ui/AdvancedPanel.jsx) | `variant`, `color`, `children` | 2 |
+| [src/components/settings/SettingsPanel.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/settings/SettingsPanel.jsx) | `variant`, `children` | 2 |
 | [src/components/dashboard/UserSummary.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/UserSummary.jsx) | `variant`, `children` | 2 |
+| [src/components/dashboard/MainDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/MainDashboard.jsx) | `variant`, `children` | 2 |
 | [src/components/dashboard/ActivityFeed.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/ActivityFeed.jsx) | `variant`, `children` | 2 |
+| [src/components/composite/DashboardHub.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/composite/DashboardHub.jsx) | `variant`, `children` | 2 |
+| [src/components/common/DataDisplay.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/common/DataDisplay.jsx) | `variant`, `component`, `children` | 2 |
+| [src/components/analytics/AnalyticsDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/analytics/AnalyticsDashboard.jsx) | `variant`, `children` | 2 |
 
 ### Co-located Components
 Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Box](../@mui_material/Box.md) | @mui/material | 8 |
-| [Grid](../@mui_material/Grid.md) | @mui/material | 5 |
-| [Container](../@mui_material/Container.md) | @mui/material | 4 |
-| [Stack](../@mui_material/Stack.md) | @mui/material | 3 |
-| [Paper](../@mui_material/Paper.md) | @mui/material | 3 |
+| [Box](../@mui_material/Box.md) | @mui/material | 17 |
+| [Paper](../@mui_material/Paper.md) | @mui/material | 12 |
+| [Text](../@chakra-ui_react/Text.md) | @chakra-ui/react | 10 |
+| [Container](../@mui_material/Container.md) | @mui/material | 9 |
+| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 9 |

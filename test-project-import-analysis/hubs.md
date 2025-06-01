@@ -5,7 +5,7 @@
 
 # Hubs Overview
 
-**Total Hubs Found: 6**
+**Total Hubs Found: 12**
 
 ## Hubs
 
@@ -53,17 +53,45 @@ flowchart LR
 
 ```
 
-- **Main Hubs** (0): *Rely on Intermediate and Base hubs but are not utilized by other hubs.*
-- **Intermediate Hubs** (0): *Both rely on other hubs and are used by other hubs.*
-- **Base Hubs** (0): *Used by other hubs but don't rely on other hubs themselves.*
-- **Isolated Hubs** (6): *Used only within their features and don't interact with other hubs.*
+- **Main Hubs** (1): *Rely on Intermediate and Base hubs but are not utilized by other hubs.*
+- **Intermediate Hubs** (1): *Both rely on other hubs and are used by other hubs.*
+- **Base Hubs** (3): *Used by other hubs but don't rely on other hubs themselves.*
+- **Isolated Hubs** (7): *Used only within their features and don't interact with other hubs.*
 
 Hub dependencies can be:
 - **Direct**: The hub directly imports and uses another hub
 - **Indirect**: The hub uses another hub through an intermediate hub
 - **Both**: The hub both directly and indirectly uses another hub
 
+## Main Hubs
 
+These components only depend on other hubs:
+
+| Hub |
+|-----|
+| [ManagementHub](./hubs/ManagementHub.md) |
+
+
+<a id="intermediate-hubs"></a>
+
+## Intermediate Hubs*
+
+These components both use and are used by other hubs:
+
+| Hub | Used By Hubs |
+|-----|-------------|
+| [IntermediateForm](./hubs/IntermediateForm.md) [*](#intermediate-hubs) | [ManagementHub](../hubs/ManagementHub.md) |
+
+
+## Base Hubs
+
+These components are only used by other hubs:
+
+| Hub | Used By Hubs |
+|-----|-------------|
+| [BaseCard](./hubs/BaseCard.md) | [ManagementHub](../hubs/ManagementHub.md), [IntermediateForm](../hubs/IntermediateForm.md) [*](#intermediate-hubs) |
+| [BaseButton](./hubs/BaseButton.md) | [ManagementHub](../hubs/ManagementHub.md), [IntermediateForm](../hubs/IntermediateForm.md) [*](#intermediate-hubs) |
+| [IntermediatePanel](./hubs/IntermediatePanel.md) | [ManagementHub](../hubs/ManagementHub.md) |
 
 
 ## Isolated Hubs
@@ -77,5 +105,6 @@ These components are used only within their features and don't interact with oth
 | [Card](./hubs/Card.md) | @chakra-ui/react | [UserSummary](./features/UserSummary.md) |
 | [ChakraButton](./hubs/ChakraButton.md) | @chakra-ui/react | [UserSummary](./features/UserSummary.md) |
 | [ChakraCard](./hubs/ChakraCard.md) | @chakra-ui/react | [UserSummary](./features/UserSummary.md) |
+| [DataDisplay](./hubs/DataDisplay.md) | @mui/material, @chakra-ui/react | [AdvancedPanel](./features/AdvancedPanel.md) |
 | [InfoPanel](./hubs/InfoPanel.md) | @chakra-ui/react | [UserSummary](./features/UserSummary.md) |
 

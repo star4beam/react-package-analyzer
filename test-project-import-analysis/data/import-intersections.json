@@ -1,10 +1,1013 @@
 {
   "stats": {
-    "directImportersCount": 4,
-    "indirectImportersCount": 1,
-    "intersectionCount": 1
+    "directImportersCount": 12,
+    "indirectImportersCount": 7,
+    "intersectionCount": 7
   },
   "intersectionImporters": [
+    {
+      "path": "src/components/analytics/AnalyticsDashboard.jsx",
+      "name": "AnalyticsDashboard",
+      "directImporterImportsCount": 2,
+      "indirectImporterImportsCount": 0,
+      "indirectImportChains": [
+        {
+          "path": [
+            "src/components/analytics/AnalyticsDashboard.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/analytics/AnalyticsDashboard.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/analytics/AnalyticsDashboard.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/analytics/AnalyticsDashboard.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/analytics/AnalyticsDashboard.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/analytics/AnalyticsDashboard.jsx",
+            "src/components/common/DataDisplay.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/analytics/AnalyticsDashboard.jsx",
+            "src/components/common/DataDisplay.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/analytics/AnalyticsDashboard.jsx",
+            "src/components/common/DataDisplay.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ],
+      "groupedImportChains": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/common/DataDisplay.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/DataDisplay.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/DataDisplay.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/composite/ManagementHub.jsx",
+      "name": "ManagementHub",
+      "directImporterImportsCount": 2,
+      "indirectImporterImportsCount": 1,
+      "indirectImportChains": [
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ],
+      "groupedImportChains": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "chainCount": 6,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/dashboard/MainDashboard.jsx",
+      "name": "MainDashboard",
+      "directImporterImportsCount": 3,
+      "indirectImporterImportsCount": 2,
+      "indirectImportChains": [
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/IntermediateForm.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ],
+      "groupedImportChains": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "chainCount": 6,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "chainCount": 12,
+          "chains": [
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "path": "src/components/dashboard/UserSummary.jsx",
       "name": "UserSummary",
@@ -236,9 +1239,1152 @@
           ]
         }
       ]
+    },
+    {
+      "path": "src/components/settings/SettingsPanel.jsx",
+      "name": "SettingsPanel",
+      "directImporterImportsCount": 4,
+      "indirectImporterImportsCount": 2,
+      "indirectImportChains": [
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/IntermediateForm.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/common/DataDisplay.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/common/DataDisplay.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/common/DataDisplay.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ],
+      "groupedImportChains": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "chainCount": 6,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "chainCount": 12,
+          "chains": [
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/IntermediateForm.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/composite/ManagementHub.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/common/DataDisplay.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/DataDisplay.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/DataDisplay.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/AdvancedPanel.jsx",
+      "name": "AdvancedPanel",
+      "directImporterImportsCount": 2,
+      "indirectImporterImportsCount": 0,
+      "indirectImportChains": [
+        {
+          "path": [
+            "src/components/ui/AdvancedPanel.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/AdvancedPanel.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/AdvancedPanel.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/AdvancedPanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/AdvancedPanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/AdvancedPanel.jsx",
+            "src/components/common/DataDisplay.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/AdvancedPanel.jsx",
+            "src/components/common/DataDisplay.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/AdvancedPanel.jsx",
+            "src/components/common/DataDisplay.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ],
+      "groupedImportChains": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/common/DataDisplay.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/DataDisplay.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/common/DataDisplay.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/IntermediateForm.jsx",
+      "name": "IntermediateForm",
+      "directImporterImportsCount": 1,
+      "indirectImporterImportsCount": 0,
+      "indirectImportChains": [
+        {
+          "path": [
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/IntermediatePanel.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseCard.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": [
+            "src/components/ui/IntermediateForm.jsx",
+            "src/components/ui/BaseButton.jsx"
+          ],
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ],
+      "groupedImportChains": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "chainCount": 3,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": [
+                "src/components/ui/IntermediatePanel.jsx",
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseCard.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "chainCount": 1,
+          "chains": [
+            {
+              "path": [
+                "src/components/ui/BaseButton.jsx"
+              ],
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "globalImportHubs": [
+    {
+      "path": "src/components/ui/IntermediatePanel.jsx",
+      "name": "IntermediatePanel",
+      "usedByIntersectionsCount": 6,
+      "usedByIntersections": [
+        "src/components/analytics/AnalyticsDashboard.jsx",
+        "src/components/composite/ManagementHub.jsx",
+        "src/components/dashboard/MainDashboard.jsx",
+        "src/components/settings/SettingsPanel.jsx",
+        "src/components/ui/AdvancedPanel.jsx",
+        "src/components/ui/IntermediateForm.jsx"
+      ],
+      "totalChainCount": 18,
+      "packages": [
+        "@mui/material",
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": [
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "count": 6,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "count": 6,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/BaseCard.jsx",
+      "name": "BaseCard",
+      "usedByIntersectionsCount": 6,
+      "usedByIntersections": [
+        "src/components/analytics/AnalyticsDashboard.jsx",
+        "src/components/composite/ManagementHub.jsx",
+        "src/components/dashboard/MainDashboard.jsx",
+        "src/components/settings/SettingsPanel.jsx",
+        "src/components/ui/AdvancedPanel.jsx",
+        "src/components/ui/IntermediateForm.jsx"
+      ],
+      "totalChainCount": 6,
+      "packages": [
+        "@mui/material",
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": []
+    },
+    {
+      "path": "src/components/ui/BaseButton.jsx",
+      "name": "BaseButton",
+      "usedByIntersectionsCount": 6,
+      "usedByIntersections": [
+        "src/components/analytics/AnalyticsDashboard.jsx",
+        "src/components/composite/ManagementHub.jsx",
+        "src/components/dashboard/MainDashboard.jsx",
+        "src/components/settings/SettingsPanel.jsx",
+        "src/components/ui/AdvancedPanel.jsx",
+        "src/components/ui/IntermediateForm.jsx"
+      ],
+      "totalChainCount": 6,
+      "packages": [
+        "@mui/material",
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": []
+    },
+    {
+      "path": "src/components/common/DataDisplay.jsx",
+      "name": "DataDisplay",
+      "usedByIntersectionsCount": 3,
+      "usedByIntersections": [
+        "src/components/analytics/AnalyticsDashboard.jsx",
+        "src/components/settings/SettingsPanel.jsx",
+        "src/components/ui/AdvancedPanel.jsx"
+      ],
+      "totalChainCount": 9,
+      "packages": [
+        "@mui/material",
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": [
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "count": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "count": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/ui/IntermediateForm.jsx",
+      "name": "IntermediateForm",
+      "usedByIntersectionsCount": 3,
+      "usedByIntersections": [
+        "src/components/composite/ManagementHub.jsx",
+        "src/components/dashboard/MainDashboard.jsx",
+        "src/components/settings/SettingsPanel.jsx"
+      ],
+      "totalChainCount": 18,
+      "packages": [
+        "@mui/material",
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "count": 9,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "count": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "count": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/components/composite/ManagementHub.jsx",
+      "name": "ManagementHub",
+      "usedByIntersectionsCount": 2,
+      "usedByIntersections": [
+        "src/components/dashboard/MainDashboard.jsx",
+        "src/components/settings/SettingsPanel.jsx"
+      ],
+      "totalChainCount": 24,
+      "packages": [
+        "@mui/material",
+        "@chakra-ui/react"
+      ],
+      "dependencyPaths": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "count": 6,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "count": 12,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "count": 2,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "count": 2,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ]
+        }
+      ]
+    },
     {
       "path": "src/components/ui/Button.jsx",
       "name": "Button",
@@ -354,6 +2500,419 @@
     }
   ],
   "globalImportHubByIntersection": {
+    "src/components/analytics/AnalyticsDashboard.jsx": {
+      "name": "AnalyticsDashboard",
+      "hubsCount": 4,
+      "hubs": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        }
+      ]
+    },
+    "src/components/composite/ManagementHub.jsx": {
+      "name": "ManagementHub",
+      "hubsCount": 4,
+      "hubs": [
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 6,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "direct"
+        }
+      ]
+    },
+    "src/components/dashboard/MainDashboard.jsx": {
+      "name": "MainDashboard",
+      "hubsCount": 5,
+      "hubs": [
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "totalIntersectionsUsingThisHub": 2,
+          "chainsCount": 12,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 6,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        }
+      ]
+    },
     "src/components/dashboard/UserSummary.jsx": {
       "name": "UserSummary",
       "hubsCount": 6,
@@ -456,9 +3015,1136 @@
           "dependencyType": "direct"
         }
       ]
+    },
+    "src/components/settings/SettingsPanel.jsx": {
+      "name": "SettingsPanel",
+      "hubsCount": 6,
+      "hubs": [
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "totalIntersectionsUsingThisHub": 2,
+          "chainsCount": 12,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 6,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        }
+      ]
+    },
+    "src/components/ui/AdvancedPanel.jsx": {
+      "name": "AdvancedPanel",
+      "hubsCount": 4,
+      "hubs": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        }
+      ]
+    },
+    "src/components/ui/IntermediateForm.jsx": {
+      "name": "IntermediateForm",
+      "hubsCount": 3,
+      "hubs": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "direct"
+        }
+      ]
     }
   },
   "features": [
+    {
+      "path": "src/components/ui/AdvancedPanel.jsx",
+      "name": "AdvancedPanel",
+      "hubsCount": 4,
+      "hubs": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        }
+      ],
+      "hubDependencies": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "dependencyType": "both"
+        }
+      ]
+    },
+    {
+      "path": "src/components/analytics/AnalyticsDashboard.jsx",
+      "name": "AnalyticsDashboard",
+      "hubsCount": 4,
+      "hubs": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        }
+      ],
+      "hubDependencies": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "dependencyType": "both"
+        }
+      ]
+    },
+    {
+      "path": "src/components/dashboard/MainDashboard.jsx",
+      "name": "MainDashboard",
+      "hubsCount": 5,
+      "hubs": [
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "totalIntersectionsUsingThisHub": 2,
+          "chainsCount": 12,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 6,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        }
+      ],
+      "hubDependencies": [
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "dependencyType": "both"
+        }
+      ]
+    },
+    {
+      "path": "src/components/settings/SettingsPanel.jsx",
+      "name": "SettingsPanel",
+      "hubsCount": 6,
+      "hubs": [
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "totalIntersectionsUsingThisHub": 2,
+          "chainsCount": 12,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediateForm.jsx",
+              "name": "IntermediateForm",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 6,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/IntermediatePanel.jsx",
+              "name": "IntermediatePanel",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "totalIntersectionsUsingThisHub": 3,
+          "chainsCount": 3,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [
+            {
+              "path": "src/components/ui/BaseCard.jsx",
+              "name": "BaseCard",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            },
+            {
+              "path": "src/components/ui/BaseButton.jsx",
+              "name": "BaseButton",
+              "packages": [
+                "@mui/material",
+                "@chakra-ui/react"
+              ]
+            }
+          ],
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "totalIntersectionsUsingThisHub": 6,
+          "chainsCount": 1,
+          "packages": [
+            "@mui/material",
+            "@chakra-ui/react"
+          ],
+          "dependencyPaths": [],
+          "dependencyType": "both"
+        }
+      ],
+      "hubDependencies": [
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/common/DataDisplay.jsx",
+          "name": "DataDisplay",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "dependencyType": "both"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "dependencyType": "both"
+        }
+      ]
+    },
     {
       "path": "src/components/dashboard/UserSummary.jsx",
       "name": "UserSummary",
@@ -596,11 +4282,126 @@
       ]
     }
   ],
-  "hubDependencies": {},
-  "hubUsage": {},
+  "hubDependencies": {
+    "src/components/ui/IntermediateForm.jsx": {
+      "name": "IntermediateForm",
+      "dependsOn": [
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "dependencyType": "direct"
+        }
+      ]
+    },
+    "src/components/composite/ManagementHub.jsx": {
+      "name": "ManagementHub",
+      "dependsOn": [
+        {
+          "path": "src/components/ui/IntermediatePanel.jsx",
+          "name": "IntermediatePanel",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseCard.jsx",
+          "name": "BaseCard",
+          "dependencyType": "indirect"
+        },
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/ui/BaseButton.jsx",
+          "name": "BaseButton",
+          "dependencyType": "both"
+        }
+      ]
+    }
+  },
+  "hubUsage": {
+    "src/components/ui/BaseCard.jsx": {
+      "name": "BaseCard",
+      "usedBy": [
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "dependencyType": "indirect"
+        }
+      ]
+    },
+    "src/components/ui/BaseButton.jsx": {
+      "name": "BaseButton",
+      "usedBy": [
+        {
+          "path": "src/components/ui/IntermediateForm.jsx",
+          "name": "IntermediateForm",
+          "dependencyType": "direct"
+        },
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "dependencyType": "both"
+        }
+      ]
+    },
+    "src/components/ui/IntermediatePanel.jsx": {
+      "name": "IntermediatePanel",
+      "usedBy": [
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "dependencyType": "direct"
+        }
+      ]
+    },
+    "src/components/ui/IntermediateForm.jsx": {
+      "name": "IntermediateForm",
+      "usedBy": [
+        {
+          "path": "src/components/composite/ManagementHub.jsx",
+          "name": "ManagementHub",
+          "dependencyType": "direct"
+        }
+      ]
+    }
+  },
   "hubCategories": {
-    "baseHubs": [],
-    "mainHubs": [],
-    "intermediateHubs": []
+    "baseHubs": [
+      {
+        "path": "src/components/ui/BaseCard.jsx",
+        "name": "BaseCard"
+      },
+      {
+        "path": "src/components/ui/BaseButton.jsx",
+        "name": "BaseButton"
+      },
+      {
+        "path": "src/components/ui/IntermediatePanel.jsx",
+        "name": "IntermediatePanel"
+      }
+    ],
+    "mainHubs": [
+      {
+        "path": "src/components/composite/ManagementHub.jsx",
+        "name": "ManagementHub"
+      }
+    ],
+    "intermediateHubs": [
+      {
+        "path": "src/components/ui/IntermediateForm.jsx",
+        "name": "IntermediateForm"
+      }
+    ]
   }
 }

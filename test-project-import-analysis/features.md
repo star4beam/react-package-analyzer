@@ -61,4 +61,8 @@ flowchart LR
 
 | Feature | Main Hubs | Intermediate Hubs | Base Hubs |
 |---------|-----------|-------------------|-----------|
+| [AdvancedPanel](./features/AdvancedPanel.md) | - | - | [BaseCard](./hubs/BaseCard.md), [BaseButton](./hubs/BaseButton.md), [IntermediatePanel](./hubs/IntermediatePanel.md) |
+| [AnalyticsDashboard](./features/AnalyticsDashboard.md) | - | - | [BaseCard](./hubs/BaseCard.md), [BaseButton](./hubs/BaseButton.md), [IntermediatePanel](./hubs/IntermediatePanel.md) |
+| [MainDashboard](./features/MainDashboard.md) | [ManagementHub](./hubs/ManagementHub.md) | [IntermediateForm](./hubs/IntermediateForm.md) | [BaseCard](./hubs/BaseCard.md), [BaseButton](./hubs/BaseButton.md), [IntermediatePanel](./hubs/IntermediatePanel.md) |
+| [SettingsPanel](./features/SettingsPanel.md) | [ManagementHub](./hubs/ManagementHub.md) | [IntermediateForm](./hubs/IntermediateForm.md) | [BaseCard](./hubs/BaseCard.md), [BaseButton](./hubs/BaseButton.md), [IntermediatePanel](./hubs/IntermediatePanel.md) |
 | [UserSummary](./features/UserSummary.md) | - | - | - |

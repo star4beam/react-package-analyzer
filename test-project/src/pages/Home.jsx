@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import Card from '@layouts/containers/Card';
 import PrimaryButton from '@common/buttons/PrimaryButton';
 import SecondaryButton from '@common/buttons/SecondaryButton';
+import IntermediatePanel from '@components/ui/IntermediatePanel';
+import IntermediateForm from '@components/ui/IntermediateForm';
+import DataDisplay from '@components/common/DataDisplay';
+import AdvancedPanel from '@components/ui/AdvancedPanel';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -59,6 +63,56 @@ const Home = () => {
               </PrimaryButton>
             </Box>
           </Card>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <IntermediatePanel
+            title="Quick Actions"
+            content="Access frequently used features"
+            actions={[
+              { label: 'Main Dashboard', onClick: () => navigate('/main-dashboard') },
+              { label: 'Profile', onClick: () => navigate('/profile') },
+            ]}
+            variant="chakra"
+          />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <IntermediateForm
+            title="Subscribe"
+            fields={[
+              { name: 'email', label: 'Email', placeholder: 'your@email.com' },
+            ]}
+            onSubmit={() => console.log('Subscribed!')}
+            variant="mui"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <Card title="Latest Updates">
+            <DataDisplay
+              title="Recent Activity"
+              data={[
+                { label: 'New Features', value: '5 added' },
+                { label: 'Bug Fixes', value: '12 resolved' },
+                { label: 'Performance', value: '+15% faster' },
+              ]}
+              variant="chakra"
+            />
+          </Card>
+        </Grid>
+        <Grid item xs={12}>
+          <AdvancedPanel
+            title="Advanced Management"
+            subtitle="Comprehensive control panel with multiple features"
+            data={[
+              { label: 'Active Users', value: '1,234' },
+              { label: 'System Health', value: '98%' },
+              { label: 'Cache Hit Rate', value: '85%' },
+            ]}
+            panelActions={[
+              { label: 'System Settings', onClick: () => navigate('/settings') },
+              { label: 'Analytics', onClick: () => navigate('/analytics') },
+              { label: 'Admin Panel', onClick: () => navigate('/admin') },
+            ]}
+          />
         </Grid>
       </Grid>
     </Container>

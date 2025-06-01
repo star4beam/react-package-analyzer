@@ -10,16 +10,16 @@
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
 | Component | Grid | Package | @mui/material |
-| Usage Count | 23 instances | Files | 6 files |
+| Usage Count | 32 instances | Files | 7 files |
 | Unique Props | 8 props | Prop Categories | 2 categories |
-| Impact Score | 35 (Low) | | |
+| Impact Score | 44 (Medium) | | |
 
 ### Impact Assessment
 
-**Low Impact Component**  
+**Medium Impact Component**  
 Primary factor: Usage frequency
 
-This component has relatively low impact in your codebase. It&#x27;s used in fewer files or has a simpler interface. Changes are less likely to cause widespread issues.
+This component has medium impact in your codebase. It&#x27;s used in several files and has moderate complexity. Changes should be made with care.
 
 ## Prop Usage Analysis
 
@@ -27,20 +27,20 @@ This component has relatively low impact in your codebase. It&#x27;s used in few
 
 | Category | Props | Usage Count |
 |----------|-------|-------------|
-| Customization | `xs` (16), `md` (13), `spacing` (7) | 36 |
-| Other | `item` (16), `container` (7), `mt` (1), `mb` (1) | 25 |
+| Customization | `xs` (24), `md` (19), `spacing` (8) | 51 |
+| Other | `item` (24), `container` (8), `mt` (1), `mb` (1) | 34 |
 
 ## Prop Combinations
 
 This section analyzes similar ways this component is configured across the codebase (75% similarity threshold).
 
-### Pattern Group 1 (5 total usages)
+### Pattern Group 1 (6 total usages)
 
 **Base configuration**: `children`, `container`, `item`, `md`, `mt`, `spacing`, `xs`
 
 **Variations**:
 - `children`, `container`, `item`, `mb`, `md`, `spacing`, `xs` (1 uses, 75% similarity)
-- `children`, `container`, `item`, `md`, `spacing`, `xs` (3 uses, 86% similarity)
+- `children`, `container`, `item`, `md`, `spacing`, `xs` (4 uses, 86% similarity)
 
 
 ## Locations
@@ -55,14 +55,15 @@ This section analyzes similar ways this component is configured across the codeb
 | [src/pages/dashboard/LazyDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/dashboard/LazyDashboard.jsx) | `container`, `spacing`, `mb`, `children`, `item`, `xs`, `md` | 3 |
 | [src/pages/dashboard/EnhancedDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/dashboard/EnhancedDashboard.jsx) | `container`, `spacing`, `children`, `item`, `xs`, `md` | 3 |
 | [src/components/dashboard/Dashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/Dashboard.jsx) | `container`, `spacing`, `children`, `item`, `xs`, `md` | 3 |
+| [src/components/analytics/AnalyticsDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/analytics/AnalyticsDashboard.jsx) | `container`, `spacing`, `children`, `item`, `xs`, `md` | 3 |
 
 ### Co-located Components
 Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Container](../@mui_material/Container.md) | @mui/material | 6 |
-| [Box](../@mui_material/Box.md) | @mui/material | 6 |
-| [Typography](../@mui_material/Typography.md) | @mui/material | 4 |
-| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 3 |
-| [Stack](../@mui_material/Stack.md) | @mui/material | 1 |
+| [Container](../@mui_material/Container.md) | @mui/material | 7 |
+| [Box](../@mui_material/Box.md) | @mui/material | 7 |
+| [Typography](../@mui_material/Typography.md) | @mui/material | 6 |
+| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 4 |
+| [Paper](../@mui_material/Paper.md) | @mui/material | 3 |

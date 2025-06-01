@@ -10,9 +10,9 @@
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
 | Component | Divider | Package | @mui/material |
-| Usage Count | 4 instances | Files | 2 files |
+| Usage Count | 12 instances | Files | 6 files |
 | Unique Props | 1 props | Prop Categories | 1 categories |
-| Impact Score | 7 (Low) | | |
+| Impact Score | 18 (Low) | | |
 
 ### Impact Assessment
 
@@ -37,9 +37,9 @@ This section analyzes similar ways this component is configured across the codeb
 
 | Prop Combination | Usage Count | % of Total Uses |
 |------------------|-------------|----------------|
-| `sx` | 2 | 50.0% |
+| `sx` | 2 | 16.7% |
 
-> **Flexibility Index: 25.0%** - This measures how many different ways the component is configured relative to its total usage. Higher numbers indicate more versatility.
+> **Flexibility Index: 8.3%** - This measures how many different ways the component is configured relative to its total usage. Higher numbers indicate more versatility.
 
 ## Locations
 
@@ -55,8 +55,8 @@ Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Box](../@chakra-ui_react/Box.md) | @chakra-ui/react | 2 |
-| [Container](../@mui_material/Container.md) | @mui/material | 1 |
-| [Grid](../@mui_material/Grid.md) | @mui/material | 1 |
-| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 1 |
-| [Flex](../@chakra-ui_react/Flex.md) | @chakra-ui/react | 1 |
+| [Box](../@chakra-ui_react/Box.md) | @chakra-ui/react | 6 |
+| [Typography](../@mui_material/Typography.md) | @mui/material | 4 |
+| [Paper](../@mui_material/Paper.md) | @mui/material | 3 |
+| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 3 |
+| [Text](../@chakra-ui_react/Text.md) | @chakra-ui/react | 3 |

@@ -10,14 +10,14 @@
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
 | Component | Button | Package | @mui/material |
-| Usage Count | 3 instances | Files | 4 files |
+| Usage Count | 6 instances | Files | 6 files |
 | Unique Props | 5 props | Prop Categories | 2 categories |
-| Impact Score | 14 (Low) | | |
+| Impact Score | 19 (Low) | | |
 
 ### Impact Assessment
 
 **Low Impact Component**  
-Primary factor: Prop complexity
+Primary factor: File distribution
 
 This component has relatively low impact in your codebase. It&#x27;s used in fewer files or has a simpler interface. Changes are less likely to cause widespread issues.
 
@@ -27,19 +27,19 @@ This component has relatively low impact in your codebase. It&#x27;s used in few
 
 | Category | Props | Usage Count |
 |----------|-------|-------------|
-| Customization | `variant` (3), `color` (3), `size` (1) | 7 |
+| Customization | `variant` (6), `color` (4), `size` (1) | 11 |
 | **Event Handler** | **onClick** (1) | 1 |
 
 ## Prop Combinations
 
 This section analyzes similar ways this component is configured across the codebase (75% similarity threshold).
 
-### Pattern Group 1 (2 total usages)
+### Pattern Group 1 (3 total usages)
 
 **Base configuration**: `children`, `color`, `onClick`, `variant`
 
 **Variations**:
-- `children`, `color`, `variant` (1 uses, 75% similarity)
+- `children`, `color`, `variant` (2 uses, 75% similarity)
 
 
 ## Locations
@@ -49,7 +49,9 @@ This section analyzes similar ways this component is configured across the codeb
 | File | Props Used | Prop Categories |
 |------|------------|----------------|
 | [src/pages/dashboard/LazyDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/dashboard/LazyDashboard.jsx) | `variant`, `color`, `onClick`, `children` | 3 |
+| [src/components/ui/BaseButton.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ui/BaseButton.jsx) | `variant`, `children` | 2 |
 | [src/components/ui/AdaptiveButton.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ui/AdaptiveButton.jsx) | `variant`, `color`, `size`, `children` | 2 |
+| [src/components/composite/AdminPanel.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/composite/AdminPanel.jsx) | `variant`, `color`, `children` | 2 |
 | [src/components/common/buttons/PrimaryButton.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/common/buttons/PrimaryButton.jsx) | `variant`, `color`, `children` | 2 |
 
 ### Co-located Components
@@ -57,8 +59,8 @@ Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Container](../@mui_material/Container.md) | @mui/material | 1 |
-| [Typography](../@mui_material/Typography.md) | @mui/material | 1 |
+| [Container](../@mui_material/Container.md) | @mui/material | 2 |
+| [Typography](../@mui_material/Typography.md) | @mui/material | 2 |
+| [Box](../@mui_material/Box.md) | @mui/material | 2 |
 | [Grid](../@mui_material/Grid.md) | @mui/material | 1 |
-| [Box](../@mui_material/Box.md) | @mui/material | 1 |
 | [CircularProgress](../@mui_material/CircularProgress.md) | @mui/material | 1 |
