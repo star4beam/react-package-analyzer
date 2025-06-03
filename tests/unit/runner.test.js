@@ -217,11 +217,7 @@ describe('runner', () => {
             mockExit.mockRestore()
         })
         
-        // TODO: Fix this test - process.exit mocking issue with readJsonReport
-        it.skip('should continue without intersections report', async () => {
-            // Mock process.exit early to prevent it from being called
-            const mockExit = jest.spyOn(process, 'exit').mockImplementation(() => {})
-            
+        it('should continue without intersections report', async () => {
             glob.sync
                 .mockReturnValueOnce([]) // For file analysis
                 .mockReturnValueOnce([]) // For dependency chains
@@ -250,10 +246,8 @@ describe('runner', () => {
                 config: mockConfig,
                 dependencyReport: {},
                 detailedReport: {},
-                intersectionsReport: undefined
+                intersectionsReport: null
             })
-            
-            mockExit.mockRestore()
         })
         
         it('should use custom logger when provided', async () => {
@@ -286,15 +280,14 @@ describe('runner', () => {
             expect(customLogger.debug).toHaveBeenCalled()
         })
         
-        // TODO: Fix this test - need to properly mock raw.jsonl parsing with invalid JSON
-        it.skip('should handle dependency chain analysis errors', async () => {
+        it('should handle dependency chain analysis errors', async () => {
             glob.sync
                 .mockReturnValueOnce([]) // For file analysis
                 .mockReturnValueOnce([]) // For dependency chains
             
             // Mock raw.jsonl to have invalid JSON and valid JSON
             let callCount = 0
-            fs.readFileSync.mockImplementation(() => {
+            fs.readFileSync.mockImplementation((file) => {
                 callCount++
                 if (callCount === 1) {
                     // First call for dependency analysis - mixed valid/invalid
@@ -304,6 +297,7 @@ describe('runner', () => {
                     // Second call for final parse - only valid
                     return '{"file": "test.js", "usage": {}}'
                 }
+                // Return proper JSON for report files
                 return '{}'
             })
             
@@ -317,8 +311,7 @@ describe('runner', () => {
             )
         })
         
-        // TODO: Fix this test - need to ensure raw.jsonl has proper structure
-        it.skip('should handle empty package tracking', async () => {
+        it('should handle empty package tracking', async () => {
             const configNoPackages = { ...mockConfig, packagesToTrack: [] }
             
             glob.sync
@@ -340,8 +333,7 @@ describe('runner', () => {
             })
         })
         
-        // TODO: Fix this test - need to ensure raw.jsonl has proper structure
-        it.skip('should split format string correctly', async () => {
+        it('should split format string correctly', async () => {
             const configMultiFormat = { ...mockConfig, format: 'json,markdown,csv' }
             
             glob.sync
@@ -374,8 +366,7 @@ describe('runner', () => {
         }
         
         // Since analyzeDependencyChains is not exported, we test it through runAnalysis
-        // TODO: Fix this test - need to properly mock import extraction and dependency chain building
-        it.skip('should build dependency chains correctly', async () => {
+        it('should build dependency chains correctly', async () => {
             const mockFiles = ['/project/src/ComponentA.js', '/project/src/ComponentB.js']
             const mockRawData = [
                 { file: 'src/ComponentA.js', usage: { react: { Component: 1 } } },
@@ -387,25 +378,38 @@ describe('runner', () => {
                 .mockReturnValueOnce(['src/ComponentA.js', 'src/ComponentB.js']) // For dependency chains
             
             // Mock file contents for import extraction
-            const fileReads = [
-                'import React from "react"', // ComponentA for transform
-                'import { useState } from "react"\nimport ComponentA from "./ComponentA"', // ComponentB for transform
-                mockRawData.map(d => JSON.stringify(d)).join('\n'), // raw.jsonl for dependency chains
-                'import React from "react"', // ComponentA for dependency analysis
-                'import { useState } from "react"\nimport ComponentA from "./ComponentA"', // ComponentB for dependency analysis
-                mockRawData.map(d => JSON.stringify(d)).join('\n'), // raw.jsonl for parse
-                '{}', // detailed.json
-                '{}', // dependency-chains.json
-                '{}' // intersections.json
-            ]
-            
             let readIndex = 0
-            fs.readFileSync.mockImplementation(() => fileReads[readIndex++])
+            fs.readFileSync.mockImplementation((file) => {
+                // Handle file reads for transformation
+                if (readIndex < 2) {
+                    readIndex++
+                    if (readIndex === 1) return 'import React from "react"'
+                    if (readIndex === 2) return 'import { useState } from "react"\nimport ComponentA from "./ComponentA"'
+                }
+                
+                // Handle raw.jsonl reads
+                if (file && file.includes('raw.jsonl')) {
+                    return mockRawData.map(d => JSON.stringify(d)).join('\n')
+                }
+                
+                // Handle component file reads for dependency analysis
+                if (file && file.includes('ComponentA.js')) {
+                    return 'import React from "react"'
+                }
+                if (file && file.includes('ComponentB.js')) {
+                    return 'import { useState } from "react"\nimport ComponentA from "./ComponentA"'
+                }
+                
+                // Default to empty JSON for report files
+                return '{}'
+            })
             
             // Mock import extraction
             extractImportsFromContent
-                .mockReturnValueOnce(['react']) // ComponentA imports
-                .mockReturnValueOnce(['react', './ComponentA']) // ComponentB imports
+                .mockReturnValueOnce(['react']) // ComponentA imports (file analysis)
+                .mockReturnValueOnce(['react', './ComponentA']) // ComponentB imports (file analysis)
+                .mockReturnValueOnce(['react']) // ComponentA imports (dependency chains)
+                .mockReturnValueOnce(['react', './ComponentA']) // ComponentB imports (dependency chains)
             
             // Mock path normalization and file finding
             normalizePath
@@ -427,11 +431,10 @@ describe('runner', () => {
             })
             
             expect(result.dependencyChains).toBeDefined()
-            expect(extractImportsFromContent).toHaveBeenCalledTimes(2)
+            expect(extractImportsFromContent).toHaveBeenCalledTimes(2) // Only called during dependency chain analysis
         })
         
-        // TODO: Fix this test - need to properly mock circular dependency detection
-        it.skip('should handle circular dependencies', async () => {
+        it('should handle circular dependencies', async () => {
             const mockFiles = [
                 '/project/src/ComponentA.js',
                 '/project/src/ComponentB.js'
