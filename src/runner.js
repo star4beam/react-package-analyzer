@@ -379,7 +379,7 @@ async function readJsonReport(outputDir, filename) {
         return JSON.parse(fileContent)
     } catch (error) {
         logger.error(`Error reading JSON report ${filename}: ${error.message}`)
-        process.exit(1)
+        throw error
     }
 }
 
