@@ -46,6 +46,41 @@ class ImportAnalyzer {
         return importString
     }
 
+    findMatchingPackage(importPath) {
+        // Ensure packagesToTrack is an array
+        const packages = Array.isArray(this.config.packagesToTrack) 
+            ? this.config.packagesToTrack 
+            : [];
+            
+        // First try exact match
+        if (packages.includes(importPath)) {
+            return importPath
+        }
+        
+        // Then try sub-path matches
+        for (const pkg of packages) {
+            // Check if import path starts with package name followed by '/'
+            if (importPath.startsWith(pkg + '/')) {
+                return pkg
+            }
+        }
+        
+        return null
+    }
+
+    extractComponentNameFromPath(importPath) {
+        // Extract component name from paths like '@mui/material/Button' -> 'Button'
+        const parts = importPath.split('/')
+        const lastPart = parts[parts.length - 1]
+        
+        // Handle special cases
+        if (lastPart === 'index' && parts.length > 1) {
+            return parts[parts.length - 2]
+        }
+        
+        return lastPart || 'Unknown'
+    }
+
     analyzeFile(fileInfo, api) {
         try {
             const j = api.jscodeshift
@@ -74,8 +109,9 @@ class ImportAnalyzer {
                 }
                 
                 // Check if the import path matches any of the packages to track
-                if (Array.from(this.config.packagesToTrack).some(pkg => importPath === pkg)) {
-                    this.processImport(path.node, importPath)
+                const matchedPackage = this.findMatchingPackage(importPath)
+                if (matchedPackage) {
+                    this.processImport(path.node, matchedPackage, importPath)
                 }
             })
 
@@ -84,7 +120,7 @@ class ImportAnalyzer {
 
             // Save results only if we have tracked package usage
             const hasTrackedUsage = Object.values(this.usageMap).some(pkg => 
-                Object.keys(pkg).length > 0
+                Object.values(pkg).some(usage => usage.used > 0)
             )
             
             if (hasTrackedUsage) {
@@ -96,28 +132,106 @@ class ImportAnalyzer {
         }
     }
 
-    processImport(importNode, pkgName) {
+    processImport(importNode, pkgName, importPath) {
         try {
             importNode.specifiers.forEach(specifier => {
-                const importedName = specifier.imported?.name
-                const localName = specifier.local?.name
-                
-                if (importedName && localName) {
-                    this.componentMap[localName] = {
-                        originalName: importedName,
-                        package: pkgName
-                    }
+                // Handle named imports (import { Button } from 'package')
+                if (specifier.type === 'ImportSpecifier') {
+                    const importedName = specifier.imported?.name
+                    const localName = specifier.local?.name
+                    
+                    if (importedName && localName) {
+                        this.componentMap[localName] = {
+                            originalName: importedName,
+                            package: pkgName,
+                            importType: 'named'
+                        }
 
-                    if (!this.usageMap[pkgName][importedName]) {
-                        this.usageMap[pkgName][importedName] = {
-                            imported: 1,
-                            used: 0,
-                            withClassName: 0,
-                            withoutClassName: 0,
-                            withStyle: 0,
-                            withRef: 0,
-                            withProps: 0,
-                            totalUsage: 0
+                        if (!this.usageMap[pkgName][importedName]) {
+                            this.usageMap[pkgName][importedName] = {
+                                imported: 1,
+                                used: 0,
+                                withClassName: 0,
+                                withoutClassName: 0,
+                                withStyle: 0,
+                                withRef: 0,
+                                withProps: 0,
+                                totalUsage: 0
+                            }
+                        }
+                    }
+                }
+                // Handle default imports (import Button from '@mui/material/Button')
+                else if (specifier.type === 'ImportDefaultSpecifier') {
+                    const localName = specifier.local?.name
+                    
+                    if (localName) {
+                        // Extract component name from import path
+                        const componentName = this.extractComponentNameFromPath(importPath)
+                        
+                        this.componentMap[localName] = {
+                            originalName: componentName,
+                            package: pkgName,
+                            importType: 'default',
+                            localName: localName
+                        }
+
+                        // Track as the actual component name
+                        if (!this.usageMap[pkgName][componentName]) {
+                            this.usageMap[pkgName][componentName] = {
+                                imported: 1,
+                                used: 0,
+                                withClassName: 0,
+                                withoutClassName: 0,
+                                withStyle: 0,
+                                withRef: 0,
+                                withProps: 0,
+                                totalUsage: 0,
+                                importType: 'default'
+                            }
+                        } else {
+                            this.usageMap[pkgName][componentName].imported++
+                        }
+                    }
+                }
+                // Handle namespace imports (import * as React from 'package')
+                else if (specifier.type === 'ImportNamespaceSpecifier') {
+                    const localName = specifier.local?.name
+                    
+                    if (localName) {
+                        this.componentMap[localName] = {
+                            originalName: '*',
+                            package: pkgName,
+                            importType: 'namespace',
+                            localName: localName
+                        }
+
+                        // Note: Actual tracking happens in trackNamespaceUsage when members are used
+                    }
+                }
+                // Fallback for legacy code compatibility (non-typed specifiers)
+                else {
+                    const importedName = specifier.imported?.name
+                    const localName = specifier.local?.name
+                    
+                    if (importedName && localName) {
+                        this.componentMap[localName] = {
+                            originalName: importedName,
+                            package: pkgName,
+                            importType: 'named'
+                        }
+
+                        if (!this.usageMap[pkgName][importedName]) {
+                            this.usageMap[pkgName][importedName] = {
+                                imported: 1,
+                                used: 0,
+                                withClassName: 0,
+                                withoutClassName: 0,
+                                withStyle: 0,
+                                withRef: 0,
+                                withProps: 0,
+                                totalUsage: 0
+                            }
                         }
                     }
                 }
@@ -131,11 +245,70 @@ class ImportAnalyzer {
     trackComponentUsage(root, j) {
         try {
             Object.entries(this.componentMap).forEach(([localName, info]) => {
-                const { originalName, package: pkgName } = info
+                const { originalName, package: pkgName, importType } = info
                 
-                // Ensure the component is initialized with props tracking
-                if (!this.usageMap[pkgName][originalName].props) {
-                    this.usageMap[pkgName][originalName].props = {
+                // Handle different import types
+                if (importType === 'namespace') {
+                    this.trackNamespaceUsage(root, j, localName, pkgName)
+                } else if (importType === 'default') {
+                    // Default imports are now tracked as regular components by their actual names
+                    this.trackNamedImportUsage(root, j, localName, originalName, pkgName)
+                } else {
+                    // Handle named imports (legacy and new)
+                    this.trackNamedImportUsage(root, j, localName, originalName, pkgName)
+                }
+            })
+        } catch (error) {
+            this.logger.error(`Error tracking component usage in ${this.currentFile}`, error)
+            throw error
+        }
+    }
+
+    trackNamedImportUsage(root, j, localName, originalName, pkgName) {
+        // Ensure the component is initialized with props tracking
+        if (!this.usageMap[pkgName][originalName].props) {
+            this.usageMap[pkgName][originalName].props = {
+                total: 0,
+                unique: new Set(),
+                details: {},
+                categories: {}
+            }
+        }
+        
+        // Track JSX element usage - including both opening/closing and self-closing elements
+        // This handles: <Button prop1="value" prop2={value} />
+        const jsxElements = [
+            ...root.find(j.JSXElement, {
+                openingElement: { name: { name: localName } }
+            }).nodes(),
+            ...root.find(j.JSXOpeningElement, {
+                name: { name: localName },
+                selfClosing: true
+            }).nodes().map(node => ({ openingElement: node }))
+        ]
+
+        jsxElements.forEach(node => {
+            const usage = this.usageMap[pkgName][originalName]
+            usage.used++
+            usage.totalUsage++
+
+            // Get attributes from opening element
+            const attributes = node.openingElement.attributes || []
+            if (attributes.length > 0) {
+                this.analyzeAttributes(usage, attributes)
+            }
+            
+            // Check for children between tags (React's implicit children prop)
+            if (node.children && node.children.length > 0) {
+                // Mark that this component has children
+                if (!usage.withChildren) {
+                    usage.withChildren = 0
+                }
+                usage.withChildren++
+                
+                // Also track it as a prop for consistency
+                if (!usage.props) {
+                    usage.props = {
                         total: 0,
                         unique: new Set(),
                         details: {},
@@ -143,114 +316,132 @@ class ImportAnalyzer {
                     }
                 }
                 
-                // Track JSX element usage - including both opening/closing and self-closing elements
-                // This handles: <Button prop1="value" prop2={value} />
-                const jsxElements = [
-                    ...root.find(j.JSXElement, {
-                        openingElement: { name: { name: localName } }
-                    }).nodes(),
-                    ...root.find(j.JSXOpeningElement, {
-                        name: { name: localName },
-                        selfClosing: true
-                    }).nodes().map(node => ({ openingElement: node }))
-                ]
-
-                jsxElements.forEach(node => {
-                    const usage = this.usageMap[pkgName][originalName]
-                    usage.used++
-                    usage.totalUsage++
-
-                    // Get attributes from opening element
-                    const attributes = node.openingElement.attributes || []
-                    if (attributes.length > 0) {
-                        this.analyzeAttributes(usage, attributes)
-                    }
-                    
-                    // Check for children between tags (React's implicit children prop)
-                    if (node.children && node.children.length > 0) {
-                        // Mark that this component has children
-                        if (!usage.withChildren) {
-                            usage.withChildren = 0
-                        }
-                        usage.withChildren++
-                        
-                        // Also track it as a prop for consistency
-                        if (!usage.props) {
-                            usage.props = {
-                                total: 0,
-                                unique: new Set(),
-                                details: {},
-                                categories: {}
-                            }
-                        }
-                        
-                        usage.props.unique.add('children')
-                        if (!usage.props.details['children']) {
-                            usage.props.details['children'] = 0
-                        }
-                        usage.props.details['children']++
-                        usage.props.total++
-                        
-                        // Track children types
-                        if (!usage.childrenTypes) {
-                            usage.childrenTypes = {}
-                        }
-                        
-                        // Count different types of children
-                        node.children.forEach(child => {
-                            const childType = child.type || 'unknown'
-                            if (!usage.childrenTypes[childType]) {
-                                usage.childrenTypes[childType] = 0
-                            }
-                            usage.childrenTypes[childType]++
-                        })
-                    }
-                })
+                usage.props.unique.add('children')
+                if (!usage.props.details['children']) {
+                    usage.props.details['children'] = 0
+                }
+                usage.props.details['children']++
+                usage.props.total++
                 
-                // Also track JSX elements with member expressions (e.g., Component.SubComponent)
-                root.find(j.JSXOpeningElement, {
-                    name: { 
-                        type: 'JSXMemberExpression',
-                        object: { name: localName }
-                    }
-                }).forEach(path => {
-                    const usage = this.usageMap[pkgName][originalName]
-                    usage.used++
-                    usage.totalUsage++
-                    
-                    const attributes = path.node.attributes || []
-                    this.analyzeAttributes(usage, attributes)
-                })
+                // Track children types
+                if (!usage.childrenTypes) {
+                    usage.childrenTypes = {}
+                }
                 
-                // Track function calls but don't process props from them
-                root.find(j.CallExpression, {
-                    callee: { name: localName }
-                }).forEach(path => {
-                    const usage = this.usageMap[pkgName][originalName]
-                    usage.used++
-                    usage.totalUsage++
-                    
-                    // Track function argument patterns (but not as props)
-                    if (!usage.args) {
-                        usage.args = { count: 0, patterns: {} }
+                // Count different types of children
+                node.children.forEach(child => {
+                    const childType = child.type || 'unknown'
+                    if (!usage.childrenTypes[childType]) {
+                        usage.childrenTypes[childType] = 0
                     }
-                    
-                    usage.args.count++
-                    const argCount = path.node.arguments.length
-                    const pattern = argCount === 0 ? 'noArgs' : 
-                        argCount === 1 ? 'oneArg' : 'multipleArgs'
-                    
-                    if (!usage.args.patterns[pattern]) {
-                        usage.args.patterns[pattern] = 0
-                    }
-                    usage.args.patterns[pattern]++
+                    usage.childrenTypes[childType]++
                 })
-            })
-        } catch (error) {
-            this.logger.error(`Error tracking component usage in ${this.currentFile}`, error)
-            throw error
-        }
+            }
+        })
+        
+        // Also track JSX elements with member expressions (e.g., Component.SubComponent)
+        root.find(j.JSXOpeningElement, {
+            name: { 
+                type: 'JSXMemberExpression',
+                object: { name: localName }
+            }
+        }).forEach(path => {
+            const usage = this.usageMap[pkgName][originalName]
+            usage.used++
+            usage.totalUsage++
+            
+            const attributes = path.node.attributes || []
+            this.analyzeAttributes(usage, attributes)
+        })
+        
+        // Track function calls but don't process props from them
+        root.find(j.CallExpression, {
+            callee: { name: localName }
+        }).forEach(path => {
+            const usage = this.usageMap[pkgName][originalName]
+            usage.used++
+            usage.totalUsage++
+            
+            // Track function argument patterns (but not as props)
+            if (!usage.args) {
+                usage.args = { count: 0, patterns: {} }
+            }
+            
+            usage.args.count++
+            const argCount = path.node.arguments.length
+            const pattern = argCount === 0 ? 'noArgs' : 
+                argCount === 1 ? 'oneArg' : 'multipleArgs'
+            
+            if (!usage.args.patterns[pattern]) {
+                usage.args.patterns[pattern] = 0
+            }
+            usage.args.patterns[pattern]++
+        })
     }
+
+    trackNamespaceUsage(root, j, localName, pkgName) {
+        // Track namespace member access in JSX (e.g., <MUI.Button />)
+        root.find(j.JSXOpeningElement, {
+            name: { 
+                type: 'JSXMemberExpression',
+                object: { name: localName }
+            }
+        }).forEach(path => {
+            const memberName = path.node.name.property.name
+            
+            // Track this as the actual component (Button, not *)
+            if (!this.usageMap[pkgName][memberName]) {
+                this.usageMap[pkgName][memberName] = {
+                    imported: 1,
+                    used: 0,
+                    withClassName: 0,
+                    withoutClassName: 0,
+                    withStyle: 0,
+                    withRef: 0,
+                    withProps: 0,
+                    totalUsage: 0,
+                    importType: 'namespace'
+                }
+            }
+            
+            const usage = this.usageMap[pkgName][memberName]
+            usage.used++
+            usage.totalUsage++
+            
+            const attributes = path.node.attributes || []
+            this.analyzeAttributes(usage, attributes)
+        })
+
+        // Track namespace member access in function calls (e.g., React.createElement())
+        root.find(j.CallExpression, {
+            callee: { 
+                type: 'MemberExpression',
+                object: { name: localName }
+            }
+        }).forEach(path => {
+            const memberName = path.node.callee.property.name
+            
+            // Track this as the actual component
+            if (!this.usageMap[pkgName][memberName]) {
+                this.usageMap[pkgName][memberName] = {
+                    imported: 1,
+                    used: 0,
+                    withClassName: 0,
+                    withoutClassName: 0,
+                    withStyle: 0,
+                    withRef: 0,
+                    withProps: 0,
+                    totalUsage: 0,
+                    importType: 'namespace'
+                }
+            }
+            
+            const usage = this.usageMap[pkgName][memberName]
+            usage.used++
+            usage.totalUsage++
+        })
+    }
+
 
     // Add a helper method to categorize props
     categorizeProp(propName) {
@@ -799,6 +990,10 @@ class ImportAnalyzer {
                 }
                 if (componentUsage.classNames) {
                     componentUsage.classNames = Array.from(componentUsage.classNames)
+                }
+                // Handle new Sets for namespace and default imports
+                if (componentUsage.localNames) {
+                    componentUsage.localNames = Array.from(componentUsage.localNames)
                 }
             })
         })
