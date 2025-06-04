@@ -4,6 +4,21 @@
       "path": "src/index.js",
       "componentsUsed": [
         {
+          "name": "ThemeProvider",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "theme",
+            "children"
+          ]
+        },
+        {
+          "name": "createTheme",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": []
+        },
+        {
           "name": "CssBaseline",
           "package": "@mui/material",
           "usageCount": 2,
@@ -52,6 +67,15 @@
             "height",
             "children"
           ]
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "sx"
+          ]
         }
       ]
     },
@@ -83,7 +107,7 @@
         {
           "name": "Grid",
           "package": "@mui/material",
-          "usageCount": 8,
+          "usageCount": 9,
           "props": [
             "container",
             "spacing",
@@ -111,6 +135,22 @@
             "direction",
             "spacing",
             "children"
+          ]
+        },
+        {
+          "name": "Divider",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "sx"
+          ]
+        },
+        {
+          "name": "Alert",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "severity"
           ]
         }
       ]
@@ -717,12 +757,212 @@
       ]
     },
     {
+      "path": "src/components/ImportShowcase.jsx",
+      "componentsUsed": [
+        {
+          "name": "Button",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "variant",
+            "children"
+          ]
+        },
+        {
+          "name": "TextField",
+          "package": "@mui/material",
+          "usageCount": 2,
+          "props": [
+            "label",
+            "sx"
+          ]
+        },
+        {
+          "name": "Paper",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Typography",
+          "package": "@mui/material",
+          "usageCount": 4,
+          "props": [
+            "variant",
+            "gutterBottom",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 3,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "Stack",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "spacing",
+            "children"
+          ]
+        },
+        {
+          "name": "Alert",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "severity",
+            "children"
+          ]
+        },
+        {
+          "name": "Grid",
+          "package": "@mui/material",
+          "usageCount": 3,
+          "props": [
+            "container",
+            "spacing",
+            "children",
+            "item",
+            "xs"
+          ]
+        },
+        {
+          "name": "IconButton",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "children"
+          ]
+        },
+        {
+          "name": "Tooltip",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "title",
+            "children"
+          ]
+        },
+        {
+          "name": "Badge",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "colorScheme",
+            "children"
+          ]
+        },
+        {
+          "name": "Tag",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "colorScheme",
+            "children"
+          ]
+        },
+        {
+          "name": "useDisclosure",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": []
+        },
+        {
+          "name": "Box",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "display",
+            "ml"
+          ]
+        },
+        {
+          "name": "VStack",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "align",
+            "spacing"
+          ]
+        },
+        {
+          "name": "Heading",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "size"
+          ]
+        },
+        {
+          "name": "HStack",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": []
+        },
+        {
+          "name": "Modal",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "isOpen",
+            "onClose"
+          ]
+        },
+        {
+          "name": "ModalOverlay",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": []
+        },
+        {
+          "name": "ModalContent",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": []
+        },
+        {
+          "name": "ModalHeader",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": []
+        },
+        {
+          "name": "ModalBody",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": []
+        },
+        {
+          "name": "Button",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
       "path": "src/components/ui/TextField.jsx",
       "componentsUsed": [
         {
           "name": "TextField",
           "package": "@mui/material",
           "usageCount": 0,
+          "props": []
+        },
+        {
+          "name": "styled",
+          "package": "@mui/material",
+          "usageCount": 1,
           "props": []
         }
       ]
@@ -876,6 +1116,14 @@
           "package": "@chakra-ui/react",
           "usageCount": 2,
           "props": []
+        },
+        {
+          "name": "Divider",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "mt"
+          ]
         }
       ]
     },
@@ -886,6 +1134,18 @@
           "name": "Button",
           "package": "@mui/material",
           "usageCount": 0,
+          "props": []
+        },
+        {
+          "name": "styled",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": []
+        },
+        {
+          "name": "Icon",
+          "package": "@mui/material",
+          "usageCount": 1,
           "props": []
         }
       ]
@@ -1447,6 +1707,12 @@
           ]
         },
         {
+          "name": "styled",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": []
+        },
+        {
           "name": "Box",
           "package": "@chakra-ui/react",
           "usageCount": 1,
@@ -1590,22 +1856,47 @@
           "package": "@mui/material",
           "usageCount": 2,
           "props": [
+            "color",
             "variant",
             "gutterBottom",
-            "children",
-            "color"
+            "children"
+          ]
+        },
+        {
+          "name": "Paper",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "elevation",
+            "sx",
+            "children"
+          ]
+        },
+        {
+          "name": "Box",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "height",
+            "display",
+            "justifyContent",
+            "alignItems"
+          ]
+        },
+        {
+          "name": "Divider",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "sx"
           ]
         },
         {
           "name": "Box",
           "package": "@chakra-ui/react",
-          "usageCount": 2,
+          "usageCount": 1,
           "props": [
-            "children",
-            "height",
-            "display",
-            "justifyContent",
-            "alignItems"
+            "children"
           ]
         },
         {
@@ -1647,6 +1938,22 @@
           "props": [
             "color",
             "children"
+          ]
+        },
+        {
+          "name": "HStack",
+          "package": "@chakra-ui/react",
+          "usageCount": 1,
+          "props": [
+            "spacing"
+          ]
+        },
+        {
+          "name": "Badge",
+          "package": "@chakra-ui/react",
+          "usageCount": 2,
+          "props": [
+            "colorScheme"
           ]
         }
       ]
@@ -2109,6 +2416,21 @@
       "path": "src/components/common/ComponentLibraryProvider.jsx",
       "componentsUsed": [
         {
+          "name": "ThemeProvider",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": [
+            "theme",
+            "children"
+          ]
+        },
+        {
+          "name": "createTheme",
+          "package": "@mui/material",
+          "usageCount": 1,
+          "props": []
+        },
+        {
           "name": "ChakraProvider",
           "package": "@chakra-ui/react",
           "usageCount": 1,
@@ -2342,6 +2664,66 @@
   ],
   "components": [
     {
+      "name": "ThemeProvider",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 2,
+      "fileCount": 2,
+      "files": [
+        "src/index.js",
+        "src/components/common/ComponentLibraryProvider.jsx"
+      ],
+      "props": {
+        "total": 4,
+        "unique": [
+          "theme",
+          "children"
+        ],
+        "details": {
+          "theme": 2,
+          "children": 2
+        },
+        "categories": {
+          "styling": {
+            "count": 2,
+            "props": {
+              "theme": 2
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "theme"
+          ],
+          "files": [
+            "src/index.js",
+            "src/components/common/ComponentLibraryProvider.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createTheme",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 2,
+      "fileCount": 2,
+      "files": [
+        "src/index.js",
+        "src/components/common/ComponentLibraryProvider.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
       "name": "CssBaseline",
       "package": "@mui/material",
       "totalImports": 2,
@@ -2468,9 +2850,9 @@
     {
       "name": "Box",
       "package": "@mui/material",
-      "totalImports": 13,
-      "totalUsages": 20,
-      "fileCount": 13,
+      "totalImports": 15,
+      "totalUsages": 24,
+      "fileCount": 15,
       "files": [
         "src/App.jsx",
         "src/pages/Home.jsx",
@@ -2480,14 +2862,16 @@
         "src/pages/auth/Signup.jsx",
         "src/pages/auth/forms/SignupForm.jsx",
         "src/hooks/custom/useDynamicComponent.js",
+        "src/components/ImportShowcase.jsx",
         "src/components/ui/BaseCard.jsx",
         "src/components/layouts/containers/Panel.jsx",
         "src/components/dashboard/MainDashboard.jsx",
+        "src/components/dashboard/Dashboard.jsx",
         "src/components/composite/ControlHub.jsx",
         "src/components/common/LibrarySwitcher.jsx"
       ],
       "props": {
-        "total": 56,
+        "total": 63,
         "unique": [
           "display",
           "justifyContent",
@@ -2506,11 +2890,11 @@
           "gap"
         ],
         "details": {
-          "display": 5,
-          "justifyContent": 4,
-          "alignItems": 4,
-          "height": 2,
-          "children": 20,
+          "display": 6,
+          "justifyContent": 5,
+          "alignItems": 5,
+          "height": 3,
+          "children": 23,
           "mt": 4,
           "p": 4,
           "minHeight": 1,
@@ -2524,10 +2908,10 @@
         },
         "categories": {
           "other": {
-            "count": 26,
+            "count": 28,
             "props": {
-              "display": 5,
-              "justifyContent": 4,
+              "display": 6,
+              "justifyContent": 5,
               "mt": 4,
               "p": 4,
               "border": 1,
@@ -2537,10 +2921,10 @@
             }
           },
           "customization": {
-            "count": 10,
+            "count": 12,
             "props": {
-              "alignItems": 4,
-              "height": 2,
+              "alignItems": 5,
+              "height": 3,
               "minHeight": 1,
               "bgcolor": 1,
               "textAlign": 1,
@@ -2628,6 +3012,7 @@
           ],
           "files": [
             "src/pages/auth/forms/SignupForm.jsx",
+            "src/components/ImportShowcase.jsx",
             "src/components/layouts/containers/Panel.jsx"
           ]
         },
@@ -2655,6 +3040,17 @@
         },
         {
           "propSet": [
+            "alignItems",
+            "display",
+            "height",
+            "justifyContent"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
             "children",
             "display",
             "gap",
@@ -2662,6 +3058,195 @@
           ],
           "files": [
             "src/components/composite/ControlHub.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Typography",
+      "package": "@mui/material",
+      "totalImports": 21,
+      "totalUsages": 31,
+      "fileCount": 21,
+      "files": [
+        "src/App.jsx",
+        "src/pages/Home.jsx",
+        "src/pages/DynamicComponentDemo.jsx",
+        "src/pages/dashboard/LazyDashboard.jsx",
+        "src/pages/dashboard/EnhancedDashboard.jsx",
+        "src/components/ImportShowcase.jsx",
+        "src/components/ui/AdvancedPanel.jsx",
+        "src/components/settings/SettingsPanel.jsx",
+        "src/components/layouts/MainLayout.jsx",
+        "src/components/layouts/containers/Panel.jsx",
+        "src/components/dashboard/UserSummary.jsx",
+        "src/components/dashboard/StatsSummary.jsx",
+        "src/components/dashboard/StatCard.jsx",
+        "src/components/dashboard/MainDashboard.jsx",
+        "src/components/dashboard/Dashboard.jsx",
+        "src/components/dashboard/ActivityFeed.jsx",
+        "src/components/composite/ManagementHub.jsx",
+        "src/components/composite/DashboardHub.jsx",
+        "src/components/composite/AdminPanel.jsx",
+        "src/components/common/DataDisplay.jsx",
+        "src/components/analytics/AnalyticsDashboard.jsx"
+      ],
+      "props": {
+        "total": 80,
+        "unique": [
+          "variant",
+          "sx",
+          "component",
+          "gutterBottom",
+          "children",
+          "paragraph",
+          "color"
+        ],
+        "details": {
+          "variant": 26,
+          "sx": 4,
+          "component": 7,
+          "gutterBottom": 9,
+          "children": 29,
+          "paragraph": 3,
+          "color": 2
+        },
+        "categories": {
+          "customization": {
+            "count": 28,
+            "props": {
+              "variant": 26,
+              "color": 2
+            }
+          },
+          "other": {
+            "count": 16,
+            "props": {
+              "sx": 4,
+              "gutterBottom": 9,
+              "paragraph": 3
+            }
+          },
+          "composition": {
+            "count": 7,
+            "props": {
+              "component": 7
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "sx",
+            "variant"
+          ],
+          "files": [
+            "src/App.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "component",
+            "gutterBottom",
+            "paragraph",
+            "variant"
+          ],
+          "files": [
+            "src/pages/Home.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "component",
+            "gutterBottom",
+            "variant"
+          ],
+          "files": [
+            "src/pages/DynamicComponentDemo.jsx",
+            "src/pages/dashboard/LazyDashboard.jsx",
+            "src/components/layouts/containers/Panel.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "gutterBottom",
+            "variant"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx",
+            "src/components/composite/ManagementHub.jsx",
+            "src/components/composite/AdminPanel.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "color",
+            "variant"
+          ],
+          "files": [
+            "src/components/ui/AdvancedPanel.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "variant"
+          ],
+          "files": [
+            "src/components/settings/SettingsPanel.jsx",
+            "src/components/dashboard/UserSummary.jsx",
+            "src/components/dashboard/MainDashboard.jsx",
+            "src/components/dashboard/ActivityFeed.jsx",
+            "src/components/composite/DashboardHub.jsx",
+            "src/components/analytics/AnalyticsDashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "component",
+            "sx",
+            "variant"
+          ],
+          "files": [
+            "src/components/layouts/MainLayout.jsx",
+            "src/components/dashboard/StatCard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "sx",
+            "variant"
+          ],
+          "files": [
+            "src/components/dashboard/StatsSummary.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "color",
+            "gutterBottom",
+            "variant"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "component",
+            "variant"
+          ],
+          "files": [
+            "src/components/common/DataDisplay.jsx"
           ]
         }
       ]
@@ -2728,199 +3313,23 @@
       ]
     },
     {
-      "name": "Typography",
-      "package": "@mui/material",
-      "totalImports": 19,
-      "totalUsages": 26,
-      "fileCount": 19,
-      "files": [
-        "src/pages/Home.jsx",
-        "src/pages/DynamicComponentDemo.jsx",
-        "src/pages/dashboard/LazyDashboard.jsx",
-        "src/pages/dashboard/EnhancedDashboard.jsx",
-        "src/components/ui/AdvancedPanel.jsx",
-        "src/components/settings/SettingsPanel.jsx",
-        "src/components/layouts/MainLayout.jsx",
-        "src/components/layouts/containers/Panel.jsx",
-        "src/components/dashboard/UserSummary.jsx",
-        "src/components/dashboard/StatsSummary.jsx",
-        "src/components/dashboard/StatCard.jsx",
-        "src/components/dashboard/MainDashboard.jsx",
-        "src/components/dashboard/Dashboard.jsx",
-        "src/components/dashboard/ActivityFeed.jsx",
-        "src/components/composite/ManagementHub.jsx",
-        "src/components/composite/DashboardHub.jsx",
-        "src/components/composite/AdminPanel.jsx",
-        "src/components/common/DataDisplay.jsx",
-        "src/components/analytics/AnalyticsDashboard.jsx"
-      ],
-      "props": {
-        "total": 70,
-        "unique": [
-          "variant",
-          "component",
-          "gutterBottom",
-          "children",
-          "paragraph",
-          "color",
-          "sx"
-        ],
-        "details": {
-          "variant": 21,
-          "component": 7,
-          "gutterBottom": 8,
-          "children": 26,
-          "paragraph": 3,
-          "color": 2,
-          "sx": 3
-        },
-        "categories": {
-          "customization": {
-            "count": 23,
-            "props": {
-              "variant": 21,
-              "color": 2
-            }
-          },
-          "composition": {
-            "count": 7,
-            "props": {
-              "component": 7
-            }
-          },
-          "other": {
-            "count": 14,
-            "props": {
-              "gutterBottom": 8,
-              "paragraph": 3,
-              "sx": 3
-            }
-          }
-        }
-      },
-      "propSetsByComponent": [
-        {
-          "propSet": [
-            "children",
-            "component",
-            "gutterBottom",
-            "paragraph",
-            "variant"
-          ],
-          "files": [
-            "src/pages/Home.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "component",
-            "gutterBottom",
-            "variant"
-          ],
-          "files": [
-            "src/pages/DynamicComponentDemo.jsx",
-            "src/pages/dashboard/LazyDashboard.jsx",
-            "src/components/layouts/containers/Panel.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "color",
-            "variant"
-          ],
-          "files": [
-            "src/components/ui/AdvancedPanel.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "variant"
-          ],
-          "files": [
-            "src/components/settings/SettingsPanel.jsx",
-            "src/components/dashboard/UserSummary.jsx",
-            "src/components/dashboard/MainDashboard.jsx",
-            "src/components/dashboard/ActivityFeed.jsx",
-            "src/components/composite/DashboardHub.jsx",
-            "src/components/analytics/AnalyticsDashboard.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "component",
-            "sx",
-            "variant"
-          ],
-          "files": [
-            "src/components/layouts/MainLayout.jsx",
-            "src/components/dashboard/StatCard.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "sx",
-            "variant"
-          ],
-          "files": [
-            "src/components/dashboard/StatsSummary.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "color",
-            "gutterBottom",
-            "variant"
-          ],
-          "files": [
-            "src/components/dashboard/Dashboard.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "gutterBottom",
-            "variant"
-          ],
-          "files": [
-            "src/components/composite/ManagementHub.jsx",
-            "src/components/composite/AdminPanel.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "component",
-            "variant"
-          ],
-          "files": [
-            "src/components/common/DataDisplay.jsx"
-          ]
-        }
-      ]
-    },
-    {
       "name": "Grid",
       "package": "@mui/material",
-      "totalImports": 7,
-      "totalUsages": 32,
-      "fileCount": 7,
+      "totalImports": 8,
+      "totalUsages": 36,
+      "fileCount": 8,
       "files": [
         "src/pages/Home.jsx",
         "src/pages/DynamicComponentDemo.jsx",
         "src/pages/profile/ProfilePage.jsx",
         "src/pages/dashboard/LazyDashboard.jsx",
         "src/pages/dashboard/EnhancedDashboard.jsx",
+        "src/components/ImportShowcase.jsx",
         "src/components/dashboard/Dashboard.jsx",
         "src/components/analytics/AnalyticsDashboard.jsx"
       ],
       "props": {
-        "total": 117,
+        "total": 129,
         "unique": [
           "container",
           "spacing",
@@ -2932,30 +3341,30 @@
           "mb"
         ],
         "details": {
-          "container": 8,
-          "spacing": 8,
-          "children": 32,
-          "item": 24,
-          "xs": 24,
+          "container": 9,
+          "spacing": 9,
+          "children": 36,
+          "item": 27,
+          "xs": 27,
           "md": 19,
           "mt": 1,
           "mb": 1
         },
         "categories": {
           "other": {
-            "count": 34,
+            "count": 38,
             "props": {
-              "container": 8,
-              "item": 24,
+              "container": 9,
+              "item": 27,
               "mt": 1,
               "mb": 1
             }
           },
           "customization": {
-            "count": 51,
+            "count": 55,
             "props": {
-              "spacing": 8,
-              "xs": 24,
+              "spacing": 9,
+              "xs": 27,
               "md": 19
             }
           }
@@ -3001,7 +3410,8 @@
             "xs"
           ],
           "files": [
-            "src/pages/profile/ProfilePage.jsx"
+            "src/pages/profile/ProfilePage.jsx",
+            "src/components/ImportShowcase.jsx"
           ]
         },
         {
@@ -3023,15 +3433,16 @@
     {
       "name": "Stack",
       "package": "@mui/material",
-      "totalImports": 2,
-      "totalUsages": 3,
-      "fileCount": 2,
+      "totalImports": 3,
+      "totalUsages": 4,
+      "fileCount": 3,
       "files": [
         "src/pages/Home.jsx",
-        "src/pages/auth/forms/SignupForm.jsx"
+        "src/pages/auth/forms/SignupForm.jsx",
+        "src/components/ImportShowcase.jsx"
       ],
       "props": {
-        "total": 8,
+        "total": 10,
         "unique": [
           "direction",
           "spacing",
@@ -3039,15 +3450,15 @@
         ],
         "details": {
           "direction": 2,
-          "spacing": 3,
-          "children": 3
+          "spacing": 4,
+          "children": 4
         },
         "categories": {
           "customization": {
-            "count": 5,
+            "count": 6,
             "props": {
               "direction": 2,
-              "spacing": 3
+              "spacing": 4
             }
           }
         }
@@ -3069,7 +3480,104 @@
             "spacing"
           ],
           "files": [
-            "src/pages/auth/forms/SignupForm.jsx"
+            "src/pages/auth/forms/SignupForm.jsx",
+            "src/components/ImportShowcase.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Divider",
+      "package": "@mui/material",
+      "totalImports": 8,
+      "totalUsages": 14,
+      "fileCount": 8,
+      "files": [
+        "src/pages/Home.jsx",
+        "src/pages/dashboard/EnhancedDashboard.jsx",
+        "src/components/ui/IntermediatePanel.jsx",
+        "src/components/dashboard/Dashboard.jsx",
+        "src/components/composite/DashboardHub.jsx",
+        "src/components/common/DataDisplay.jsx",
+        "src/components/common/ActionCard.jsx",
+        "src/components/analytics/AnalyticsDashboard.jsx"
+      ],
+      "props": {
+        "total": 6,
+        "unique": [
+          "sx"
+        ],
+        "details": {
+          "sx": 6
+        },
+        "categories": {
+          "other": {
+            "count": 6,
+            "props": {
+              "sx": 6
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "sx"
+          ],
+          "files": [
+            "src/pages/Home.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/components/dashboard/Dashboard.jsx",
+            "src/components/common/ActionCard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alert",
+      "package": "@mui/material",
+      "totalImports": 2,
+      "totalUsages": 2,
+      "fileCount": 2,
+      "files": [
+        "src/pages/Home.jsx",
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 3,
+        "unique": [
+          "severity",
+          "children"
+        ],
+        "details": {
+          "severity": 2,
+          "children": 1
+        },
+        "categories": {
+          "other": {
+            "count": 2,
+            "props": {
+              "severity": 2
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "severity"
+          ],
+          "files": [
+            "src/pages/Home.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "severity"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
           ]
         }
       ]
@@ -3331,13 +3839,14 @@
     {
       "name": "Paper",
       "package": "@mui/material",
-      "totalImports": 15,
-      "totalUsages": 14,
-      "fileCount": 15,
+      "totalImports": 17,
+      "totalUsages": 16,
+      "fileCount": 17,
       "files": [
         "src/pages/profile/ProfilePage.jsx",
         "src/pages/dashboard/EnhancedDashboard.jsx",
         "src/pages/auth/Signup.jsx",
+        "src/components/ImportShowcase.jsx",
         "src/components/ui/BaseCard.jsx",
         "src/components/ui/AdvancedPanel.jsx",
         "src/components/settings/SettingsPanel.jsx",
@@ -3346,29 +3855,30 @@
         "src/components/dashboard/UserSummary.jsx",
         "src/components/dashboard/StatCard.jsx",
         "src/components/dashboard/MainDashboard.jsx",
+        "src/components/dashboard/Dashboard.jsx",
         "src/components/composite/ManagementHub.jsx",
         "src/components/composite/DashboardHub.jsx",
         "src/components/composite/AdminPanel.jsx",
         "src/components/analytics/AnalyticsDashboard.jsx"
       ],
       "props": {
-        "total": 37,
+        "total": 42,
         "unique": [
           "sx",
           "children",
           "elevation"
         ],
         "details": {
-          "sx": 13,
-          "children": 14,
-          "elevation": 10
+          "sx": 15,
+          "children": 16,
+          "elevation": 11
         },
         "categories": {
           "other": {
-            "count": 23,
+            "count": 26,
             "props": {
-              "sx": 13,
-              "elevation": 10
+              "sx": 15,
+              "elevation": 11
             }
           }
         }
@@ -3381,6 +3891,7 @@
           ],
           "files": [
             "src/pages/profile/ProfilePage.jsx",
+            "src/components/ImportShowcase.jsx",
             "src/components/settings/SettingsPanel.jsx",
             "src/components/dashboard/UserSummary.jsx"
           ]
@@ -3397,6 +3908,7 @@
             "src/components/ui/AdvancedPanel.jsx",
             "src/components/layouts/containers/Panel.jsx",
             "src/components/dashboard/MainDashboard.jsx",
+            "src/components/dashboard/Dashboard.jsx",
             "src/components/composite/ManagementHub.jsx",
             "src/components/composite/DashboardHub.jsx",
             "src/components/composite/AdminPanel.jsx",
@@ -3512,15 +4024,16 @@
     {
       "name": "Box",
       "package": "@chakra-ui/react",
-      "totalImports": 20,
+      "totalImports": 21,
       "totalUsages": 42,
-      "fileCount": 20,
+      "fileCount": 21,
       "files": [
         "src/pages/profile/ProfilePage.jsx",
         "src/pages/dashboard/EnhancedDashboard.jsx",
         "src/pages/dashboard/DashboardPage.jsx",
         "src/pages/dashboard/widgets/StatWidget.jsx",
         "src/pages/auth/Login.jsx",
+        "src/components/ImportShowcase.jsx",
         "src/components/ui/IntermediatePanel.jsx",
         "src/components/ui/ChakraCard.jsx",
         "src/components/ui/Card.jsx",
@@ -3538,7 +4051,7 @@
         "src/components/analytics/AnalyticsDashboard.jsx"
       ],
       "props": {
-        "total": 103,
+        "total": 100,
         "unique": [
           "p",
           "children",
@@ -3550,13 +4063,12 @@
           "bg",
           "mb",
           "textAlign",
+          "ml",
           "borderRadius",
           "boxShadow",
           "borderWidth",
           "borderColor",
           "overflow",
-          "height",
-          "alignItems",
           "flex",
           "borderBottom",
           "key",
@@ -3565,22 +4077,21 @@
         ],
         "details": {
           "p": 8,
-          "children": 40,
+          "children": 39,
           "display": 7,
-          "justifyContent": 2,
+          "justifyContent": 1,
           "mt": 9,
           "gap": 5,
           "minH": 2,
           "bg": 3,
           "mb": 3,
           "textAlign": 2,
+          "ml": 1,
           "borderRadius": 3,
           "boxShadow": 2,
           "borderWidth": 3,
           "borderColor": 3,
           "overflow": 1,
-          "height": 1,
-          "alignItems": 1,
           "flex": 1,
           "borderBottom": 3,
           "key": 2,
@@ -3593,10 +4104,11 @@
             "props": {
               "p": 8,
               "display": 7,
-              "justifyContent": 2,
+              "justifyContent": 1,
               "mt": 9,
               "bg": 3,
               "mb": 3,
+              "ml": 1,
               "borderRadius": 3,
               "boxShadow": 2,
               "overflow": 1,
@@ -3607,15 +4119,13 @@
             }
           },
           "customization": {
-            "count": 17,
+            "count": 15,
             "props": {
               "gap": 5,
               "minH": 2,
               "textAlign": 2,
               "borderWidth": 3,
-              "borderColor": 3,
-              "height": 1,
-              "alignItems": 1
+              "borderColor": 3
             }
           },
           "identification": {
@@ -3674,11 +4184,21 @@
         },
         {
           "propSet": [
+            "display",
+            "ml"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        },
+        {
+          "propSet": [
             "children"
           ],
           "files": [
             "src/components/ui/IntermediatePanel.jsx",
-            "src/components/dashboard/StatCard.jsx"
+            "src/components/dashboard/StatCard.jsx",
+            "src/components/dashboard/Dashboard.jsx"
           ]
         },
         {
@@ -3754,18 +4274,6 @@
         },
         {
           "propSet": [
-            "alignItems",
-            "children",
-            "display",
-            "height",
-            "justifyContent"
-          ],
-          "files": [
-            "src/components/dashboard/Dashboard.jsx"
-          ]
-        },
-        {
-          "propSet": [
             "borderBottom",
             "borderColor",
             "children",
@@ -3810,12 +4318,13 @@
     {
       "name": "VStack",
       "package": "@chakra-ui/react",
-      "totalImports": 9,
-      "totalUsages": 12,
-      "fileCount": 9,
+      "totalImports": 10,
+      "totalUsages": 13,
+      "fileCount": 10,
       "files": [
         "src/pages/profile/ProfilePage.jsx",
         "src/pages/auth/forms/LoginForm.jsx",
+        "src/components/ImportShowcase.jsx",
         "src/components/ui/IntermediateForm.jsx",
         "src/components/ui/AdvancedPanel.jsx",
         "src/components/settings/SettingsPanel.jsx",
@@ -3825,7 +4334,7 @@
         "src/components/auth/LoginForm.jsx"
       ],
       "props": {
-        "total": 37,
+        "total": 39,
         "unique": [
           "spacing",
           "align",
@@ -3834,18 +4343,18 @@
           "p"
         ],
         "details": {
-          "spacing": 12,
-          "align": 11,
+          "spacing": 13,
+          "align": 12,
           "children": 12,
           "divider": 1,
           "p": 1
         },
         "categories": {
           "customization": {
-            "count": 23,
+            "count": 25,
             "props": {
-              "spacing": 12,
-              "align": 11
+              "spacing": 13,
+              "align": 12
             }
           },
           "other": {
@@ -3877,6 +4386,15 @@
         {
           "propSet": [
             "align",
+            "spacing"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "align",
             "children",
             "divider",
             "spacing"
@@ -3901,13 +4419,14 @@
     {
       "name": "Heading",
       "package": "@chakra-ui/react",
-      "totalImports": 15,
-      "totalUsages": 14,
-      "fileCount": 15,
+      "totalImports": 16,
+      "totalUsages": 15,
+      "fileCount": 16,
       "files": [
         "src/pages/profile/ProfilePage.jsx",
         "src/pages/dashboard/EnhancedDashboard.jsx",
         "src/pages/auth/forms/LoginForm.jsx",
+        "src/components/ImportShowcase.jsx",
         "src/components/ui/ChakraCard.jsx",
         "src/components/ui/BaseCard.jsx",
         "src/components/ui/AdvancedPanel.jsx",
@@ -3922,7 +4441,7 @@
         "src/components/analytics/AnalyticsDashboard.jsx"
       ],
       "props": {
-        "total": 36,
+        "total": 37,
         "unique": [
           "as",
           "size",
@@ -3932,7 +4451,7 @@
         ],
         "details": {
           "as": 5,
-          "size": 13,
+          "size": 14,
           "mb": 2,
           "children": 14,
           "textAlign": 2
@@ -3945,9 +4464,9 @@
             }
           },
           "customization": {
-            "count": 15,
+            "count": 16,
             "props": {
-              "size": 13,
+              "size": 14,
               "textAlign": 2
             }
           },
@@ -3996,6 +4515,14 @@
         },
         {
           "propSet": [
+            "size"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        },
+        {
+          "propSet": [
             "children",
             "mb",
             "size"
@@ -4032,11 +4559,12 @@
     {
       "name": "Button",
       "package": "@mui/material",
-      "totalImports": 6,
-      "totalUsages": 6,
-      "fileCount": 6,
+      "totalImports": 7,
+      "totalUsages": 7,
+      "fileCount": 7,
       "files": [
         "src/pages/dashboard/LazyDashboard.jsx",
+        "src/components/ImportShowcase.jsx",
         "src/components/ui/Button.jsx",
         "src/components/ui/BaseButton.jsx",
         "src/components/ui/AdaptiveButton.jsx",
@@ -4044,7 +4572,7 @@
         "src/components/common/buttons/PrimaryButton.jsx"
       ],
       "props": {
-        "total": 18,
+        "total": 20,
         "unique": [
           "variant",
           "color",
@@ -4053,17 +4581,17 @@
           "size"
         ],
         "details": {
-          "variant": 6,
+          "variant": 7,
           "color": 4,
           "onClick": 1,
-          "children": 6,
+          "children": 7,
           "size": 1
         },
         "categories": {
           "customization": {
-            "count": 11,
+            "count": 12,
             "props": {
-              "variant": 6,
+              "variant": 7,
               "color": 4,
               "size": 1
             }
@@ -4094,6 +4622,7 @@
             "variant"
           ],
           "files": [
+            "src/components/ImportShowcase.jsx",
             "src/components/ui/BaseButton.jsx"
           ]
         },
@@ -4117,49 +4646,6 @@
           "files": [
             "src/components/composite/AdminPanel.jsx",
             "src/components/common/buttons/PrimaryButton.jsx"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Divider",
-      "package": "@mui/material",
-      "totalImports": 6,
-      "totalUsages": 12,
-      "fileCount": 6,
-      "files": [
-        "src/pages/dashboard/EnhancedDashboard.jsx",
-        "src/components/ui/IntermediatePanel.jsx",
-        "src/components/composite/DashboardHub.jsx",
-        "src/components/common/DataDisplay.jsx",
-        "src/components/common/ActionCard.jsx",
-        "src/components/analytics/AnalyticsDashboard.jsx"
-      ],
-      "props": {
-        "total": 4,
-        "unique": [
-          "sx"
-        ],
-        "details": {
-          "sx": 4
-        },
-        "categories": {
-          "other": {
-            "count": 4,
-            "props": {
-              "sx": 4
-            }
-          }
-        }
-      },
-      "propSetsByComponent": [
-        {
-          "propSet": [
-            "sx"
-          ],
-          "files": [
-            "src/pages/dashboard/EnhancedDashboard.jsx",
-            "src/components/common/ActionCard.jsx"
           ]
         }
       ]
@@ -4778,40 +5264,52 @@
     {
       "name": "TextField",
       "package": "@mui/material",
-      "totalImports": 3,
-      "totalUsages": 4,
-      "fileCount": 3,
+      "totalImports": 4,
+      "totalUsages": 6,
+      "fileCount": 4,
       "files": [
+        "src/components/ImportShowcase.jsx",
         "src/components/ui/TextField.jsx",
         "src/components/ui/IntermediateForm.jsx",
         "src/components/common/inputs/TextField.jsx"
       ],
       "props": {
-        "total": 10,
+        "total": 14,
         "unique": [
+          "label",
+          "sx",
           "fullWidth",
           "placeholder",
           "name",
           "variant"
         ],
         "details": {
+          "label": 2,
+          "sx": 2,
           "fullWidth": 4,
           "placeholder": 2,
           "name": 2,
           "variant": 2
         },
         "categories": {
+          "configuration": {
+            "count": 4,
+            "props": {
+              "label": 2,
+              "placeholder": 2
+            }
+          },
+          "other": {
+            "count": 2,
+            "props": {
+              "sx": 2
+            }
+          },
           "customization": {
             "count": 6,
             "props": {
               "fullWidth": 4,
               "variant": 2
-            }
-          },
-          "configuration": {
-            "count": 2,
-            "props": {
-              "placeholder": 2
             }
           },
           "identification": {
@@ -4823,6 +5321,15 @@
         }
       },
       "propSetsByComponent": [
+        {
+          "propSet": [
+            "label",
+            "sx"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        },
         {
           "propSet": [
             "fullWidth",
@@ -4843,6 +5350,471 @@
           ]
         }
       ]
+    },
+    {
+      "name": "IconButton",
+      "package": "@mui/material",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "children"
+        ],
+        "details": {
+          "children": 1
+        },
+        "categories": {}
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "package": "@mui/material",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 2,
+        "unique": [
+          "title",
+          "children"
+        ],
+        "details": {
+          "title": 1,
+          "children": 1
+        },
+        "categories": {
+          "configuration": {
+            "count": 1,
+            "props": {
+              "title": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "title"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Badge",
+      "package": "@chakra-ui/react",
+      "totalImports": 2,
+      "totalUsages": 4,
+      "fileCount": 2,
+      "files": [
+        "src/components/ImportShowcase.jsx",
+        "src/components/dashboard/Dashboard.jsx"
+      ],
+      "props": {
+        "total": 4,
+        "unique": [
+          "colorScheme",
+          "children"
+        ],
+        "details": {
+          "colorScheme": 3,
+          "children": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 3,
+            "props": {
+              "colorScheme": 3
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "colorScheme"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "colorScheme"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tag",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 2,
+      "fileCount": 1,
+      "files": [
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 2,
+        "unique": [
+          "colorScheme",
+          "children"
+        ],
+        "details": {
+          "colorScheme": 1,
+          "children": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 1,
+            "props": {
+              "colorScheme": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "children",
+            "colorScheme"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "useDisclosure",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "HStack",
+      "package": "@chakra-ui/react",
+      "totalImports": 2,
+      "totalUsages": 2,
+      "fileCount": 2,
+      "files": [
+        "src/components/ImportShowcase.jsx",
+        "src/components/dashboard/Dashboard.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "spacing"
+        ],
+        "details": {
+          "spacing": 1
+        },
+        "categories": {
+          "customization": {
+            "count": 1,
+            "props": {
+              "spacing": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "spacing"
+          ],
+          "files": [
+            "src/components/dashboard/Dashboard.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Modal",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 2,
+        "unique": [
+          "isOpen",
+          "onClose"
+        ],
+        "details": {
+          "isOpen": 1,
+          "onClose": 1
+        },
+        "categories": {
+          "stateControl": {
+            "count": 1,
+            "props": {
+              "isOpen": 1
+            }
+          },
+          "eventHandler": {
+            "count": 1,
+            "props": {
+              "onClose": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "isOpen",
+            "onClose"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ModalOverlay",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "ModalContent",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "ModalHeader",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "ModalBody",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ImportShowcase.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "Button",
+      "package": "@chakra-ui/react",
+      "totalImports": 5,
+      "totalUsages": 5,
+      "fileCount": 5,
+      "files": [
+        "src/components/ImportShowcase.jsx",
+        "src/components/ui/ChakraButton.jsx",
+        "src/components/ui/BaseButton.jsx",
+        "src/components/ui/AdaptiveButton.jsx",
+        "src/components/common/buttons/SecondaryButton.jsx"
+      ],
+      "props": {
+        "total": 17,
+        "unique": [
+          "onClick",
+          "variant",
+          "colorScheme",
+          "fontWeight",
+          "borderRadius",
+          "shadow",
+          "_hover",
+          "children",
+          "size"
+        ],
+        "details": {
+          "onClick": 1,
+          "variant": 3,
+          "colorScheme": 4,
+          "fontWeight": 1,
+          "borderRadius": 1,
+          "shadow": 1,
+          "_hover": 1,
+          "children": 4,
+          "size": 1
+        },
+        "categories": {
+          "eventHandler": {
+            "count": 1,
+            "props": {
+              "onClick": 1
+            }
+          },
+          "customization": {
+            "count": 8,
+            "props": {
+              "variant": 3,
+              "colorScheme": 4,
+              "size": 1
+            }
+          },
+          "other": {
+            "count": 4,
+            "props": {
+              "fontWeight": 1,
+              "borderRadius": 1,
+              "shadow": 1,
+              "_hover": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "onClick"
+          ],
+          "files": [
+            "src/components/ImportShowcase.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "_hover",
+            "borderRadius",
+            "children",
+            "colorScheme",
+            "fontWeight",
+            "shadow",
+            "variant"
+          ],
+          "files": [
+            "src/components/ui/ChakraButton.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "colorScheme"
+          ],
+          "files": [
+            "src/components/ui/BaseButton.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "colorScheme",
+            "size",
+            "variant"
+          ],
+          "files": [
+            "src/components/ui/AdaptiveButton.jsx"
+          ]
+        },
+        {
+          "propSet": [
+            "children",
+            "colorScheme",
+            "variant"
+          ],
+          "files": [
+            "src/components/common/buttons/SecondaryButton.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "styled",
+      "package": "@mui/material",
+      "totalImports": 3,
+      "totalUsages": 3,
+      "fileCount": 3,
+      "files": [
+        "src/components/ui/TextField.jsx",
+        "src/components/ui/Button.jsx",
+        "src/components/dashboard/StatCard.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
     },
     {
       "name": "FormControl",
@@ -4915,107 +5887,6 @@
       ]
     },
     {
-      "name": "Button",
-      "package": "@chakra-ui/react",
-      "totalImports": 4,
-      "totalUsages": 4,
-      "fileCount": 4,
-      "files": [
-        "src/components/ui/ChakraButton.jsx",
-        "src/components/ui/BaseButton.jsx",
-        "src/components/ui/AdaptiveButton.jsx",
-        "src/components/common/buttons/SecondaryButton.jsx"
-      ],
-      "props": {
-        "total": 16,
-        "unique": [
-          "variant",
-          "colorScheme",
-          "fontWeight",
-          "borderRadius",
-          "shadow",
-          "_hover",
-          "children",
-          "size"
-        ],
-        "details": {
-          "variant": 3,
-          "colorScheme": 4,
-          "fontWeight": 1,
-          "borderRadius": 1,
-          "shadow": 1,
-          "_hover": 1,
-          "children": 4,
-          "size": 1
-        },
-        "categories": {
-          "customization": {
-            "count": 8,
-            "props": {
-              "variant": 3,
-              "colorScheme": 4,
-              "size": 1
-            }
-          },
-          "other": {
-            "count": 4,
-            "props": {
-              "fontWeight": 1,
-              "borderRadius": 1,
-              "shadow": 1,
-              "_hover": 1
-            }
-          }
-        }
-      },
-      "propSetsByComponent": [
-        {
-          "propSet": [
-            "_hover",
-            "borderRadius",
-            "children",
-            "colorScheme",
-            "fontWeight",
-            "shadow",
-            "variant"
-          ],
-          "files": [
-            "src/components/ui/ChakraButton.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "colorScheme"
-          ],
-          "files": [
-            "src/components/ui/BaseButton.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "colorScheme",
-            "size",
-            "variant"
-          ],
-          "files": [
-            "src/components/ui/AdaptiveButton.jsx"
-          ]
-        },
-        {
-          "propSet": [
-            "children",
-            "colorScheme",
-            "variant"
-          ],
-          "files": [
-            "src/components/common/buttons/SecondaryButton.jsx"
-          ]
-        }
-      ]
-    },
-    {
       "name": "useColorModeValue",
       "package": "@chakra-ui/react",
       "totalImports": 1,
@@ -5023,6 +5894,60 @@
       "fileCount": 1,
       "files": [
         "src/components/ui/Card.jsx"
+      ],
+      "props": {
+        "total": 0,
+        "unique": [],
+        "details": {},
+        "categories": {}
+      },
+      "propSetsByComponent": []
+    },
+    {
+      "name": "Divider",
+      "package": "@chakra-ui/react",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ui/Card.jsx"
+      ],
+      "props": {
+        "total": 1,
+        "unique": [
+          "mt"
+        ],
+        "details": {
+          "mt": 1
+        },
+        "categories": {
+          "other": {
+            "count": 1,
+            "props": {
+              "mt": 1
+            }
+          }
+        }
+      },
+      "propSetsByComponent": [
+        {
+          "propSet": [
+            "mt"
+          ],
+          "files": [
+            "src/components/ui/Card.jsx"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Icon",
+      "package": "@mui/material",
+      "totalImports": 1,
+      "totalUsages": 1,
+      "fileCount": 1,
+      "files": [
+        "src/components/ui/Button.jsx"
       ],
       "props": {
         "total": 0,

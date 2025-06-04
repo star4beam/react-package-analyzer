@@ -61,8 +61,8 @@ Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Box](../@mui_material/Box.md) | @mui/material | 7 |
+| [Box](../@mui_material/Box.md) | @mui/material | 8 |
 | [Grid](../@mui_material/Grid.md) | @mui/material | 6 |
 | [Typography](../@mui_material/Typography.md) | @mui/material | 5 |
-| [Paper](../@mui_material/Paper.md) | @mui/material | 3 |
-| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 3 |
+| [Paper](../@mui_material/Paper.md) | @mui/material | 4 |
+| [Divider](../@mui_material/Divider.md) | @mui/material | 3 |

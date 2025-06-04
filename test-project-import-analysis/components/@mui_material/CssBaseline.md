@@ -41,7 +41,8 @@ Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
+| [ThemeProvider](../@mui_material/ThemeProvider.md) | @mui/material | 1 |
+| [createTheme](../@mui_material/createTheme.md) | @mui/material | 1 |
 | [ChakraProvider](../@chakra-ui_react/ChakraProvider.md) | @chakra-ui/react | 1 |
 | [extendTheme](../@chakra-ui_react/extendTheme.md) | @chakra-ui/react | 1 |
 | [CircularProgress](../@mui_material/CircularProgress.md) | @mui/material | 1 |
-| [Box](../@mui_material/Box.md) | @mui/material | 1 |

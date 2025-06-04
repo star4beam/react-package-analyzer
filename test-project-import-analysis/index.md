@@ -8,9 +8,9 @@
 
 | **Summary Stats** | **Value** |
 |:---------------------|:------------:|
-| **Components Analyzed** | **56** |
-| **Files Affected** | **53** |
-| **Usage Instances** | **330** |
+| **Components Analyzed** | **73** |
+| **Files Affected** | **54** |
+| **Usage Instances** | **381** |
 | **Features** | **7** |
 | **Hubs** | **5** |
 

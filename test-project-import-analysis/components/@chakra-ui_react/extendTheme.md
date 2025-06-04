@@ -41,5 +41,7 @@ Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
+| [ThemeProvider](../@mui_material/ThemeProvider.md) | @mui/material | 1 |
+| [createTheme](../@mui_material/createTheme.md) | @mui/material | 1 |
 | [CssBaseline](../@mui_material/CssBaseline.md) | @mui/material | 1 |
 | [ChakraProvider](../@chakra-ui_react/ChakraProvider.md) | @chakra-ui/react | 1 |
