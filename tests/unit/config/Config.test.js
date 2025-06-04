@@ -42,8 +42,8 @@ describe('ImportAnalyzerConfig', () => {
       
       const config = new ImportAnalyzerConfig()
       
-      expect(config.packagesToTrack).toBeInstanceOf(Set)
-      expect(config.packagesToTrack.size).toBe(0)
+      expect(config.packagesToTrack).toBeInstanceOf(Array)
+      expect(config.packagesToTrack.length).toBe(0)
       expect(config.aliasMap).toEqual({})
       expect(config.tempFilePath).toBe('temp_import_analysis.jsonl')
       expect(config.reportFilePath).toBe('import_analysis_report.json')
@@ -61,7 +61,7 @@ describe('ImportAnalyzerConfig', () => {
       
       const config = new ImportAnalyzerConfig(options)
       
-      expect(config.packagesToTrack).toEqual(new Set(['react', 'lodash']))
+      expect(config.packagesToTrack).toEqual(['react', 'lodash'])
       expect(config.aliasMap).toEqual({ '@': 'src' })
       expect(config.tempFilePath).toBe('custom-temp.jsonl')
       expect(config.reportFilePath).toBe('custom-report.json')

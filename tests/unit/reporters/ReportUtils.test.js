@@ -92,9 +92,14 @@ describe('ReportUtils', () => {
     })
 
     test('should handle empty or special-only strings', () => {
-      expect(createSafeAnchor('')).toBe('')
-      expect(createSafeAnchor('!@#$%^&*()')).toBe('')
-      expect(createSafeAnchor('   ')).toBe('')
+      expect(createSafeAnchor('')).toBe('component')
+      expect(createSafeAnchor('!@#$%^&*()')).toBe('component')
+      expect(createSafeAnchor('   ')).toBe('component')
+    })
+
+    test('should handle special component names', () => {
+      expect(createSafeAnchor('*')).toBe('namespace')
+      expect(createSafeAnchor('default')).toBe('default')
     })
   })
 

@@ -180,11 +180,13 @@ describe('ImportAnalyzer', () => {
 
       expect(analyzer.componentMap.Button).toEqual({
         originalName: 'Button',
-        package: '@mui/material'
+        package: '@mui/material',
+        importType: 'named'
       })
       expect(analyzer.componentMap.TextField).toEqual({
         originalName: 'TextField',
-        package: '@mui/material'
+        package: '@mui/material',
+        importType: 'named'
       })
     })
 
@@ -199,21 +201,29 @@ describe('ImportAnalyzer', () => {
 
       expect(analyzer.componentMap.MuiButton).toEqual({
         originalName: 'Button',
-        package: '@mui/material'
+        package: '@mui/material',
+        importType: 'named'
       })
     })
 
     test('should process default imports', () => {
       const mockImportNode = {
         specifiers: [
-          { type: 'ImportDefaultSpecifier', local: { name: 'React' } }
+          { type: 'ImportDefaultSpecifier', local: { name: 'Button' } }
         ]
       }
 
-      analyzer.processImport(mockImportNode, 'react')
+      analyzer.processImport(mockImportNode, '@mui/material', '@mui/material/Button')
 
-      // Default imports are not handled by processImport in the current implementation
-      expect(analyzer.componentMap.React).toBeUndefined()
+      // Default imports are now tracked by their actual component name
+      expect(analyzer.componentMap.Button).toEqual({
+        originalName: 'Button',
+        package: '@mui/material',
+        importType: 'default',
+        localName: 'Button'
+      })
+      expect(analyzer.usageMap['@mui/material'].Button).toBeDefined()
+      expect(analyzer.usageMap['@mui/material'].Button.importType).toBe('default')
     })
 
     test('should process namespace imports', () => {
@@ -223,10 +233,16 @@ describe('ImportAnalyzer', () => {
         ]
       }
 
-      analyzer.processImport(mockImportNode, '@mui/material')
+      analyzer.processImport(mockImportNode, '@mui/material', '@mui/material')
 
-      // Namespace imports are not handled by processImport in the current implementation
-      expect(analyzer.componentMap.MUI).toBeUndefined()
+      // Namespace imports register the mapping but don't create usage entries until used
+      expect(analyzer.componentMap.MUI).toEqual({
+        originalName: '*',
+        package: '@mui/material',
+        importType: 'namespace',
+        localName: 'MUI'
+      })
+      // No usage tracking until actual member access occurs
     })
 
     test('should handle mixed import types', () => {
@@ -237,27 +253,60 @@ describe('ImportAnalyzer', () => {
       const mockImportNode = {
         specifiers: [
           { type: 'ImportDefaultSpecifier', local: { name: 'React' } },
-          { imported: { name: 'useState' }, local: { name: 'useState' } },
-          { imported: { name: 'useEffect' }, local: { name: 'useEffect' } }
+          { type: 'ImportSpecifier', imported: { name: 'useState' }, local: { name: 'useState' } },
+          { type: 'ImportSpecifier', imported: { name: 'useEffect' }, local: { name: 'useEffect' } }
         ]
       }
 
-      analyzer.processImport(mockImportNode, 'react')
+      analyzer.processImport(mockImportNode, 'react', 'react')
 
-      // Only named imports are processed
-      expect(analyzer.componentMap.React).toBeUndefined()
+      // All import types should now be processed
+      expect(analyzer.componentMap.React).toEqual({
+        originalName: 'react', // Default imports extract component name from path
+        package: 'react',
+        importType: 'default',
+        localName: 'React'
+      })
       expect(analyzer.componentMap.useState).toEqual({
         originalName: 'useState',
-        package: 'react'
+        package: 'react',
+        importType: 'named'
       })
       expect(analyzer.componentMap.useEffect).toEqual({
         originalName: 'useEffect',
-        package: 'react'
+        package: 'react',
+        importType: 'named'
       })
       
       // Check that usage was initialized
       expect(analyzer.usageMap['react']['useState']).toBeDefined()
       expect(analyzer.usageMap['react']['useEffect']).toBeDefined()
+      expect(analyzer.usageMap['react']['react']).toBeDefined() // Default import tracked by component name
+    })
+  })
+
+  describe('findMatchingPackage', () => {
+    test('should find exact package matches', () => {
+      expect(analyzer.findMatchingPackage('@mui/material')).toBe('@mui/material')
+      expect(analyzer.findMatchingPackage('@chakra-ui/react')).toBe('@chakra-ui/react')
+    })
+
+    test('should find sub-path matches', () => {
+      expect(analyzer.findMatchingPackage('@mui/material/Button')).toBe('@mui/material')
+      expect(analyzer.findMatchingPackage('@mui/material/styles')).toBe('@mui/material')
+      expect(analyzer.findMatchingPackage('@chakra-ui/react/dist/Button')).toBe('@chakra-ui/react')
+    })
+
+    test('should return null for non-matching packages', () => {
+      expect(analyzer.findMatchingPackage('react')).toBeNull()
+      expect(analyzer.findMatchingPackage('lodash')).toBeNull()
+      expect(analyzer.findMatchingPackage('@different/package')).toBeNull()
+    })
+
+    test('should not match partial package names', () => {
+      // Should not match @mui if package is @mui/material
+      expect(analyzer.findMatchingPackage('@mui')).toBeNull()
+      expect(analyzer.findMatchingPackage('@chakra-ui')).toBeNull()
     })
   })
 
@@ -458,6 +507,149 @@ describe('ImportAnalyzer', () => {
       expect(() => analyzer.analyzeAttributes(mockUsage, null)).toThrow()
       expect(() => analyzer.analyzeAttributes(mockUsage, undefined)).toThrow()
       expect(() => analyzer.analyzeAttributes(mockUsage, [])).not.toThrow()
+    })
+  })
+
+  describe('new import patterns integration', () => {
+    test('should handle namespace imports with JSX usage', () => {
+      // Setup a namespace import
+      analyzer.componentMap = {
+        'MUI': {
+          originalName: '*',
+          package: '@mui/material',
+          importType: 'namespace',
+          localName: 'MUI'
+        }
+      }
+
+      // Mock JSX with namespace usage: <MUI.Button />
+      const mockRoot = {
+        find: jest.fn().mockImplementation((j, query) => {
+          if (query.name?.type === 'JSXMemberExpression') {
+            return {
+              forEach: jest.fn().mockImplementation(callback => {
+                const mockPath = {
+                  node: {
+                    name: {
+                      property: { name: 'Button' }
+                    },
+                    attributes: []
+                  }
+                }
+                callback(mockPath)
+              })
+            }
+          }
+          return { forEach: jest.fn() }
+        })
+      }
+
+      analyzer.trackNamespaceUsage(mockRoot, {}, 'MUI', '@mui/material')
+
+      // Now Button should be tracked as its own component
+      const buttonUsage = analyzer.usageMap['@mui/material']['Button']
+      expect(buttonUsage).toBeDefined()
+      expect(buttonUsage.used).toBe(1)
+      expect(buttonUsage.totalUsage).toBe(1)
+      expect(buttonUsage.importType).toBe('namespace')
+    })
+
+    test('should handle default imports with JSX usage', () => {
+      // Setup a default import - now tracked by actual component name
+      analyzer.componentMap = {
+        'Button': {
+          originalName: 'Button',
+          package: '@mui/material',
+          importType: 'default',
+          localName: 'Button'
+        }
+      }
+      
+      // Initialize Button usage
+      analyzer.usageMap['@mui/material']['Button'] = {
+        imported: 1,
+        used: 0,
+        totalUsage: 0,
+        importType: 'default',
+        props: { total: 0, unique: new Set(), details: {}, categories: {} }
+      }
+
+      // Mock JSX usage: <Button />
+      const mockRoot = {
+        find: jest.fn().mockImplementation((j, query) => {
+          if (query.openingElement?.name?.name === 'Button') {
+            return {
+              nodes: jest.fn(() => [
+                {
+                  openingElement: {
+                    attributes: [],
+                    name: { name: 'Button' }
+                  },
+                  children: []
+                }
+              ])
+            }
+          }
+          return { nodes: jest.fn(() => []), forEach: jest.fn() }
+        })
+      }
+
+      analyzer.trackNamedImportUsage(mockRoot, {}, 'Button', 'Button', '@mui/material')
+
+      const buttonUsage = analyzer.usageMap['@mui/material']['Button']
+      expect(buttonUsage.used).toBe(1)
+      expect(buttonUsage.totalUsage).toBe(1)
+    })
+
+    test('should handle sub-path imports correctly', () => {
+      // Test that sub-path imports get mapped to the main package
+      expect(analyzer.findMatchingPackage('@mui/material/Button')).toBe('@mui/material')
+      expect(analyzer.findMatchingPackage('@mui/material/styles/createTheme')).toBe('@mui/material')
+      expect(analyzer.findMatchingPackage('@chakra-ui/react/dist/Button')).toBe('@chakra-ui/react')
+    })
+
+    test('should maintain backward compatibility with named imports', () => {
+      // Test that the refactored code still works with named imports
+      const mockImportNode = {
+        specifiers: [
+          { type: 'ImportSpecifier', imported: { name: 'Button' }, local: { name: 'Button' } }
+        ]
+      }
+
+      analyzer.processImport(mockImportNode, '@mui/material')
+
+      expect(analyzer.componentMap.Button).toEqual({
+        originalName: 'Button',
+        package: '@mui/material',
+        importType: 'named'
+      })
+      expect(analyzer.usageMap['@mui/material']['Button']).toBeDefined()
+    })
+
+    test('should handle mixed import specifier types in one import', () => {
+      const mockImportNode = {
+        specifiers: [
+          { type: 'ImportDefaultSpecifier', local: { name: 'React' } },
+          { type: 'ImportSpecifier', imported: { name: 'Component' }, local: { name: 'Component' } },
+          { type: 'ImportNamespaceSpecifier', local: { name: 'ReactAll' } }
+        ]
+      }
+
+      // Setup usage maps
+      analyzer.config.packagesToTrack = ['react']
+      analyzer.usageMap['react'] = {}
+
+      analyzer.processImport(mockImportNode, 'react', 'react')
+
+      // Check all three import types were processed
+      expect(analyzer.componentMap.React.importType).toBe('default')
+      expect(analyzer.componentMap.Component.importType).toBe('named')
+      expect(analyzer.componentMap.ReactAll.importType).toBe('namespace')
+      
+      // Default imports are now tracked by component name
+      expect(analyzer.usageMap.react.react).toBeDefined() // 'react' extracted from path
+      expect(analyzer.usageMap.react.Component).toBeDefined()
+      // Namespace imports don't create usage entries until used
     })
   })
 })
