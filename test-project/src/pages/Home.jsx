@@ -1,5 +1,9 @@
 import React from 'react';
-import { Container, Typography, Grid, Box, Stack } from '@mui/material';
+import * as MUI from '@mui/material';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import { Box, Stack } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import Card from '@layouts/containers/Card';
 import PrimaryButton from '@common/buttons/PrimaryButton';
@@ -8,6 +12,7 @@ import IntermediatePanel from '@components/ui/IntermediatePanel';
 import IntermediateForm from '@components/ui/IntermediateForm';
 import DataDisplay from '@components/common/DataDisplay';
 import AdvancedPanel from '@components/ui/AdvancedPanel';
+import ImportShowcase from '@components/ImportShowcase';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -62,6 +67,10 @@ const Home = () => {
                 Dynamic Components Demo
               </PrimaryButton>
             </Box>
+            <MUI.Divider sx={{ my: 2 }} />
+            <MUI.Alert severity="info">
+              This project demonstrates namespace imports, default imports, and subpath imports.
+            </MUI.Alert>
           </Card>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -113,6 +122,9 @@ const Home = () => {
               { label: 'Admin Panel', onClick: () => navigate('/admin') },
             ]}
           />
+        </Grid>
+        <Grid item xs={12}>
+          <ImportShowcase />
         </Grid>
       </Grid>
     </Container>

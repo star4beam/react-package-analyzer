@@ -1,6 +1,9 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { CssBaseline, CircularProgress, Box } from '@mui/material';
+import * as MUI from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 // Import the main layout hub
 import MainLayout from '@components/layouts/MainLayout';
@@ -28,10 +31,11 @@ const Login = lazy(() => import('@pages/auth/Login'));
 const Signup = lazy(() => import('@pages/auth/Signup'));
 const DynamicComponentDemo = lazy(() => import('@pages/DynamicComponentDemo'));
 
-// Loading fallback component
+// Loading fallback component using both namespace and default imports
 const LoadingFallback = () => (
   <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
     <CircularProgress />
+    <MUI.Typography variant="body2" sx={{ ml: 2 }}>Loading...</MUI.Typography>
   </Box>
 );
 
