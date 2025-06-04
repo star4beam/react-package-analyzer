@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button as MuiButton } from '@mui/material';
+import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
+import * as MUI from '@mui/material';
 
 // Custom styled button extending MUI's Button
-const StyledButton = styled(MuiButton)(({ theme }) => ({
+const StyledButton = styled(Button)(({ theme }) => ({
   borderRadius: theme.shape.borderRadius * 2,
   textTransform: 'none',
   fontWeight: 600,
@@ -13,12 +14,15 @@ const StyledButton = styled(MuiButton)(({ theme }) => ({
   },
 }));
 
-export const Button = ({ children, variant = 'contained', color = 'primary', ...props }) => {
+export const ButtonComponent = ({ children, variant = 'contained', color = 'primary', startIcon, ...props }) => {
+  // Demonstrate namespace usage
+  const icon = startIcon && <MUI.Icon>{startIcon}</MUI.Icon>;
+  
   return (
-    <StyledButton variant={variant} color={color} {...props}>
+    <StyledButton variant={variant} color={color} startIcon={icon} {...props}>
       {children}
     </StyledButton>
   );
 };
 
-export default Button; 
+export default ButtonComponent; 

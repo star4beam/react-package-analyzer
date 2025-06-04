@@ -7,7 +7,7 @@ const fs = require('fs')
  */
 class ImportAnalyzerConfig {
     constructor(options = {}) {
-        this.packagesToTrack = new Set(options.packagesToTrack || [])
+        this.packagesToTrack = options.packagesToTrack || []
         this.aliasMap = options.aliasMap || {}
         this.tempFilePath = options.tempFilePath || 'temp_import_analysis.jsonl'
         this.reportFilePath = options.reportFilePath || 'import_analysis_report.json'

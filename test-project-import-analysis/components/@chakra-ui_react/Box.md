@@ -10,16 +10,16 @@
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
 | Component | Box | Package | @chakra-ui/react |
-| Usage Count | 42 instances | Files | 20 files |
-| Unique Props | 22 props | Prop Categories | 3 categories |
-| Impact Score | 79 (Medium) | | |
+| Usage Count | 42 instances | Files | 21 files |
+| Unique Props | 21 props | Prop Categories | 3 categories |
+| Impact Score | 80 (High) | | |
 
 ### Impact Assessment
 
-**Medium Impact Component**  
+**High Impact Component**  
 Primary factor: Usage frequency
 
-This component has medium impact in your codebase. It&#x27;s used in several files and has moderate complexity. Changes should be made with care.
+This component has high impact in your codebase. It&#x27;s widely used across multiple files and/or has a complex prop interface. Changes to this component would affect many parts of your application.
 
 ## Prop Usage Analysis
 
@@ -27,8 +27,8 @@ This component has medium impact in your codebase. It&#x27;s used in several fil
 
 | Category | Props | Usage Count |
 |----------|-------|-------------|
-| Other | `mt` (9), `p` (8), `display` (7), `bg` (3), `mb` (3), `borderRadius` (3), `borderBottom` (3), `justifyContent` (2), `boxShadow` (2), `overflow` (1), `flex` (1), `py` (1), `flexWrap` (1) | 44 |
-| Customization | `gap` (5), `borderWidth` (3), `borderColor` (3), `minH` (2), `textAlign` (2), `height` (1), `alignItems` (1) | 17 |
+| Other | `mt` (9), `p` (8), `display` (7), `bg` (3), `mb` (3), `borderRadius` (3), `borderBottom` (3), `boxShadow` (2), `justifyContent` (1), `ml` (1), `overflow` (1), `flex` (1), `py` (1), `flexWrap` (1) | 44 |
+| Customization | `gap` (5), `borderWidth` (3), `borderColor` (3), `minH` (2), `textAlign` (2) | 15 |
 | Identification | `key` (2) | 2 |
 
 ## Prop Combinations
@@ -67,23 +67,24 @@ This section analyzes similar ways this component is configured across the codeb
 | [src/components/ui/AdvancedPanel.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ui/AdvancedPanel.jsx) | `children`, `display`, `gap` | 3 |
 | [src/components/settings/SettingsPanel.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/settings/SettingsPanel.jsx) | `p`, `children`, `mt`, `display`, `gap` | 3 |
 | [src/components/layouts/MainLayout.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/layouts/MainLayout.jsx) | `minH`, `children`, `mt` | 3 |
-| [src/components/dashboard/Dashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/Dashboard.jsx) | `children`, `height`, `display`, `justifyContent`, `alignItems` | 3 |
 | [src/components/dashboard/ActivityFeed.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/ActivityFeed.jsx) | `flex`, `children`, `mb`, `borderBottom`, `borderColor`, `mt`, `textAlign` | 3 |
 | [src/components/composite/AdminPanel.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/composite/AdminPanel.jsx) | `children`, `mt`, `display`, `gap` | 3 |
 | [src/pages/profile/ProfilePage.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/profile/ProfilePage.jsx) | `p`, `children`, `display`, `justifyContent`, `mt` | 2 |
 | [src/components/dashboard/StatsSummary.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/StatsSummary.jsx) | `p`, `children` | 2 |
 | [src/components/composite/DashboardHub.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/composite/DashboardHub.jsx) | `p`, `children` | 2 |
 | [src/components/common/ActionCard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/common/ActionCard.jsx) | `p`, `children` | 2 |
+| [src/components/ImportShowcase.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ImportShowcase.jsx) | `children` | 1 |
 | [src/components/ui/IntermediatePanel.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ui/IntermediatePanel.jsx) | `children` | 1 |
 | [src/components/dashboard/StatCard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/StatCard.jsx) | `children` | 1 |
+| [src/components/dashboard/Dashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/Dashboard.jsx) | `height`, `display`, `justifyContent`, `alignItems` | 1 |
 
 ### Co-located Components
 Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Typography](../@mui_material/Typography.md) | @mui/material | 12 |
+| [Typography](../@mui_material/Typography.md) | @mui/material | 13 |
+| [Paper](../@mui_material/Paper.md) | @mui/material | 11 |
 | [Text](../@chakra-ui_react/Text.md) | @chakra-ui/react | 11 |
-| [Paper](../@mui_material/Paper.md) | @mui/material | 9 |
-| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 9 |
+| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 10 |
 | [Container](../@mui_material/Container.md) | @mui/material | 8 |

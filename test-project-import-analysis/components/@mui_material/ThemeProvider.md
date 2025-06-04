@@ -3,21 +3,21 @@
 
 
 
-# CircularProgress (@mui/material)
+# ThemeProvider (@mui/material)
 
 ## Component Facts
 
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
-| Component | CircularProgress | Package | @mui/material |
-| Usage Count | 6 instances | Files | 3 files |
-| Unique Props | 1 props | Prop Categories | 1 categories |
-| Impact Score | 9 (Low) | | |
+| Component | ThemeProvider | Package | @mui/material |
+| Usage Count | 2 instances | Files | 2 files |
+| Unique Props | 2 props | Prop Categories | 1 categories |
+| Impact Score | 8 (Low) | | |
 
 ### Impact Assessment
 
 **Low Impact Component**  
-Primary factor: Usage frequency
+Primary factor: File distribution
 
 This component has relatively low impact in your codebase. It&#x27;s used in fewer files or has a simpler interface. Changes are less likely to cause widespread issues.
 
@@ -27,7 +27,7 @@ This component has relatively low impact in your codebase. It&#x27;s used in few
 
 | Category | Props | Usage Count |
 |----------|-------|-------------|
-| Customization | `size` (4) | 4 |
+| Styling | `theme` (2) | 2 |
 
 ## Prop Combinations
 
@@ -37,9 +37,9 @@ This section analyzes similar ways this component is configured across the codeb
 
 | Prop Combination | Usage Count | % of Total Uses |
 |------------------|-------------|----------------|
-| `size` | 2 | 33.3% |
+| `children`, `theme` | 2 | 100.0% |
 
-> **Flexibility Index: 16.7%** - This measures how many different ways the component is configured relative to its total usage. Higher numbers indicate more versatility.
+> **Flexibility Index: 50.0%** - This measures how many different ways the component is configured relative to its total usage. Higher numbers indicate more versatility.
 
 ## Locations
 
@@ -47,16 +47,15 @@ This section analyzes similar ways this component is configured across the codeb
 
 | File | Props Used | Prop Categories |
 |------|------------|----------------|
-| [src/pages/dashboard/LazyDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/dashboard/LazyDashboard.jsx) | `size` | 1 |
-| [src/hooks/custom/useDynamicComponent.js](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/hooks/custom/useDynamicComponent.js) | `size` | 1 |
+| [src/index.js](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/index.js) | `theme`, `children` | 2 |
+| [src/components/common/ComponentLibraryProvider.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/common/ComponentLibraryProvider.jsx) | `theme`, `children` | 2 |
 
 ### Co-located Components
 Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Box](../@mui_material/Box.md) | @mui/material | 3 |
-| [Typography](../@mui_material/Typography.md) | @mui/material | 2 |
+| [createTheme](../@mui_material/createTheme.md) | @mui/material | 2 |
+| [ChakraProvider](../@chakra-ui_react/ChakraProvider.md) | @chakra-ui/react | 2 |
 | [CssBaseline](../@mui_material/CssBaseline.md) | @mui/material | 1 |
-| [Container](../@mui_material/Container.md) | @mui/material | 1 |
-| [Grid](../@mui_material/Grid.md) | @mui/material | 1 |
+| [extendTheme](../@chakra-ui_react/extendTheme.md) | @chakra-ui/react | 1 |

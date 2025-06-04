@@ -121,6 +121,18 @@
           ]
         ]
       },
+      "src/components/ImportShowcase.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/Home.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
       "src/components/ui/TextField.jsx": {
         "directImporters": [],
         "indirectImporters": [],
@@ -1665,6 +1677,36 @@
           ]
         ]
       },
+      "src/components/common/ComponentLibraryProvider.jsx": {
+        "directImporters": [
+          "src/components/common/LibrarySwitcher.jsx"
+        ],
+        "indirectImporters": [],
+        "totalImporters": 1,
+        "importChains": [
+          [
+            "src/index.js"
+          ],
+          [
+            "src/components/ui/AdaptiveButton.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/LibrarySwitcher.jsx",
+            "src/pages/profile/ProfilePage.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ],
+          [
+            "src/components/common/LibrarySwitcher.jsx",
+            "src/pages/dashboard/EnhancedDashboard.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
+        ]
+      },
       "src/components/common/ActionCard.jsx": {
         "directImporters": [
           "src/components/dashboard/UserSummary.jsx"
@@ -1835,6 +1877,18 @@
         "totalImporters": 0,
         "importChains": [
           []
+        ]
+      },
+      "src/components/ImportShowcase.jsx": {
+        "directImporters": [],
+        "indirectImporters": [],
+        "totalImporters": 0,
+        "importChains": [
+          [
+            "src/pages/Home.jsx",
+            "src/App.jsx",
+            "src/index.js"
+          ]
         ]
       },
       "src/components/ui/IntermediatePanel.jsx": {

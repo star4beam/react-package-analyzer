@@ -43,6 +43,8 @@ flowchart LR
         class comp__chakra_ui_react_Box component
         comp__chakra_ui_react_useColorModeValue["useColorModeValue"]
         class comp__chakra_ui_react_useColorModeValue component
+        comp__chakra_ui_react_Divider["Divider"]
+        class comp__chakra_ui_react_Divider component
     end
     hub_Card --> pkg__chakra_ui_react
 
@@ -75,6 +77,6 @@ This section shows the components directly used by this hub from packages.
 
 | Package | Components |
 | ------- | ---------- |
-| @chakra-ui/react | [Box](../components/@chakra-ui_react/Box.md), [useColorModeValue](../components/@chakra-ui_react/useColorModeValue.md) |
+| @chakra-ui/react | [Box](../components/@chakra-ui_react/Box.md), [Divider](../components/@chakra-ui_react/Divider.md), [useColorModeValue](../components/@chakra-ui_react/useColorModeValue.md) |
 
 

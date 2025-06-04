@@ -3,21 +3,21 @@
 
 
 
-# useColorModeValue (@chakra-ui/react)
+# Icon (@mui/material)
 
 ## Component Facts
 
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
-| Component | useColorModeValue | Package | @chakra-ui/react |
-| Usage Count | 2 instances | Files | 1 files |
+| Component | Icon | Package | @mui/material |
+| Usage Count | 1 instances | Files | 1 files |
 | Unique Props | 0 props | Prop Categories | 0 categories |
-| Impact Score | 3 (Low) | | |
+| Impact Score | 2 (Low) | | |
 
 ### Impact Assessment
 
 **Low Impact Component**  
-Primary factor: Usage frequency
+Primary factor: File distribution
 
 This component has relatively low impact in your codebase. It&#x27;s used in fewer files or has a simpler interface. Changes are less likely to cause widespread issues.
 
@@ -41,5 +41,5 @@ Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Box](../@chakra-ui_react/Box.md) | @chakra-ui/react | 1 |
-| [Divider](../@chakra-ui_react/Divider.md) | @chakra-ui/react | 1 |
+| [Button](../@mui_material/Button.md) | @mui/material | 1 |
+| [styled](../@mui_material/styled.md) | @mui/material | 1 |

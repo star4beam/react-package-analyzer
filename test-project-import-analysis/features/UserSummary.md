@@ -79,6 +79,6 @@ These hubs are used only within this feature and don't interact with other hubs.
 
 | Package | Components |
 |---------|------------|
-| @mui/material | [Paper](../components/@mui_material/Paper.md), [Avatar](../components/@mui_material/Avatar.md), [Typography](../components/@mui_material/Typography.md), [Button](../components/@mui_material/Button.md) |
-| @chakra-ui/react | [Stack](../components/@chakra-ui_react/Stack.md), [Box](../components/@chakra-ui_react/Box.md), [useColorModeValue](../components/@chakra-ui_react/useColorModeValue.md), [Box](../components/@chakra-ui_react/Box.md), [Heading](../components/@chakra-ui_react/Heading.md), [Text](../components/@chakra-ui_react/Text.md), [Button](../components/@chakra-ui_react/Button.md) |
+| @mui/material | [Paper](../components/@mui_material/Paper.md), [Avatar](../components/@mui_material/Avatar.md), [Typography](../components/@mui_material/Typography.md), [Button](../components/@mui_material/Button.md), [styled](../components/@mui_material/styled.md), [Icon](../components/@mui_material/Icon.md) |
+| @chakra-ui/react | [Stack](../components/@chakra-ui_react/Stack.md), [Box](../components/@chakra-ui_react/Box.md), [useColorModeValue](../components/@chakra-ui_react/useColorModeValue.md), [Divider](../components/@chakra-ui_react/Divider.md), [Box](../components/@chakra-ui_react/Box.md), [Heading](../components/@chakra-ui_react/Heading.md), [Text](../components/@chakra-ui_react/Text.md), [Button](../components/@chakra-ui_react/Button.md) |
 

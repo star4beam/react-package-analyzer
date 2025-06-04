@@ -33,6 +33,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:unit": "jest tests/unit/",
+    "analyze-test-project": "cd test-project && node ../bin/cli.js .",
     "version": "git add -A",
     "postversion": "git push && git push --tags",
     "release": "npm test && npm version patch && npm publish"

@@ -46,9 +46,22 @@ const createFileLink = (filePath, baseUrl = '') => {
  * @returns {string} Safe anchor ID
  */
 const createSafeAnchor = (text) => {
-    return text
+    // Handle special component names first
+    const specialNames = {
+        '*': 'namespace',
+        'default': 'default'
+    }
+    
+    if (specialNames[text]) {
+        return specialNames[text]
+    }
+    
+    const result = text
         .replace(/[^a-zA-Z0-9]+/g, '-')
         .replace(/^-+|-+$/g, '')
+        
+    // If result is empty after sanitization, use a fallback
+    return result || 'component'
 }
 
 /**

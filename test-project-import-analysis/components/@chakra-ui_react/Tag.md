@@ -3,21 +3,21 @@
 
 
 
-# ChakraProvider (@chakra-ui/react)
+# Tag (@chakra-ui/react)
 
 ## Component Facts
 
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
-| Component | ChakraProvider | Package | @chakra-ui/react |
-| Usage Count | 2 instances | Files | 2 files |
+| Component | Tag | Package | @chakra-ui/react |
+| Usage Count | 2 instances | Files | 1 files |
 | Unique Props | 2 props | Prop Categories | 1 categories |
-| Impact Score | 8 (Low) | | |
+| Impact Score | 6 (Low) | | |
 
 ### Impact Assessment
 
 **Low Impact Component**  
-Primary factor: File distribution
+Primary factor: Prop complexity
 
 This component has relatively low impact in your codebase. It&#x27;s used in fewer files or has a simpler interface. Changes are less likely to cause widespread issues.
 
@@ -27,7 +27,7 @@ This component has relatively low impact in your codebase. It&#x27;s used in few
 
 | Category | Props | Usage Count |
 |----------|-------|-------------|
-| Styling | `theme` (1) | 1 |
+| Customization | `colorScheme` (1) | 1 |
 
 ## Prop Combinations
 
@@ -37,10 +37,9 @@ This section analyzes similar ways this component is configured across the codeb
 
 | Prop Combination | Usage Count | % of Total Uses |
 |------------------|-------------|----------------|
-| `children`, `theme` | 1 | 50.0% |
-| `children` | 1 | 50.0% |
+| `children`, `colorScheme` | 1 | 50.0% |
 
-> **Flexibility Index: 100.0%** - This measures how many different ways the component is configured relative to its total usage. Higher numbers indicate more versatility.
+> **Flexibility Index: 50.0%** - This measures how many different ways the component is configured relative to its total usage. Higher numbers indicate more versatility.
 
 ## Locations
 
@@ -48,15 +47,15 @@ This section analyzes similar ways this component is configured across the codeb
 
 | File | Props Used | Prop Categories |
 |------|------------|----------------|
-| [src/index.js](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/index.js) | `theme`, `children` | 2 |
-| [src/components/common/ComponentLibraryProvider.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/common/ComponentLibraryProvider.jsx) | `children` | 1 |
+| [src/components/ImportShowcase.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ImportShowcase.jsx) | `colorScheme`, `children` | 2 |
 
 ### Co-located Components
 Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [ThemeProvider](../@mui_material/ThemeProvider.md) | @mui/material | 2 |
-| [createTheme](../@mui_material/createTheme.md) | @mui/material | 2 |
-| [CssBaseline](../@mui_material/CssBaseline.md) | @mui/material | 1 |
-| [extendTheme](../@chakra-ui_react/extendTheme.md) | @chakra-ui/react | 1 |
+| [Button](../@mui_material/Button.md) | @mui/material | 2 |
+| [Box](../@mui_material/Box.md) | @mui/material | 2 |
+| [TextField](../@mui_material/TextField.md) | @mui/material | 1 |
+| [Paper](../@mui_material/Paper.md) | @mui/material | 1 |
+| [Typography](../@mui_material/Typography.md) | @mui/material | 1 |

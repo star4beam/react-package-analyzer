@@ -59,8 +59,8 @@ Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Box](../@chakra-ui_react/Box.md) | @chakra-ui/react | 4 |
+| [Box](../@chakra-ui_react/Box.md) | @chakra-ui/react | 5 |
 | [Text](../@chakra-ui_react/Text.md) | @chakra-ui/react | 4 |
 | [Typography](../@mui_material/Typography.md) | @mui/material | 3 |
-| [Paper](../@mui_material/Paper.md) | @mui/material | 2 |
+| [Paper](../@mui_material/Paper.md) | @mui/material | 3 |
 | [Container](../@chakra-ui_react/Container.md) | @chakra-ui/react | 2 |

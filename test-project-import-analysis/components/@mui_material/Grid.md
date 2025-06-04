@@ -10,9 +10,9 @@
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
 | Component | Grid | Package | @mui/material |
-| Usage Count | 32 instances | Files | 7 files |
+| Usage Count | 36 instances | Files | 8 files |
 | Unique Props | 8 props | Prop Categories | 2 categories |
-| Impact Score | 44 (Medium) | | |
+| Impact Score | 48 (Medium) | | |
 
 ### Impact Assessment
 
@@ -27,8 +27,8 @@ This component has medium impact in your codebase. It&#x27;s used in several fil
 
 | Category | Props | Usage Count |
 |----------|-------|-------------|
-| Customization | `xs` (24), `md` (19), `spacing` (8) | 51 |
-| Other | `item` (24), `container` (8), `mt` (1), `mb` (1) | 34 |
+| Customization | `xs` (27), `md` (19), `spacing` (9) | 55 |
+| Other | `item` (27), `container` (9), `mt` (1), `mb` (1) | 38 |
 
 ## Prop Combinations
 
@@ -54,6 +54,7 @@ This section analyzes similar ways this component is configured across the codeb
 | [src/pages/profile/ProfilePage.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/profile/ProfilePage.jsx) | `container`, `spacing`, `children`, `item`, `xs` | 3 |
 | [src/pages/dashboard/LazyDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/dashboard/LazyDashboard.jsx) | `container`, `spacing`, `mb`, `children`, `item`, `xs`, `md` | 3 |
 | [src/pages/dashboard/EnhancedDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/dashboard/EnhancedDashboard.jsx) | `container`, `spacing`, `children`, `item`, `xs`, `md` | 3 |
+| [src/components/ImportShowcase.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/ImportShowcase.jsx) | `container`, `spacing`, `children`, `item`, `xs` | 3 |
 | [src/components/dashboard/Dashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/Dashboard.jsx) | `container`, `spacing`, `children`, `item`, `xs`, `md` | 3 |
 | [src/components/analytics/AnalyticsDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/analytics/AnalyticsDashboard.jsx) | `container`, `spacing`, `children`, `item`, `xs`, `md` | 3 |
 
@@ -62,8 +63,8 @@ Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
+| [Box](../@mui_material/Box.md) | @mui/material | 10 |
 | [Container](../@mui_material/Container.md) | @mui/material | 7 |
-| [Box](../@mui_material/Box.md) | @mui/material | 7 |
-| [Typography](../@mui_material/Typography.md) | @mui/material | 6 |
-| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 4 |
-| [Paper](../@mui_material/Paper.md) | @mui/material | 3 |
+| [Typography](../@mui_material/Typography.md) | @mui/material | 7 |
+| [Paper](../@mui_material/Paper.md) | @mui/material | 5 |
+| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 5 |

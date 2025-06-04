@@ -41,6 +41,10 @@ flowchart LR
     subgraph pkg__mui_material["@mui/material"]
         comp__mui_material_Button["Button"]
         class comp__mui_material_Button component
+        comp__mui_material_styled["styled"]
+        class comp__mui_material_styled component
+        comp__mui_material_Icon["Icon"]
+        class comp__mui_material_Icon component
     end
     hub_Button --> pkg__mui_material
 
@@ -73,6 +77,6 @@ This section shows the components directly used by this hub from packages.
 
 | Package | Components |
 | ------- | ---------- |
-| @mui/material | [Button](../components/@mui_material/Button.md) |
+| @mui/material | [Button](../components/@mui_material/Button.md), [Icon](../components/@mui_material/Icon.md), [styled](../components/@mui_material/styled.md) |
 
 

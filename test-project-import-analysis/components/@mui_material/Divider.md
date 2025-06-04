@@ -10,9 +10,9 @@
 | Property | Value | Property | Value |
 |----------|-------|----------|-------|
 | Component | Divider | Package | @mui/material |
-| Usage Count | 12 instances | Files | 6 files |
+| Usage Count | 14 instances | Files | 8 files |
 | Unique Props | 1 props | Prop Categories | 1 categories |
-| Impact Score | 18 (Low) | | |
+| Impact Score | 22 (Low) | | |
 
 ### Impact Assessment
 
@@ -27,7 +27,7 @@ This component has relatively low impact in your codebase. It&#x27;s used in few
 
 | Category | Props | Usage Count |
 |----------|-------|-------------|
-| Other | `sx` (4) | 4 |
+| Other | `sx` (6) | 6 |
 
 ## Prop Combinations
 
@@ -37,9 +37,9 @@ This section analyzes similar ways this component is configured across the codeb
 
 | Prop Combination | Usage Count | % of Total Uses |
 |------------------|-------------|----------------|
-| `sx` | 2 | 16.7% |
+| `sx` | 4 | 28.6% |
 
-> **Flexibility Index: 8.3%** - This measures how many different ways the component is configured relative to its total usage. Higher numbers indicate more versatility.
+> **Flexibility Index: 7.1%** - This measures how many different ways the component is configured relative to its total usage. Higher numbers indicate more versatility.
 
 ## Locations
 
@@ -47,7 +47,9 @@ This section analyzes similar ways this component is configured across the codeb
 
 | File | Props Used | Prop Categories |
 |------|------------|----------------|
+| [src/pages/Home.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/Home.jsx) | `sx` | 1 |
 | [src/pages/dashboard/EnhancedDashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/pages/dashboard/EnhancedDashboard.jsx) | `sx` | 1 |
+| [src/components/dashboard/Dashboard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/dashboard/Dashboard.jsx) | `sx` | 1 |
 | [src/components/common/ActionCard.jsx](https://github.com/star4beam/react-import-analyzer/blob/main/test-project/src/components/common/ActionCard.jsx) | `sx` | 1 |
 
 ### Co-located Components
@@ -55,8 +57,8 @@ Components that appear in the same files:
 
 | Component | Package | Common Files |
 |-----------|---------|--------------|
-| [Box](../@chakra-ui_react/Box.md) | @chakra-ui/react | 6 |
-| [Typography](../@mui_material/Typography.md) | @mui/material | 4 |
-| [Paper](../@mui_material/Paper.md) | @mui/material | 3 |
-| [Heading](../@chakra-ui_react/Heading.md) | @chakra-ui/react | 3 |
-| [Text](../@chakra-ui_react/Text.md) | @chakra-ui/react | 3 |
+| [Box](../@mui_material/Box.md) | @mui/material | 9 |
+| [Typography](../@mui_material/Typography.md) | @mui/material | 6 |
+| [Container](../@mui_material/Container.md) | @mui/material | 4 |
+| [Grid](../@mui_material/Grid.md) | @mui/material | 4 |
+| [Stack](../@mui_material/Stack.md) | @mui/material | 4 |
